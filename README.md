@@ -6,5 +6,3 @@
     <li>npm run dev</li>
     <li>php artisan serve</li>
 </ol>
-    
-
