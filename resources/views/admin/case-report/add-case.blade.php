@@ -87,11 +87,8 @@
                         </tbody>
                     </table>
                 </section>
-                
-                {{-- asd --}}
-                <input type="button" name="next-step" id="btn-validation" class="next-step btn btn-primary btn-sm" value="Add new report" style="display: block"/>
-                    
-                    
+            
+                <input type="button" name="next-step" id="btn-validation" class="next-step btn btn-primary btn-sm" value="Add new report" style="display: none"/>
                 
             </fieldset>
 
