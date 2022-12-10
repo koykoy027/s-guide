@@ -7,7 +7,7 @@
     <div class="small-box bg-info">
       <div class="inner">
         <h3>350</h3>
-        <p>Population</p>
+        <p>Total Case Report</p>
       </div>
 
       <div class="icon">
@@ -22,7 +22,7 @@
         <div class="small-box bg-success">
             <div class="inner">
                 <h3>53</h3>
-                <p>Registered voters</p>
+                <p>Total Students Reports </p>
             </div>
             <div class="icon">
                 <i class="ion ion-stats-bars"></i>
@@ -36,7 +36,7 @@
           <div class="inner">
             <h3>44</h3>
 
-            <p>Non-registered voters</p>
+            <p>Total Walk-in reports</p>
           </div>
           <div class="icon">
             <i class="ion ion-person-add"></i>
@@ -49,7 +49,7 @@
         <div class="small-box bg-danger">
           <div class="inner">
             <h3>65</h3>
-            <p>Blotter case</p>
+            <p>Total online reports</p>
           </div>
           <div class="icon">
             <i class="ion ion-pie-graph"></i>
@@ -59,7 +59,7 @@
       </div>
     </div>
 
-        {{-- <div class="row">
+        <div class="row">
           <section class="col-lg-7 connectedSortable">
             <div class="card">
               <div class="card-header">
@@ -95,7 +95,7 @@
           <section class="col-lg-5 connectedSortable">
 
             <!-- Map card -->
-            <div class="card bg-gradient-primary">
+            {{-- <div class="card bg-gradient-primary">
               <div class="card-header border-0">
                 <h3 class="card-title">
                   <i class="fas fa-map-marker-alt mr-1"></i>
@@ -131,11 +131,11 @@
                   </div>                  
                 </div>
               </div>
-            </div>
+            </div> --}}
             
 
             
-            <div class="card bg-gradient-info">
+            {{-- <div class="card bg-gradient-info">
               <div class="card-header border-0">
                 <h3 class="card-title">
                   <i class="fas fa-th mr-1"></i>
@@ -174,7 +174,7 @@
                   </div>                  
                 </div>
               </div>              
-            </div>            
+            </div>             --}}
 
             <!-- Calendar -->
             <div class="card bg-gradient-success">
@@ -217,5 +217,5 @@
             <!-- /.card -->
           </section>
           <!-- right col -->
-        </div> --}}
+        </div>
 @endsection

@@ -6,7 +6,7 @@
         <div class="card-body">
             <div class="row">
                 <div class="col-lg">
-                    <h1 class="text-center">IMAGE HERE</h1>
+                    <h1 class="text-center"></h1>
                     {{-- INSET BACKROUND IMAGE HERE --}}
                 
                 </div>

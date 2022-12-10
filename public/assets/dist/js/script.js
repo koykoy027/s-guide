@@ -1,3 +1,20 @@
+function offenseMinorOthers(val) {
+    if (val === "others") {
+        $('#offense-minor-11').css("display", "block")
+    }
+    {
+        $('#offense-minor-11').css("display", "none")
+    }
+}
+function offenseMajorOthers(val) {
+    if (val === "others") {
+        $('#offense-major-20').css("display", "block")
+    }
+    {
+        $('#offense-major-20').css("display", "none")
+    }
+}
+
 function validation() {
     if ($('#firstname').val().length == 0) {
         $('#firstname').css("border", "1px solid red")

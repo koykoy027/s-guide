@@ -117,3 +117,24 @@
     </div>
   </div>
 </form>
+
+
+<!-- Delete Confirm -->
+<form class="modal fade" id="delete-confirm" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="true">
+  <div class="modal-dialog modal-dialog-centered modal-scrollable modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Delete record?</h5>
+         <button class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+      </div>
+      <div class="modal-body">
+        Are you sure you want to delete?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary btn-sm">Delete</button>
+        
+      </div>
+    </div>
+  </div>
+</form>

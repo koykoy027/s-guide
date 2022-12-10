@@ -18,6 +18,9 @@ Auth::routes();
 Route::get('/case-reports', function () {
     return view('admin.case-reports');
 });
+Route::get('/user', function () {
+    return view('admin.user');
+});
 
 
 Route::get('/add-case', [App\Http\Controllers\HomeController::class, 'addCase'])->name('addCase');

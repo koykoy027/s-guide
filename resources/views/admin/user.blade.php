@@ -1,5 +1,5 @@
 @extends('admin.layouts.master')
-@section('title', 'Case reports')
+@section('title', 'User')
 @section('content')
 
 <div class="card shadow-lg">
@@ -13,8 +13,8 @@
                 <thead>
                     <tr>                
                         <th scope="col">Fullname</th>
-                        <th scope="col">LRN</th>
-                        <th scope="col">Total number of cases</th>
+                        <th scope="col">Role</th>
+                        <th scope="col">Status</th>
                         <th scope="col">Actions</th>
                         
                     </tr>
@@ -22,22 +22,22 @@
                 <tbody>
                     <tr>
                         <td>
-                            <b>Joshua Villanueva</b>
+                            <b>John Doe</b>
                             <br>
-                            <span>Birthday: 07/27/2000</span>
+                            <span>johndoe@gmail.com</span>
                         </td>
                         
                         <td>
-                            20192281235
+                            Principal
                         </td>
-                        <td>3</td>
+                        <td> <span class="badge badge-primary">Active</span></td>
                         <td>
                             <div class="dropdown">
                                 <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <i class="bi bi-three-dots-vertical"></i>
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#viewCase">View</a></li>
+                                    <li><a class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#">Update</a></li>
                                     <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete-confirm">Delete</a></li>                                
                                 </ul>
                             </div>
@@ -45,45 +45,22 @@
                     </tr>
                     <tr>
                         <td>
-                            <b>CzarMcGokou Sebastian</b>
+                            <b>Francis Hiloma Oliver</b>
                             <br>
-                            <span>Birthday: 06/21/2001</span>
+                            <span>hilomaoliver@gmail.com</span>
                         </td>
                         
                         <td>
-                            460070541
+                            Vice Principal
                         </td>
-                        <td>3</td>
+                        <td> <span class="badge badge-danger">Inactive</span></td>
                         <td>
                             <div class="dropdown">
                                 <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <i class="bi bi-three-dots-vertical"></i>
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#viewCase">View</a></li>
-                                    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete-confirm">Delete</a></li>                                
-                                </ul>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <b>Mark Joel Calimag</b>
-                            <br>
-                            <span>Birthday: 01/13/2003</span>
-                        </td>
-                        
-                        <td>
-                            9300502556
-                        </td>
-                        <td>3</td>
-                        <td>
-                            <div class="dropdown">
-                                <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="bi bi-three-dots-vertical"></i>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#viewCase">View</a></li>
+                                    <li><a class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#">Update</a></li>
                                     <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete-confirm">Delete</a></li>                                
                                 </ul>
                             </div>

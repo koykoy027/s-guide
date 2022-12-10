@@ -89,7 +89,7 @@
                 </section>
             
                 <input type="button" name="next-step" id="btn-validation" class="next-step btn btn-primary btn-sm" value="Add new report" style="display: none"/>
-                
+
             </fieldset>
 
             <fieldset>
@@ -256,77 +256,101 @@
                 <h4 class="text-success">Incidence details</h4>
                 <small>Indicate information of the report.</small>
                 <hr>
+                <p class="text-primary">Type of complaint</p>
 
                 <div class="row">
-                    <div class="col-lg-5 p-3 shadow">
-                        <p class="text-primary">Type of complaint</p>
-                        <p>Traffic in Persons Elements.</p>
+                    <div class="col-lg p-3 shadow">
+                        
+                        <p>A. Minor Offences</p>
                         
                         
-                        <div class="mb-3">
-                            <span>Type of offense</span>
-                            <select class="form-control" id="type-of-offense" onchange="offenseType(this.value)">
-                                <option value="Minor offense">Minor offense</option>
-                                <option value="Major offense">Major offense</option>
-                            </select>
-                        </div>
+                        
                         <section id="minor-offense">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="offense-minor-1">
                                 <label class="form-check-label" for="offense-minor-1">
-                                    Minor offense 1
+                                    Pagkakalat ng basura kung saan mang bahagi ng paaralan
                                 </label>
                             </div>
 
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="offense-minor-2">
                                 <label class="form-check-label" for="offense-minor-2">
-                                    Minor offense 2
+                                    Paglagay ng anumang dekorasyon sa bibig, dila, ilong o sa kahit anumang bahagi ng katawan maliban lamang sa tanggap na pagsusuot ng hikaw sa mga babae
+
                                 </label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="offense-minor-3">
                                 <label class="form-check-label" for="offense-minor-3">
-                                    Minor offense 3
+                                    Pagtambay sa oras ng klase
+
                                 </label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="offense-minor-4">
                                 <label class="form-check-label" for="offense-minor-4">
-                                    Minor offense 4
+                                    Pagdadala ng Mobile Phone, Tablet at anumang kahalintudad na bagay na makakasagabal sa pagbibigay tuon sa pag aaral
+
                                 </label>
                             </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="offense-minor-4">
+                                <label class="form-check-label" for="offense-minor-4">
+                                    Paglalagay ng kung anu-anong kulay (make-up), tattoo, paso o anumang marka sa katawan
 
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="offense-minor-5">
+                                <label class="form-check-label" for="offense-minor-5">
+                                    Pagtakas o sadyang pag-alis sa loob ng silid-aralan (cutting classes) upang di pasukan ang asignatura
+
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="offense-minor-6">
+                                <label class="form-check-label" for="offense-minor-6">
+                                    Hindi pagbibigay ng sulat o liham paanyaya para sa magulang ukol sa pagpupulong o mahahalagang bagay na dapat pag-usapan
+
+
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="offense-minor-7">
+                                <label class="form-check-label" for="offense-minor-7">
+                                    Hindi pakikiisa sa gawaing pampaaralan (flag ceremony, flag retreat at mga opisyal na gawaing pampaaralan
+
+
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="offense-minor-8">
+                                <label class="form-check-label" for="offense-minor-8">
+                                    Pag-iingay sa koridor (hallway) habang may nagkaklase
+
+
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="offense-minor-9">
+                                <label class="form-check-label" for="offense-minor-9">
+                                    Pagpasok ng huli sa klase (late)
+                                </label>
+                            </div>
+                            {{-- <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="offense-minor-10" onchange="offenseMinorOthers(this.value)">
+                                <label class="form-check-label" for="offense-minor-10">
+                                    Others
+                                </label>
+                            </div> --}}
+                            {{-- <div class="form-group">
+                                <input class="form-control" id="offense-minor-11" placeholder="Please specify..." style="display: none">
+                            </div> --}}
                         </section>
 
-                        <section id="major-offense" style="display: none">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="offense-major-1">
-                                <label class="form-check-label" for="offense-major-1">
-                                    Major offense 1
-                                </label>
-                            </div>
 
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="offense-major-2">
-                                <label class="form-check-label" for="offense-major-2">
-                                    Major offense 2
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="offense-major-3">
-                                <label class="form-check-label" for="offense-major-3">
-                                    Major offense 3
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="offense-major-4">
-                                <label class="form-check-label" for="offense-major-4">
-                                    Major offense 4
-                                </label>
-                            </div>
-
-                        </section>
+                        
                         
 
                         
@@ -338,7 +362,138 @@
 
 
 
-                    <div class="col-lg">asd</div>
+                    <div class="col-lg p-3 shadow">
+                        
+                        <p>B. Major Offences</p>
+                        
+                        <section id="major-offense">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="offense-major-1">
+                                <label class="form-check-label" for="offense-major-1">
+                                    Paninigarilyo sa loob at labas ng paaralan
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="offense-major-2">
+                                <label class="form-check-label" for="offense-major-2">
+                                    Pagsusugal sa loob at labas ng silid-aralan
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="offense-major-3">
+                                <label class="form-check-label" for="offense-major-3">
+                                    Pagtalon sa bakod, pagtakas, paglabas ng paaralan ng walang pahintulot
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="offense-major-4">
+                                <label class="form-check-label" for="offense-major-4">
+                                    Walang pahintulot na paggamit at paninira ng anumang kagamitang pampaaralan
+
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="offense-major-5">
+                                <label class="form-check-label" for="offense-major-5">
+                                    Pagdadala ng mga bagay na nakakasakit sa kapwa tulad ng baril, patalim o katulad na bagay
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="offense-major-6">
+                                <label class="form-check-label" for="offense-major-6">
+                                    Pagtatag o pagsapi sa mga samahan na tulad ng fraternity o sorority sa loob at labas ng paaralan
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="offense-major-7">
+                                <label class="form-check-label" for="offense-major-7">
+                                    Pagsusulat sa alinmang bahagi ng kuwarto, silya sa kuwarto sa loob at labas ng paaralan
+
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="offense-major-8">
+                                <label class="form-check-label" for="offense-major-8">
+                                    Di Kaaya-ayang pagpapahayag ng damdamin tulad ng paghahalikan, pagyayakapan at iba pa
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="offense-major-9">
+                                <label class="form-check-label" for="offense-major-9">
+                                    Hayagang pakikipagrelasyon sa kapwa babae o kapwa lalaki (PDA)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="offense-major-10">
+                                <label class="form-check-label" for="offense-major-10">
+                                    Pakkipag-ugnayang sekswal (pre-marital-sex)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="offense-major-11">
+                                <label class="form-check-label" for="offense-major-11">
+                                    Pandaraya sa anumang pagsusulit
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="offense-major-12">
+                                <label class="form-check-label" for="offense-major-12">
+                                    Panggagaya ng lagda
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="offense-major-13">
+                                <label class="form-check-label" for="offense-major-13">
+                                    Pagnanakaw o pagkuha ng gamit ng kamag-aral o paaralan
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="offense-major-14">
+                                <label class="form-check-label" for="offense-major-14">
+                                    Pagbabago sa anumang papeles na may kaugnayan sap ag-aaral (hal: Report Card)?
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="offense-major-15">
+                                <label class="form-check-label" for="offense-major-15">
+                                    Pananakit, pananakot o pagbabanta sa kapwa mag-aaral at pakikisangkot sa anumang gulo at basag ulo?
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="offense-major-16">
+                                <label class="form-check-label" for="offense-major-16">
+                                    Paglapastangan (hal: pagsagot ng pabalang, pagmumura, pananakit at pagtatangka sa buhay ng guro o pamunuan at kawani ng paaralan.
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="offense-major-17">
+                                <label class="form-check-label" for="offense-major-17">
+                                    Pagdadala o pagbebenta, paggamit o pagpasok na nasa impluwensiyang alak o bawal na gamot?
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="offense-major-18">
+                                <label class="form-check-label" for="offense-major-18">
+                                    Panunuod ng malalaswang panoorin, pagdadala at pagbabasa ng malalaswang babasahin?
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="offense-major-19">
+                                <label class="form-check-label" for="offense-major-19">
+                                    Paglabag sa safety health protocols (physical and mental health)
+                                </label>
+                            </div>
+                            {{-- <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="offense-major-20" onchange="offenseMajorOthers(this.value)">
+                                <label class="form-check-label" for="offense-major-20">
+                                    Others
+                                </label>
+                            </div> --}}
+                            {{-- <div class="form-group">
+                                <input class="form-control" id="offense-major-20" placeholder="Please specify..." style="display: none">
+                            </div> --}}
+                        </section>
+                    </div>
 
                 </div>
 
@@ -346,17 +501,93 @@
                 <input type="button" name="previous-step" class="previous-step btn btn-secondary btn-sm" value="Previous Step" />
             </fieldset>
             <fieldset>
-                <h2>Welcome To GFG Step 4</h2>
-                <input type="button" name="next-step" class="next-step btn btn-primary btn-sm" value="Next Step" />
+                <h4 class="text-success">Summary</h4>
+                <div class="">
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="row">
+                                <div class="col-md-2">Fullname</div>
+                                <div class="col-md">: Joshua Villanueva</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2">Grade Level</div>
+                                <div class="col-md">: 8</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2">Section</div>
+                                <div class="col-md">: C</div>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="row">
+                                <div class="col-md-2">LRN</div>
+                                <div class="col-md">: 201922812019</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2">Birthday</div>
+                                <div class="col-md">: 07/27/2000</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <hr>
+
+                <h5 class="text-success">Victim's Details</h5>
+                <br>
+                <h6>Contact Information</h6>
+                <div class="row">
+                    <div class="col-md-2">Contact Number</div>
+                    <div class="col-md">: 09300502556</div>
+                </div>
+                <h6>Guardian's Details</h6>
+                <div class="row">
+                    <div class="col-md-2">Relationship</div>
+                    <div class="col-md">: Father</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">Fullname</div>
+                    <div class="col-md">: John Doe</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">Contact</div>
+                    <div class="col-md">: 093004502561</div>
+                </div>
+                <hr>
+
+                <h5 class="text-success">Incidence's Details</h5>
+                <br>
+                <h6>Type of complaints</h6>
+                <div class="row">
+                    <div class="col-md-2">Minor offense</div>
+                    <div class="col-md">: Pagkakalat ng basura kung saan mang bahagi ng paaralan</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">Minor offense</div>
+                    <div class="col-md">: Paglagay ng anumang dekorasyon sa bibig, dila, ilong o sa kahit anumang bahagi ng katawan maliban lamang sa tanggap na pagsusuot ng hikaw sa mga babae</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">Major offense</div>
+                    <div class="col-md">: Paninigarilyo sa loob at labas ng paaralan</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">Major offense</div>
+                    <div class="col-md">: Pagsusugal sa loob at labas ng silid-aralan</div>
+                </div>
+                    
+                
+                <input type="button" name="next-step" class="next-step btn btn-primary btn-sm" value="Submit" />
                 <input type="button" name="previous-step" class="previous-step btn btn-secondary btn-sm" value="Previous Step" />
             </fieldset>
             <fieldset>
                 <div class="finish">
                     <h2 class="text text-center">
-                        <strong>FINISHED</strong>
+                        <h1 class="text-success">FINISHED</h1>
                     </h2>
                 </div>
-                <input type="button" name="previous-step" class="previous-step btn btn-secondary btn-sm" value="Previous Step" />
+                <a href="{{ route('addCase') }}" class="btn btn-secondary btn-sm">Done</a>
+                
             </fieldset>
         </div>
     </form>
