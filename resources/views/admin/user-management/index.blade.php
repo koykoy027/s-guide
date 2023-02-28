@@ -40,9 +40,9 @@
                                     </div> --}}
                                 </td>
                                 <td>
-                                    <b> {{ $datas->school->name }} </b>
+                                    <b> {{ $datas->schools->name }} </b>
                                     <br>
-                                    <span> {{ $datas->school->year_level }} </span>
+                                    <span> {{ $datas->schools->year_level }} </span>
                                 </td>
 
 
