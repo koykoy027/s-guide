@@ -21,12 +21,10 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+
+
     public function index()
     {
-        return view('admin.dashboard');
-    }
-    public function addCase()
-    {
-        return view('admin.case-report.add-case');
+        return view('admin.dashboard.dashboard');
     }
 }

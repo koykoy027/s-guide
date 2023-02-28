@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\ReportController;
+use App\Http\Controllers\UserController;
+use Illuminate\Routing\RouteGroup;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,13 +18,26 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/case-reports', function () {
-    return view('admin.case-reports');
-});
-Route::get('/user', function () {
-    return view('admin.user');
+Route::prefix('/')->middleware('auth')->group(function () {
+    // reports endpoint
+    Route::prefix('reports')->group(function () {
+        Route::get('list', [ReportController::class, 'index']); //show records
+        Route::get('create', [ReportController::class, 'create']); //create records
+        Route::post('store', [ReportController::class, 'store']); //store records
+        Route::get('profile/{id}', [ReportController::class, 'profile']); //show profile
+    });
+
+    // user management endpoint
+    Route::prefix('user')->group(function () {
+        Route::get('list', [UserController::class, 'index']); //show records
+    });
 });
 
 
-Route::get('/add-case', [App\Http\Controllers\HomeController::class, 'addCase'])->name('addCase');
+
+
+
+
+
+
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');

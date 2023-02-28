@@ -1,8 +1,7 @@
-@extends('admin.layouts.master')
+@extends('adminLayout.master')
 @section('title', 'Dashboard')
 @section('content')
 
-    <h1>Hello world</h1>
     <div class="row">
         <div class="col-lg-3 col-6">
             <div class="small-box bg-info">
