@@ -98,7 +98,13 @@
                                 <p>School</p>
                             </div>
                             <div class="col-md">
-                                <select class="form-control @error('school') is-invalid @enderror"
+                                <select name="school" class="form-control">
+                                    @foreach ($table as $tables)
+                                        <option value="{{ $tables->name }}">{{ $tables->name }}</option>
+                                    @endforeach
+                                </select>
+
+                                {{-- <select class="form-control @error('school') is-invalid @enderror"
                                     value="{{ old('school') }}" autocomplete="on" autofocus id="school" name="school">
                                     <option value="University of Caloocan City - Main Campus">University of Caloocan City -
                                         Main
@@ -114,7 +120,7 @@
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
-                                @enderror
+                                @enderror --}}
                             </div>
                         </div>
                         <div class="row mb-3">

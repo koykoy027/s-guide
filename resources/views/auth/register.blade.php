@@ -17,7 +17,7 @@
                         <small><em>Note: Please input all fields.</em></small>
 
 
-                        <div class="row my-3">
+                        {{-- <div class="row my-3">
                             <div class="col-md">
                                 <input placeholder="Enter School reference ID" type="text"
                                     class="form-control @error('school_id') is-invalid @enderror" name="school_id"
@@ -28,16 +28,16 @@
                                     </span>
                                 @enderror
                             </div>
-                        </div>
-                        {{-- <div class="row my-3">
+                        </div> --}}
+                        <div class="row my-3">
                             <div class="col-md">
                                 <select name="school_id" class="form-control">
-                                    @foreach ( as )
-                                        <option value=""></option>
+                                    @foreach ($table as $tables)
+                                        <option value="{{ $tables->id }}">{{ $tables->name }}</option>
                                     @endforeach
                                 </select>
                             </div>
-                        </div> --}}
+                        </div>
                         <div class="row mb-3">
                             <div class="col-md mb-3">
                                 <input placeholder="Enter your Fullname" type="text"

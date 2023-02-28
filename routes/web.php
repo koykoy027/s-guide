@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ReportController;
+use App\Http\Controllers\SchoolController;
 use App\Http\Controllers\UserController;
 use Illuminate\Routing\RouteGroup;
 use Illuminate\Support\Facades\Route;
@@ -21,10 +22,11 @@ Auth::routes();
 Route::prefix('/')->middleware('auth')->group(function () {
     // reports endpoint
     Route::prefix('reports')->group(function () {
-        Route::get('list', [ReportController::class, 'index']); //show records
-        Route::get('create', [ReportController::class, 'create']); //create records
-        Route::post('store', [ReportController::class, 'store']); //store records
-        Route::get('profile/{id}', [ReportController::class, 'profile']); //show profile
+        Route::get('list', [ReportController::class, 'index']);             //show records
+        Route::get('create', [ReportController::class, 'create']);          //create records
+        Route::post('store', [ReportController::class, 'store']);           //store records
+        Route::get('profile/{id}', [ReportController::class, 'profile']);   //show profile
+        Route::get('create', [SchoolController::class, 'showInCreateRecord']);
     });
 
     // user management endpoint
@@ -32,6 +34,12 @@ Route::prefix('/')->middleware('auth')->group(function () {
         Route::get('list', [UserController::class, 'index']); //show records
     });
 });
+
+Route::controller(SchoolController::class)->group(function () {
+    Route::get('register', 'showInRegister')->name('register');
+    // Route::get('reports/create', 'showInCreateRecord');
+});
+
 
 
 

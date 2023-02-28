@@ -97,6 +97,12 @@
             </div>
         </div>
         <div class="card-body">
+            <div class="row mb-3">
+                <div class="col-md">
+                    <b>Reporter: </b> <span>Joshua VIllanuave</span>
+                </div>
+            </div>
+
             <div class="row">
                 <div class="col-md">
                     <p class="text-bold">Type of complain</p>
@@ -107,6 +113,7 @@
                     <p>{{ $profile->status }}</p>
                 </div>
             </div>
+            <hr />
             <p class="text-bold">Place of incidence</p>
             <p class="text-justify">{{ $profile->place_of_incidence }}</p>
 
