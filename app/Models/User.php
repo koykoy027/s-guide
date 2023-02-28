@@ -30,7 +30,7 @@ class User extends Authenticatable
 
 
 
-    public function school()
+    public function schools()
     {
         return $this->belongsTo(School::class, 'school_id', 'id');
     }

@@ -40,7 +40,7 @@ class DatabaseSeeder extends Seeder
             'email' => 'hilomafrancisoliver@gmail.com',
             'password' => bcrypt('Pa$$w0rd!')
         ]);
-        $user1->school()->associate($school1);
+        $user1->schools()->associate($school1);
         $user1->save();
 
         $user2 = new User([
@@ -50,7 +50,7 @@ class DatabaseSeeder extends Seeder
             'email' => 'villanuevajoshua27@gmail.com',
             'password' => bcrypt('Pa$$w0rd!')
         ]);
-        $user2->school()->associate($school2);
+        $user2->schools()->associate($school2);
         $user2->save();
 
         // \App\Models\User::factory(10)->create();
