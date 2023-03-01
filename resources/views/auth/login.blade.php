@@ -74,6 +74,9 @@
                                 Don't have account yet? <a class="text-primary" href="{{ route ('register') }}">Register here</a>
                         </small>
                     </div> --}}
+                        <small class="col-md text-end">
+                            Don't have account yet? <a class="text-primary" href="{{ route('register') }}">Register here</a>
+                        </small>
                     </form>
 
                     <div class="col-lg">

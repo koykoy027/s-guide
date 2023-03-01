@@ -41,6 +41,7 @@
                                 </td>
                                 <td>
                                     <b> {{ $datas->schools->name }} </b>
+
                                     <br>
                                     <span> {{ $datas->schools->year_level }} </span>
                                 </td>

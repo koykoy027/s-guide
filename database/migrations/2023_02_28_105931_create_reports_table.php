@@ -17,8 +17,8 @@ return new class extends Migration
         Schema::create('reports', function (Blueprint $table) {
             $table->id();
 
-            // $table->unsignedBigInteger('report_id');
-            // $table->foreign('report_id')->references('id')->on('users')->onDelete('cascade');
+            $table->unsignedBigInteger('report_id');
+            $table->foreign('report_id')->references('id')->on('users')->onDelete('cascade');
             // personal information
             $table->string('fullname');
             $table->string('gender');

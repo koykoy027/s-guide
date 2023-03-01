@@ -32,6 +32,7 @@ class ReportController extends Controller
         // dd($request->all());
         $request->validate([
             // personal info
+            'report_id' => 'required',
             'fullname' => 'required',
             'student_number' => 'required',
             'gender' => 'required',
@@ -51,6 +52,4 @@ class ReportController extends Controller
         Report::create($request->all());
         return redirect()->back()->with(['message' => 'Case added successfully!']);
     }
-
-    
 }

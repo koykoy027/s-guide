@@ -35,10 +35,10 @@ class User extends Authenticatable
         return $this->belongsTo(School::class, 'school_id', 'id');
     }
 
-    // public function report()
-    // {
-    //     return $this->belongsTo(User::class, 'report_id', 'id');
-    // }
+    public function reports()
+    {
+        return $this->hasOne(User::class, 'report_id', 'id');
+    }
 
     /**
      * The attributes that should be hidden for serialization.

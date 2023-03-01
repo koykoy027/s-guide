@@ -19,7 +19,7 @@
 
                         {{-- <div class="row my-3">
                             <div class="col-md">
-                                <input placeholder="Enter School reference ID" type="text"
+                                <input placeholder="" type="text"
                                     class="form-control @error('school_id') is-invalid @enderror" name="school_id"
                                     value="{{ old('school_id') }}" required autocomplete="school_id" autofocus>
                                 @error('school_id')

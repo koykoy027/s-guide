@@ -22,10 +22,10 @@ Auth::routes();
 Route::prefix('/')->middleware('auth')->group(function () {
     // reports endpoint
     Route::prefix('reports')->group(function () {
-        Route::get('list', [ReportController::class, 'index']);             //show records
-        Route::get('create', [ReportController::class, 'create']);          //create records
-        Route::post('store', [ReportController::class, 'store']);           //store records
-        Route::get('profile/{id}', [ReportController::class, 'profile']);   //show profile
+        Route::get('list', [ReportController::class, 'index']); //show records
+        Route::get('create', [ReportController::class, 'create']); //create records
+        Route::post('store', [ReportController::class, 'store']); //store records
+        Route::get('profile/{id}', [ReportController::class, 'profile']); //show profile
         Route::get('create', [SchoolController::class, 'showInCreateRecord']);
     });
 
@@ -36,7 +36,7 @@ Route::prefix('/')->middleware('auth')->group(function () {
 });
 
 Route::controller(SchoolController::class)->group(function () {
-    Route::get('register', 'showInRegister')->name('register');
+    Route::get('register', 'showInRegister')->name('register'); //show Schools in register
     // Route::get('reports/create', 'showInCreateRecord');
 });
 
@@ -48,4 +48,4 @@ Route::controller(SchoolController::class)->group(function () {
 
 
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard'); //show dashboard

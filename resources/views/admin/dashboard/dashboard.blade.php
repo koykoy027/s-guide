@@ -22,7 +22,7 @@
             <div class="small-box bg-success">
                 <div class="inner">
                     <h3>53</h3>
-                    <p>Total Students Reports </p>
+                    <p>Total Elementary Reports</p>
                 </div>
                 <div class="icon">
                     <i class="ion ion-stats-bars"></i>
@@ -36,7 +36,7 @@
                 <div class="inner">
                     <h3>44</h3>
 
-                    <p>Total Walk-in reports</p>
+                    <p>Total Highschool Reports</p>
                 </div>
                 <div class="icon">
                     <i class="ion ion-person-add"></i>
@@ -49,7 +49,7 @@
             <div class="small-box bg-danger">
                 <div class="inner">
                     <h3>65</h3>
-                    <p>Total online reports</p>
+                    <p>Total College Reports</p>
                 </div>
                 <div class="icon">
                     <i class="ion ion-pie-graph"></i>
@@ -176,7 +176,7 @@
             </div>             --}}
 
             <!-- Calendar -->
-            <div class="card bg-gradient-success">
+            {{-- <div class="card bg-gradient-success">
                 <div class="card-header border-0">
 
                     <h3 class="card-title">
@@ -213,7 +213,7 @@
                     <div id="calendar" style="width: 100%"></div>
                 </div>
                 <!-- /.card-body -->
-            </div>
+            </div> --}}
             <!-- /.card -->
         </section>
         <!-- right col -->

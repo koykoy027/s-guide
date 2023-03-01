@@ -100,9 +100,15 @@
                             <div class="col-md">
                                 <select name="school" class="form-control">
                                     @foreach ($table as $tables)
-                                        <option value="{{ $tables->name }}">{{ $tables->name }}</option>
+                                        <option value="{{ $tables->name }}">{{ $tables->name }} </option>
                                     @endforeach
                                 </select>
+
+
+
+                                <input type="hidden" class="form-control" value="{{ Auth::user()->id }}" name="report_id">
+
+
 
                                 {{-- <select class="form-control @error('school') is-invalid @enderror"
                                     value="{{ old('school') }}" autocomplete="on" autofocus id="school" name="school">
@@ -196,7 +202,13 @@
                         <select class="form-control @error('type_of_complain') is-invalid @enderror"
                             value="{{ old('type_of_complain') }}" autocomplete="on" autofocus name="type_of_complain">
                             <option value="Sexual Harassment">Sexual Harassment</option>
+                            <option value="Smoking inside campus">Arriving Late</option>
                             <option value="Smoking inside campus">Smoking inside campus</option>
+                            <option value="Gambling">Gambling</option>
+                            <option value="Bullying">Bullying</option>
+                            <option value="Failure to wear prescribed uniform">Failure to wear prescribed uniform</option>
+                            <option value="Use or Posses drugs">Use or Posses drugs</option>
+
                             <option value="Others">Others</option>
                         </select>
                         @error('type_of_complain')
@@ -204,6 +216,8 @@
                                 <strong>{{ $message }}</strong>
                             </span>
                         @enderror
+                        {{-- <p>{{ $datas->usersReport->name }}</p> --}}
+
                         <input type="text" class="form-control" placeholder="Please specify" style="display: none">
 
                     </div>

@@ -12,9 +12,12 @@ class SchoolController extends Controller
         $table = School::all();
         return view('auth.register', compact('table'));
     }
+
     public function showInCreateRecord()
     {
         $table = School::all();
         return view('admin.reports.create', compact('table'));
     }
+
+    
 }

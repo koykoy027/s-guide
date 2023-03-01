@@ -11,6 +11,7 @@ class Report extends Model
     protected $table = "reports";
     protected $fillable = [
         // personal info
+        "report_id",
         "fullname",
         "gender",
         "birthday",
@@ -30,8 +31,8 @@ class Report extends Model
         "summary",
     ];
 
-    // public function users()
-    // {
-    //     return $this->belongsTo(User::class, 'report_id', 'id');
-    // }
+    public function usersReport()
+    {
+        return $this->belongsTo(User::class, 'report_id', 'id');
+    }
 }

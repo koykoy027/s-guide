@@ -99,7 +99,10 @@
         <div class="card-body">
             <div class="row mb-3">
                 <div class="col-md">
-                    <b>Reporter: </b> <span>Joshua VIllanuave</span>
+                    <p class="text-bold">Reporter</p>
+                    <p>{{ $profile->usersReport->name }}</p>
+
+
                 </div>
             </div>
 
