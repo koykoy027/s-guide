@@ -1,10 +1,24 @@
 <p>Step by step</p>
 <ol>
-    <li>git clone https://github.com/koykoy027/icms.git</li>
-    <li>cd icms</li>
-    <li>npm install</li>
-    <li>npm run dev</li>
-    <li>composer install</li>
-    <li>php artisan migrate</li>
-    <li>php artisan serve</li>
+    <li>
+    <code>git clone https://github.com/koykoy027/s-guide.git</code>
+    </li>
+    <li>
+    <code>cd s-guide</code>
+    </li>
+    <li>
+    <code>npm install</code>
+    </li>
+    <li>
+    <code>npm run dev</code>
+    </li>
+    <li>
+    <code>composer install</code>
+    </li>
+    <li>
+    <code>php artisan migrate:fresh --seed</code>
+    </li>
+    <li>
+    <code>php artisan serve</code>
+    </li>
 </ol>
