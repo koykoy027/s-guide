@@ -1,6 +1,8 @@
 <p>Step by step</p>
 <ol>
-    <li>git clone https://github.com/koykoy027/icms.git</li>
+    <li>
+    <code>git clone https://github.com/koykoy027/s-guide.git</code>
+    </li>
     <li>cd icms</li>
     <li>npm install</li>
     <li>npm run dev</li>
