@@ -4,7 +4,7 @@
     <code>git clone https://github.com/koykoy027/s-guide.git</code>
     </li>
     <li>
-    <code>s-guide</code>
+    <code>cd s-guide</code>
     </li>
     <li>
     <code>npm install</code>
