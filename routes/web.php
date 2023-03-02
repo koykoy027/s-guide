@@ -38,11 +38,9 @@ Route::prefix('/')->middleware('auth')->group(function () {
 Route::controller(SchoolController::class)->group(function () {
     Route::get('register', 'showInRegister')->name('register'); //show Schools in register
     // Route::get('reports/create', 'showInCreateRecord');
+
+
 });
-
-
-
-
 
 
 
