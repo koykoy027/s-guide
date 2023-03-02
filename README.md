@@ -22,3 +22,16 @@
     <code>php artisan serve</code>
     </li>
 </ol>
+
+<p>SHORTCUT KEY</p>
+<ol>
+<li>
+    crtl + p = find files
+</li>
+<li>
+    crtl + shift + f = search text in all folder
+</li>
+<li>
+    crtl + /? = comment/uncomment
+</li>
+</ol>
