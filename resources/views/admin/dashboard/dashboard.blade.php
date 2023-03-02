@@ -3,6 +3,7 @@
 @section('content')
 
     <h1>Hello goks</h1>
+    <p>Hello francis</p>
     <div class="row">
         <div class="col-lg-3 col-6">
             <div class="small-box bg-info">
