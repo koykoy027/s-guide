@@ -42,10 +42,13 @@ Route::controller(SchoolController::class)->group(function () {
 
 
 
-
-
-
-
-
-
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard'); //show dashboard
+
+
+
+
+//sa web.php files goks
+
+Route::get('home', function(){
+  return view('homepage.home'); // period yung gagamitin mong pang locate ng folder or files
+});
