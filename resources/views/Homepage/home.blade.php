@@ -5,13 +5,13 @@
     <meta charset="utf-8">
 
     <!--====== Title ======-->
-    <title>S-guide | Home</title>
+    <title>S-guide | HomePage</title>
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="lp/lp/assets/images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="lp/lp/assets/images/SGUIDE.png" type="image/png">
 
     <!--====== Slick CSS ======-->
     <link rel="stylesheet" href="lp/lp/assets/css/slick.css">
@@ -51,11 +51,11 @@
         <div class="loader">
             <div class="ytp-spinner">
                 <div class="ytp-spinner-container">
-                    <div class="ytp-spinner-rotator">
+                  <div class="ytp-spinner-rotator">
                         <div class="ytp-spinner-left">
-                            <div class="ytp-spinner-circle"></div>
+                          <div class="ytp-spinner-circle"></div>
                         </div>
-                        <div class="ytp-spinner-right">
+                         <div class="ytp-spinner-right">
                             <div class="ytp-spinner-circle"></div>
                         </div>
                     </div>
@@ -125,7 +125,7 @@
                     <div class="col-lg-7">
                         <div class="header-hero-content">
                             <h1 class="hero-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"><b>Lets</b> <span>Help</span> each <b>Other.</b></h1>
-                            <p class="text-center">“You’re not alone in this world.</p><p class="text-center" > We
+                            <br><p class="text-center" >“You’re not alone in this world.</p><p class="text-center" > We
 may not understand exactly how you feel, ”</p><p class="text-center"> but we care about you and want to help.</p>
                             <div class="header-singup wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
                                 {{-- <input type="text" placeholder="username@yourdomain.com">
@@ -167,11 +167,9 @@ may not understand exactly how you feel, ”</p><p class="text-center"> but we c
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="about-content pt-45">
-                        <p class="text wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">Education in the Philippines has undergone several stages of development from the pre-Spanish times to the present. In meeting the needs of the society, education serves as focus of emphases/priorities of the leadership at certain periods/epochs in our national struggle as a race.
+                        <p class="text wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s"><strong style="font-style: black"> in the Philippines has undergone several stages of development from the pre-Spanish times to the present. In meeting the needs of the society, education serves as focus of emphases/priorities of the leadership at certain periods/epochs in our national struggle as a race.
 
-As early as in pre-Magellanic times, education was informal, unstructured, and devoid of methods. Children were provided more vocational training and less academics (3 Rs) by their parents and in the houses of tribal tutors. </p>
-
-                        <div class="about-counter pt-60">
+As early as in pre-Magellanic times, education was informal, unstructured, and devoid of methods. Children were provided more vocational training and less academics (3 Rs) by their parents and in the houses of tribal tutors. </strong></p>                        <div class="about-counter pt-60">
                             <div class="row">
                                 <div class="col-sm-4">
                                     <div class="single-counter counter-color-1 mt-30 d-flex wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
@@ -182,7 +180,7 @@ As early as in pre-Magellanic times, education was informal, unstructured, and d
                                         </div>
                                         <div class="counter-content media-body">
                                             <span class="counter-count"><span class="counter">8796</span></span>
-                                            <p class="text">DepED</p>
+                                            <p class="text" ><strong>DepED</strong></p>
                                         </div>
                                     </div> <!-- single counter -->
                                 </div>
@@ -195,7 +193,7 @@ As early as in pre-Magellanic times, education was informal, unstructured, and d
                                         </div>
                                         <div class="counter-content media-body">
                                             <span class="counter-count"><span class="counter">87</span>%</span>
-                                            <p class="text">Ched</p>
+                                            <p class="text"><strong>Ched</strong></p>
                                         </div>
                                     </div> <!-- single counter -->
                                 </div>
@@ -208,7 +206,7 @@ As early as in pre-Magellanic times, education was informal, unstructured, and d
                                         </div>
                                         <div class="counter-content media-body">
                                             <span class="counter-count"><span class="counter">9865</span></span>
-                                            <p class="text">Student's</p>
+                                            <p class="text"><strong>Students</strong>'s</p>
                                         </div>
                                     </div> <!-- single counter -->
                                 </div>
@@ -967,7 +965,7 @@ As early as in pre-Magellanic times, education was informal, unstructured, and d
                                     <li><a href="#"><i class="lni-facebook"></i></a></li>
                                     <li><a href="#"><i class="lni-twitter"></i></a></li>
                                     <li><a href="#"><i class="lni-instagram"></i></a></li>
-                                    <li><a href="#"><i class="lni-linkedin"></i></a></li>
+                                    {{-- <li><a href="#"><i class="lni-linkedin"></i></a></li> --}}
                                 </ul>
                             </div> <!-- contact -->
                         </div> <!-- footer contact -->
