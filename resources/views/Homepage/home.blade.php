@@ -118,7 +118,8 @@
             </div> <!-- container -->
         </div> <!-- navbar area -->
 
-        <div id="home" class="header-hero bg_cover d-lg-flex align-items-center" style="background-image: url(lp/lp/assets/images/header-loginBG.jpg)">
+        <div id="home" class="header-hero bg_cover d-lg-flex align-items-center" style="background-image: url()">
+            {{-- lp/lp/assets/images/header-loginBG.jpg --}}
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7">
@@ -177,7 +178,7 @@ As early as in pre-Magellanic times, education was informal, unstructured, and d
                                         <div class="counter-shape">
                                             {{-- <span class="shape-1"></span>
                                             <span class="shape-2"></span> --}}
-                                            <img src="lp/lp/assets/images/DepED-3.png" alt="DepED" height="70px">
+                                            <img src="lp/lp/assets/images/DepED-3.png" alt="DepED" height="60px" width="90px">
                                         </div>
                                         <div class="counter-content media-body">
                                             <span class="counter-count"><span class="counter">8796</span></span>
@@ -717,7 +718,7 @@ As early as in pre-Magellanic times, education was informal, unstructured, and d
     <!--====== TESTIMONIAL PART ENDS ======-->
 
     <!--====== BRAND PART START ======-->
-{{-- 
+{{--
     <div id="brand" class="brand-area">
         <div class="container">
             <div class="row">
@@ -974,7 +975,7 @@ As early as in pre-Magellanic times, education was informal, unstructured, and d
                 </div> <!-- row -->
             </div> <!-- footer widget -->
             <div class="footer-copyright text-center">
-                <p class="text">© 2022 Crafted by <a href="#" rel="nofollow">S-Guide</a> All Rights Reserved.</p>
+                <p class="text">© 2023 Crafted by <a href="#" rel="nofollow">S-Guide</a> All Rights Reserved.</p>
             </div>
         </div> <!-- container -->
     </footer>
