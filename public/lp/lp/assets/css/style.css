@@ -728,6 +728,7 @@ p {
     padding: 10px 0;
     position: relative;
     font-family: "Nunito", sans-serif;
+    text-shadow: 1px 1px 2px black;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .navbar-nav .nav-item a {

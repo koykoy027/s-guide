@@ -103,9 +103,9 @@
                                     <li class="nav-item">
                                         <a href="#contact">Contact</a>
                                     </li>
-                                    <li class="nav-item">
+                                    {{-- <li class="nav-item">
                                         <a href="#FAQS">Faqs</a>
-                                    </li>
+                                    </li> --}}
                                 </ul>
                             </div> <!-- navbar collapse -->
 
@@ -152,8 +152,8 @@ may not understand exactly how you feel, ”</p><p class="text-center"> but we c
             <div class="row justify-content-center" >
                 <div class="col-lg-9">
                     <div class="about-title text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-                        <h6 class="welcome">WELCOME</h6>
-                        <h3 class="title"><span>HISTORICAL PERSPECTIVE OF THE PHILIPPINE  </span> EDUCATIONAL SYSTEM</h3>
+                        <h6 class="welcome">About Us</h6>
+                        <h3 class="title"><span>Article XV,</span> Section[2]</h3>
                     </div>
                 </div>
             </div> <!-- row -->
@@ -167,9 +167,8 @@ may not understand exactly how you feel, ”</p><p class="text-center"> but we c
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="about-content pt-45">
-                        <p class="text wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s"><strong style="font-style: black"> in the Philippines has undergone several stages of development from the pre-Spanish times to the present. In meeting the needs of the society, education serves as focus of emphases/priorities of the leadership at certain periods/epochs in our national struggle as a race.
-
-As early as in pre-Magellanic times, education was informal, unstructured, and devoid of methods. Children were provided more vocational training and less academics (3 Rs) by their parents and in the houses of tribal tutors. </strong></p>                        <div class="about-counter pt-60">
+                        <p class="text wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s"><strong style="font-style: black"><h3>Pursuant to the 1987 Constitution, the State shall defend the right of children to assistance, including proper care and nutrition, and special protection from all forms of neglect, abuse, cruelty, exploitation and other conditions prejudicial to their development (Article XV, Section 3 [2]).</h3><br><h4>Child Protection</h4></strong></p>
+                         <div class="about-counter pt-60">
                             <div class="row">
                                 <div class="col-sm-4">
                                     <div class="single-counter counter-color-1 mt-30 d-flex wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
@@ -921,7 +920,7 @@ As early as in pre-Magellanic times, education was informal, unstructured, and d
                             <a href="#">
                                 <img src="lp/lp/assets/images/123.png" alt="Logo">
                             </a>
-                            <p class="text"></p> <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            <p class="text"></p> <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
                         </div> <!-- footer about -->
                     </div>
                     <div class="col-lg-3 col-sm-6 order-sm-3 order-lg-2">
