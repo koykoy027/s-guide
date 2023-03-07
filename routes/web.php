@@ -18,8 +18,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Auth::routes();
+//sa web.php files goks
 
-Route::prefix('/')->middleware('auth')->group(function () {
+Route::get('/', function () {
+    return view('homepage.home'); // period yung gagamitin mong pang locate ng folder or files
+});
+
+Route::prefix('dashboard')->middleware('auth')->group(function () {
     // reports endpoint
     Route::prefix('reports')->group(function () {
         Route::get('list', [ReportController::class, 'index']); //show records
@@ -42,13 +47,4 @@ Route::controller(SchoolController::class)->group(function () {
 
 
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard'); //show dashboard
-
-
-
-
-//sa web.php files goks
-
-Route::get('home', function(){
-  return view('homepage.home'); // period yung gagamitin mong pang locate ng folder or files
-});
+Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard'); //show dashboard

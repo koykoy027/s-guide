@@ -39,7 +39,8 @@
 
 </head>
 
-<body style="background-image: url(lp/lp/assets/images/header-loginBG.jpg)">
+<body
+    style="background-image: url(lp/lp/assets/images/header-loginBG.jpg);background-position: center; background-repeat: no-repeat; background-size: cover;">
     <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
@@ -51,11 +52,11 @@
         <div class="loader">
             <div class="ytp-spinner">
                 <div class="ytp-spinner-container">
-                  <div class="ytp-spinner-rotator">
+                    <div class="ytp-spinner-rotator">
                         <div class="ytp-spinner-left">
-                          <div class="ytp-spinner-circle"></div>
+                            <div class="ytp-spinner-circle"></div>
                         </div>
-                         <div class="ytp-spinner-right">
+                        <div class="ytp-spinner-right">
                             <div class="ytp-spinner-circle"></div>
                         </div>
                     </div>
@@ -77,7 +78,9 @@
                             <a class="navbar-brand" href="home">
                                 <img src="lp/lp/assets/images/123.png" alt="Logo">
                             </a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="toggler-icon"></span>
                                 <span class="toggler-icon"></span>
                                 <span class="toggler-icon"></span>
@@ -97,11 +100,14 @@
                                     {{-- <li class="nav-item">
                                         <a href="#portfolio">Portfolio</a>
                                     </li> --}}
-                                     {{-- <li class="nav-item">
+                                    {{-- <li class="nav-item">
                                         <a href="#blog">Blog</a>
                                     </li> --}}
                                     <li class="nav-item">
                                         <a href="#contact">Contact</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{ url('login') }}">Sign in as school</a>
                                     </li>
                                     {{-- <li class="nav-item">
                                         <a href="#FAQS">Faqs</a>
@@ -124,9 +130,14 @@
                 <div class="row">
                     <div class="col-lg-7">
                         <div class="header-hero-content">
-                            <h1 class="hero-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"><b>Lets</b> <span>Help</span> each <b>Other.</b></h1>
-                            <br><p class="text-center" >“You’re not alone in this world.</p><p class="text-center" > We
-may not understand exactly how you feel, ”</p><p class="text-center"> but we care about you and want to help.</p>
+                            <h1 class="hero-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"><b>Lets</b>
+                                <span>Help</span> each <b>Other.</b>
+                            </h1>
+                            <br>
+                            <p class="text-center">“You’re not alone in this world.</p>
+                            <p class="text-center"> We
+                                may not understand exactly how you feel, ”</p>
+                            <p class="text-center"> but we care about you and want to help.</p>
                             <div class="header-singup wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
                                 {{-- <input type="text" placeholder="username@yourdomain.com">
                                 <button class="main-btn">Sign Up</button> --}}
@@ -135,7 +146,8 @@ may not understand exactly how you feel, ”</p><p class="text-center"> but we c
                     </div>
                 </div> <!-- row -->
             </div> <!-- container -->
-            <div class="header-hero-image d-flex align-items-center wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="1.1s">
+            <div class="header-hero-image d-flex align-items-center wow fadeInRightBig" data-wow-duration="1s"
+                data-wow-delay="1.1s">
                 <div class="image">
                     <img src="lp/lp/assets/images/hero-poster.png" alt="Hero Image">
                 </div>
@@ -147,9 +159,9 @@ may not understand exactly how you feel, ”</p><p class="text-center"> but we c
 
     <!--====== ABOUT PART START ======-->
 
-    <section id="about" class="about-area pt-115" >
-        <div class="container" >
-            <div class="row justify-content-center" >
+    <section id="about" class="about-area pt-115">
+        <div class="container">
+            <div class="row justify-content-center">
                 <div class="col-lg-9">
                     <div class="about-title text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
                         <h6 class="welcome">About Us</h6>
@@ -167,24 +179,34 @@ may not understand exactly how you feel, ”</p><p class="text-center"> but we c
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="about-content pt-45">
-                        <p class="text wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s"><strong style="font-style: black"><h3>Pursuant to the 1987 Constitution, the State shall defend the right of children to assistance, including proper care and nutrition, and special protection from all forms of neglect, abuse, cruelty, exploitation and other conditions prejudicial to their development (Article XV, Section 3 [2]).</h3><br><h4>Child Protection</h4></strong></p>
-                         <div class="about-counter pt-60">
+                        <p class="text wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s"><strong
+                                style="font-style: black">
+                                <h3>Pursuant to the 1987 Constitution, the State shall defend the right of children to
+                                    assistance, including proper care and nutrition, and special protection from all
+                                    forms of neglect, abuse, cruelty, exploitation and other conditions prejudicial to
+                                    their development (Article XV, Section 3 [2]).</h3><br>
+                                <h4>Child Protection</h4>
+                            </strong></p>
+                        <div class="about-counter pt-60">
                             <div class="row">
                                 <div class="col-sm-4">
-                                    <div class="single-counter counter-color-1 mt-30 d-flex wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                                    <div class="single-counter counter-color-1 mt-30 d-flex wow fadeInUp"
+                                        data-wow-duration="1s" data-wow-delay="0.3s">
                                         <div class="counter-shape">
                                             {{-- <span class="shape-1"></span>
                                             <span class="shape-2"></span> --}}
-                                            <img src="lp/lp/assets/images/DepED-3.png" alt="DepED" height="60px" width="90px">
+                                            <img src="lp/lp/assets/images/DepED-3.png" alt="DepED" height="60px"
+                                                width="90px">
                                         </div>
                                         <div class="counter-content media-body">
                                             <span class="counter-count"><span class="counter">8796</span></span>
-                                            <p class="text" ><strong>DepED</strong></p>
+                                            <p class="text"><strong>DepED</strong></p>
                                         </div>
                                     </div> <!-- single counter -->
                                 </div>
                                 <div class="col-sm-4">
-                                    <div class="single-counter counter-color-2 mt-30 d-flex wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+                                    <div class="single-counter counter-color-2 mt-30 d-flex wow fadeInUp"
+                                        data-wow-duration="1s" data-wow-delay="0.6s">
                                         <div class="counter-shape">
                                             {{-- <span class="shape-1"></span>
                                             <span class="shape-2"></span> --}}
@@ -197,11 +219,13 @@ may not understand exactly how you feel, ”</p><p class="text-center"> but we c
                                     </div> <!-- single counter -->
                                 </div>
                                 <div class="col-sm-4">
-                                    <div class="single-counter counter-color-3 mt-30 d-flex wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.9s">
+                                    <div class="single-counter counter-color-3 mt-30 d-flex wow fadeInUp"
+                                        data-wow-duration="1s" data-wow-delay="0.9s">
                                         <div class="counter-shape">
                                             {{-- <span class="shape-1"></span>
                                             <span class="shape-2"></span> --}}
-                                            <img src="lp/lp/assets/images/student-5.png" alt="DepED" height="70px">
+                                            <img src="lp/lp/assets/images/student-5.png" alt="DepED"
+                                                height="70px">
                                         </div>
                                         <div class="counter-content media-body">
                                             <span class="counter-count"><span class="counter">9865</span></span>
@@ -715,7 +739,7 @@ may not understand exactly how you feel, ”</p><p class="text-center"> but we c
     <!--====== TESTIMONIAL PART ENDS ======-->
 
     <!--====== BRAND PART START ======-->
-{{--
+    {{--
     <div id="brand" class="brand-area">
         <div class="container">
             <div class="row">
@@ -826,7 +850,8 @@ may not understand exactly how you feel, ”</p><p class="text-center"> but we c
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-4">
-                    <div class="section-title text-center pb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                    <div class="section-title text-center pb-20 wow fadeInUp" data-wow-duration="1s"
+                        data-wow-delay="0.3s">
                         <h6 class="sub-title">Our Contact</h6>
                         <h4 class="title">Get In <span>Touch.</span></h4>
                     </div> <!-- section title -->
@@ -835,7 +860,8 @@ may not understand exactly how you feel, ”</p><p class="text-center"> but we c
             <div class="contact-info pt-30">
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
-                        <div class="single-contact-info contact-color-1 mt-30 d-flex  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <div class="single-contact-info contact-color-1 mt-30 d-flex  wow fadeInUp"
+                            data-wow-duration="1s" data-wow-delay="0.3s">
                             <div class="contact-info-icon">
                                 <i class="lni-map-marker"></i>
                             </div>
@@ -845,7 +871,8 @@ may not understand exactly how you feel, ”</p><p class="text-center"> but we c
                         </div> <!-- single contact info -->
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="single-contact-info contact-color-2 mt-30 d-flex  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+                        <div class="single-contact-info contact-color-2 mt-30 d-flex  wow fadeInUp"
+                            data-wow-duration="1s" data-wow-delay="0.6s">
                             <div class="contact-info-icon">
                                 <i class="lni-envelope"></i>
                             </div>
@@ -856,7 +883,8 @@ may not understand exactly how you feel, ”</p><p class="text-center"> but we c
                         </div> <!-- single contact info -->
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="single-contact-info contact-color-3 mt-30 d-flex  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.9s">
+                        <div class="single-contact-info contact-color-3 mt-30 d-flex  wow fadeInUp"
+                            data-wow-duration="1s" data-wow-delay="0.9s">
                             <div class="contact-info-icon">
                                 <i class="lni-phone"></i>
                             </div>
@@ -870,8 +898,10 @@ may not understand exactly how you feel, ”</p><p class="text-center"> but we c
             </div> <!-- contact info -->
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="contact-wrapper-form pt-115  wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <h4 class="contact-title pb-10"><i class="lni-envelope"></i> Leave <span>A Message.</span></h4>
+                    <div class="contact-wrapper-form pt-115  wow fadeInUpBig" data-wow-duration="1s"
+                        data-wow-delay="0.5s">
+                        <h4 class="contact-title pb-10"><i class="lni-envelope"></i> Leave <span>A Message.</span>
+                        </h4>
 
                         <form id="contact-form" action="lp/lp/assets/contact.php" method="post">
                             <div class="row">
@@ -911,7 +941,8 @@ may not understand exactly how you feel, ”</p><p class="text-center"> but we c
 
     <!--====== FOOTER PART START ======-->
 
-    <footer id="footer" class="footer-area bg_cover" style="background-image: url(lp/lp/assets/images/footer-bg.jpg)">
+    <footer id="footer" class="footer-area bg_cover"
+        style="background-image: url(lp/lp/assets/images/footer-bg.jpg)">
         <div class="container">
             <div class="footer-widget pt-30 pb-70">
                 <div class="row">
@@ -920,7 +951,12 @@ may not understand exactly how you feel, ”</p><p class="text-center"> but we c
                             <a href="#">
                                 <img src="lp/lp/assets/images/123.png" alt="Logo">
                             </a>
-                            <p class="text"></p> <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                            <p class="text"></p>
+                            <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen
+                                book. It has survived not only five centuries, but also the leap into electronic
+                                typesetting, remaining essentially unchanged. </p>
                         </div> <!-- footer about -->
                     </div>
                     <div class="col-lg-3 col-sm-6 order-sm-3 order-lg-2">
@@ -972,7 +1008,8 @@ may not understand exactly how you feel, ”</p><p class="text-center"> but we c
                 </div> <!-- row -->
             </div> <!-- footer widget -->
             <div class="footer-copyright text-center">
-                <p class="text">© 2023 Crafted by <a href="#" rel="nofollow">S-Guide</a> All Rights Reserved.</p>
+                <p class="text">© 2023 Crafted by <a href="#" rel="nofollow">S-Guide</a> All Rights Reserved.
+                </p>
             </div>
         </div> <!-- container -->
     </footer>
