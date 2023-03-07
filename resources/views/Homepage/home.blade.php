@@ -107,7 +107,7 @@
                                         <a href="#contact">Contact</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="{{ url('login') }}">Sign in as school</a>
+                                        <a href="{{ url('online-portal') }}">Online Portal</a>
                                     </li>
                                     {{-- <li class="nav-item">
                                         <a href="#FAQS">Faqs</a>

@@ -18,10 +18,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Auth::routes();
-//sa web.php files goks
 
 Route::get('/', function () {
-    return view('homepage.home'); // period yung gagamitin mong pang locate ng folder or files
+    return view('homepage.home');
+});
+Route::get('online-portal', function () {
+    return view('homepage.online-portal');
 });
 
 Route::prefix('dashboard')->middleware('auth')->group(function () {

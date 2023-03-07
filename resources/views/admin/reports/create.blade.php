@@ -9,7 +9,7 @@
             <div class="card-header">
                 <div class="d-flex justify-content-between">
                     <span>STUDENT PROFILE</span>
-                    <a class="btn btn-primary btn-sm" href="{{ url('reports/list') }}">Back</a>
+                    <a class="btn btn-primary btn-sm" href="{{ url('dashboard/reports/list') }}">Back</a>
 
                 </div>
             </div>
