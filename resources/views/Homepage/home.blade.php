@@ -36,11 +36,27 @@
 
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="lp/lp/assets/css/style.css">
-
 </head>
+<style>
+    body {
+        background-image: url(lp/lp/assets/images/header-loginBG.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
-<body
-    style="background-image: url(lp/lp/assets/images/header-loginBG.jpg);background-position: center; background-repeat: no-repeat; background-size: cover;">
+    .transparent {
+        background: rgba(0, 0, 0, 0.2);
+        color: #fff !important;
+        padding: 2%;
+    }
+
+    .transparent p {
+        color: #fff;
+    }
+</style>
+
+<body style="">
     <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
@@ -75,8 +91,10 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg">
-                            <a class="navbar-brand" href="home">
-                                <img src="lp/lp/assets/images/123.png" alt="Logo">
+                            <a class="navbar-brand nav-link" href="home">
+
+                                <img src="{{ asset('images/SG 2.png') }}" alt="S-GUIDE" width="50">
+
                             </a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -129,7 +147,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7">
-                        <div class="header-hero-content">
+                        <div class="header-hero-content transparent">
                             <h1 class="hero-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"><b>Lets</b>
                                 <span>Help</span> each <b>Other.</b>
                             </h1>

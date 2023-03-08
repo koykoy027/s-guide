@@ -17,8 +17,6 @@
             <a class="btn btn-primary w-100 mb-3" href="{{ route('login') }}">
                 For Faculty
             </a>
-
-
         </div>
     </div>
 @endsection

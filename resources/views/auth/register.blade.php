@@ -123,13 +123,13 @@
                             </span>
                         @enderror
                     </div>
+
                     <div class="col-md">
                         <input placeholder="Confirm your password" id="password-confirm" type="password"
                             class="form-control" name="password_confirmation" required autocomplete="new-password">
                     </div>
 
                 </div>
-
 
                 <div class="d-flex justify-content-end">
                     <button type="submit" class="btn btn-primary btn-sm">
