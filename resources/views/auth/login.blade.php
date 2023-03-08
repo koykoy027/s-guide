@@ -80,12 +80,10 @@
                                     Don't have account yet? <a class="text-primary" href="{{ route('register') }}">Register
                                         here</a>
                                 </small>
+                            </form>
+
                         </div>
                     </div>
-                    </form>
-
                 </div>
             </div>
-        </div>
-    </div>
-@endsection
+        @endsection
