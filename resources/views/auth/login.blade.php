@@ -65,26 +65,25 @@
                                     </div>
                                 </div>
 
-                        {{-- <div class="row my-3 ">
-                        @if (Route::has('password.request'))
-                        <small class="col-md text-start">
-                            <a class="text-primary" href="{{ route('password.request') }}">
-                                {{ __('Forgot Your Password?') }}
-                            </a>
-                        </small>
-                        @endif
+                                <div class="row my-3 ">
+                                    @if (Route::has('password.request'))
+                                        <small class="col-md text-start">
+                                            <a class="text-primary" href="{{ route('password.request') }}">
+                                                {{ __('Forgot Your Password?') }}
+                                            </a>
+                                        </small>
+                                    @endif
 
-                        <small class="col-md text-end">
-                                Don't have account yet? <a class="text-primary" href="{{ route ('register') }}">Register here</a>
-                        </small>
-                    </div> --}}
-                        <small class="col-md text-end">
-                            Don't have account yet? <a class="text-primary" href="{{ route('register') }}">Register here</a>
-                        </small>
-                    </form>
 
+                                </div>
+                                <small class="col-md text-end">
+                                    Don't have account yet? <a class="text-primary" href="{{ route('register') }}">Register
+                                        here</a>
+                                </small>
+                            </form>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-@endsection
+        @endsection
