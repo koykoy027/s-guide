@@ -39,9 +39,10 @@ class DatabaseSeeder extends Seeder
 
         // Create users
         $user1 = new User([
-            'name' => 'Francis Oliver Light Hiloma',
+            'lastname' => 'Hiloma',
+            'firstname' => 'Francis Oliver',
+            'MI' => 'O',
             'gender' => 'Male',
-
             'email' => 'hilomafrancisoliver@gmail.com',
             'password' => bcrypt('Pa$$w0rd!')
         ]);
@@ -49,9 +50,10 @@ class DatabaseSeeder extends Seeder
         $user1->save();
 
         $user2 = new User([
-            'name' => 'Joshua Villanueva',
+            'lastname' => 'Villanueva',
+            'firstname' => 'Joshua',
+            'MI' => 'A',
             'gender' => 'Male',
-
             'email' => 'villanuevajoshua27@gmail.com',
             'password' => bcrypt('Pa$$w0rd!')
         ]);

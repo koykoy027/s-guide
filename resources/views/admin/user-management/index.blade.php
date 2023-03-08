@@ -22,7 +22,9 @@
                     <tbody>
                         @foreach ($data as $datas)
                             <tr>
-                                <th> {{ $datas->name }} </th>
+                                <th>
+                                    {{ $datas->lastname }} , {{ $datas->firstname }} {{ $datas->MI }}.
+                                </th>
 
                                 <td> {{ $datas->email }} </td>
                                 <td class="d=flex justify-content-start">

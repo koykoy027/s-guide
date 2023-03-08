@@ -5,7 +5,7 @@
         </li>
 
         <li class="nav-item d-none d-sm-inline-block">
-            <a href="/" class="nav-link">Home</a>
+            <a href="{{ url('dashboard') }}" class="nav-link">Home</a>
         </li>
         {{-- <li class="nav-item d-none d-sm-inline-block">
       <a href="/" class="nav-link">Contact</a>
@@ -43,7 +43,7 @@
         <li class="nav-item dropdown">
             <a id="navbarDropdown" class="nav-link dropdown-toggle text-dark text-sm" href="#" role="button"
                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                {{ Auth::user()->name }}
+                {{ Auth::user()->firstname }} {{ Auth::user()->lastname }}
             </a>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown" style="text-transform:none ">
                 <a class="dropdown-item text-sm" href="{{ route('logout') }}"
