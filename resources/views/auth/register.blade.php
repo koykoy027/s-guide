@@ -27,7 +27,7 @@
                     </div>
                     <div class="col-md">
                         <input placeholder="Enter registered number" type="text"
-                            class="form-control @error('school_id') is-invalid @enderror" name="school_id"
+                            class="form-control @error('school_id') is-invalid @enderror" name=""
                             value="{{ old('school_id') }}" required autocomplete="school_id" autofocus>
                         @error('school_id')
                             <span class="invalid-feedback" role="alert">
