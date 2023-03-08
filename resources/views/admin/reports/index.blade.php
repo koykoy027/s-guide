@@ -6,7 +6,7 @@
         <div class="card-header">
             <div class="d-flex justify-content-between">
                 <span>REPORTS</span>
-                <a class="btn btn-primary btn-sm" href="{{ url('reports/create') }}">Add report</a>
+                <a class="btn btn-primary btn-sm" href="{{ url('dashboard/reports/create') }}">Add report</a>
 
             </div>
         </div>
@@ -40,7 +40,7 @@
                                         <ul class="dropdown-menu text-sm">
                                             <li>
                                                 <a class="dropdown-item"
-                                                    href="{{ url('reports/profile', ['id' => $tables->id]) }}">
+                                                    href="{{ url('dashboard/reports/profile', ['id' => $tables->id]) }}">
                                                     View
                                                 </a>
                                             </li>

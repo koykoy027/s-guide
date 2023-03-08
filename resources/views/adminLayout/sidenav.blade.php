@@ -22,7 +22,8 @@
 
                 <li class="nav-header">MENU</li>
                 <li class="nav-item">
-                    <a href="/" class="nav-link {{ '/' == request()->path() ? 'active' : '' }}">
+                    <a href="{{ url('dashboard') }}"
+                        class="nav-link {{ 'dashboard' == request()->path() ? 'active' : '' }}">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
                             Dashboard
@@ -32,8 +33,8 @@
 
                 <li class="nav-header">CASE REPORTS</li>
                 <li class="nav-item">
-                    <a href="{{ url('reports/list') }}"
-                        class="nav-link {{ 'reports/list' == request()->path() ? 'bg-primary' : '' }}">
+                    <a href="{{ url('dashboard/reports/list') }}"
+                        class="nav-link {{ 'dashboard/reports/list' == request()->path() ? 'bg-primary' : '' }}">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
                             Record and Reports
@@ -43,8 +44,8 @@
 
                 <li class="nav-header">User management</li>
                 <li class="nav-item">
-                    <a href="{{ url('user/list') }}"
-                        class="nav-link {{ 'user/list' == request()->path() ? 'active' : '' }}">
+                    <a href="{{ url('dashboard/user/list') }}"
+                        class="nav-link {{ 'dashboard/user/list' == request()->path() ? 'active' : '' }}">
                         <i class="nav-icon bi bi-person-fill"></i>
                         <p>
                             User

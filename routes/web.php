@@ -19,7 +19,14 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::prefix('/')->middleware('auth')->group(function () {
+Route::get('/', function () {
+    return view('homepage.home');
+});
+Route::get('online-portal', function () {
+    return view('homepage.online-portal');
+});
+
+Route::prefix('dashboard')->middleware('auth')->group(function () {
     // reports endpoint
     Route::prefix('reports')->group(function () {
         Route::get('list', [ReportController::class, 'index']); //show records
@@ -44,6 +51,4 @@ Route::controller(SchoolController::class)->group(function () {
 
 
 
-
-
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard'); //show dashboard
+Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard'); //show dashboard
