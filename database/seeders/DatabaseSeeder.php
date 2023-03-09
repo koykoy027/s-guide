@@ -41,6 +41,7 @@ class DatabaseSeeder extends Seeder
         $user1 = new User([
             'lastname' => 'Hiloma',
             'firstname' => 'Francis Oliver',
+            'employee_number' => '5897485',
             'MI' => 'O',
             'gender' => 'Male',
             'email' => 'hilomafrancisoliver@gmail.com',
@@ -52,6 +53,7 @@ class DatabaseSeeder extends Seeder
         $user2 = new User([
             'lastname' => 'Villanueva',
             'firstname' => 'Joshua',
+            'employee_number' => '5869874',
             'MI' => 'A',
             'gender' => 'Male',
             'email' => 'villanuevajoshua27@gmail.com',
