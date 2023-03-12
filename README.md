@@ -32,6 +32,6 @@
     crtl + shift + f = search text in all folder
 </li>
 <li>
-    crtl + /? = comment/uncomment
+    crtl + /? = comment / uncomment
 </li>
 </ol>
