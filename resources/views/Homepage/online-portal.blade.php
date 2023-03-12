@@ -1,22 +1,31 @@
-@extends('adminLayout.app')
+@extends('Homepage.layout.master')
 @section('content')
-    <div class="d-flex justify-content-center">
-        <div class="transparent">
-            <h1>S-GUIDE SYSTEM</h1>
-            <div class="d-flex justify-content-center mb-3">
-                <img src="{{ asset('images/SG 2.png') }}" alt="S-GUIDE">
+    <section id="" class="features section">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <a href="" class="btn"> Go Back to website</a>
+                    <hr>
+                </div>
+                <h3>Lorem, ipsum dolor.</h3>
+                <p class="mb-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error neque assumenda sint repellat placeat
+                    et est maiores saepe similique nihil suscipit quis eaque voluptatem, nesciunt quibusdam expedita
+                    facere iste esse!
+                </p>
+                <div class="d-flex justify-content-around">
+
+                    <a class="btn btn-outline-info w-100 mb-3 mx-2" href="{{ url('online-reporting') }}">
+                        For Student / Guardian / Parents
+                    </a>
+                    <a class="btn btn-outline-info w-100 mb-3 mx-2" href="{{ route('login') }}">
+                        For Faculty
+                    </a>
+
+                </div>
             </div>
-            <hr />
-            <a class="btn btn-primary w-100 mb-3" href="{{ url('/') }}">
-                Go to Website
-            </a>
-            <hr />
-            <a class="btn btn-primary w-100 mb-3" href="{{ url('online-reporting') }}">
-                For Student / Guardian / Parents
-            </a>
-            <a class="btn btn-primary w-100 mb-3" href="{{ route('login') }}">
-                For Faculty
-            </a>
+
         </div>
+    </section>
     </div>
 @endsection

@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', function () {
-    return view('homepage.home');
+    return view('homepage.index');
 });
 Route::get('online-portal', function () {
     return view('homepage.online-portal');
