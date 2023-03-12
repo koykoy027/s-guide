@@ -11,7 +11,7 @@
                 Go to Website
             </a>
             <hr />
-            <a class="btn btn-primary w-100 mb-3">
+            <a class="btn btn-primary w-100 mb-3" href="{{ url('online-reporting') }}">
                 For Student / Guardian / Parents
             </a>
             <a class="btn btn-primary w-100 mb-3" href="{{ route('login') }}">

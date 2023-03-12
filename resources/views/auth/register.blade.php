@@ -98,7 +98,7 @@
 
                 <div class="row mb-3">
                     <div class="col-md">
-                        <input placeholder="Enter your Email Address" type="email"
+                        <input placeholder="Email Address" type="email"
                             class="form-control @error('email') is-invalid @enderror" name="email"
                             value="{{ old('email') }}" required autocomplete="email">
 
@@ -113,7 +113,7 @@
                 <div class="row mb-3">
 
                     <div class="col-md">
-                        <input placeholder="Enter your password" id="password" type="password"
+                        <input placeholder="Password" id="password" type="password"
                             class="form-control @error('password') is-invalid @enderror" name="password" required
                             autocomplete="new-password">
 
@@ -125,8 +125,8 @@
                     </div>
 
                     <div class="col-md">
-                        <input placeholder="Confirm your password" id="password-confirm" type="password"
-                            class="form-control" name="password_confirmation" required autocomplete="new-password">
+                        <input placeholder="Confirm password" id="password-confirm" type="password" class="form-control"
+                            name="password_confirmation" required autocomplete="new-password">
                     </div>
 
                 </div>

@@ -1,8 +1,34 @@
+function selectTypesOfComplain(val) {
+    if (val === "Others") {
+
+        $('[name="others_type_of_complain"]').css("display", "flex")
+        $('[name="others_type_of_complain"]').val("")
+
+
+    }
+    else {
+        $('[name="others_type_of_complain"]').css("display", "none")
+    }
+
+}
+
+function selectComplainant(val) {
+    if (val === "Student") {
+        $('[name="others_complainant"]').css("display", "none")
+        $('[name="guardian_name"]').val("")
+        $('[name="guardian_relationship"]').val("")
+    }
+    else {
+        $('[name="others_complainant"]').css("display", "flex")
+    }
+
+}
+
 function offenseMinorOthers(val) {
     if (val === "others") {
         $('#offense-minor-11').css("display", "block")
     }
-    {
+    else {
         $('#offense-minor-11').css("display", "none")
     }
 }
@@ -10,7 +36,7 @@ function offenseMajorOthers(val) {
     if (val === "others") {
         $('#offense-major-20').css("display", "block")
     }
-    {
+    else {
         $('#offense-major-20').css("display", "none")
     }
 }
@@ -211,3 +237,22 @@ $(document).ready(function () {
     $('div.dataTables_filter input').addClass('px-2 mx-2');
     $('div.dataTables_filter input').attr('placeholder', 'Search here...');
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

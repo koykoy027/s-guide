@@ -93,6 +93,7 @@
     <script>
         $.widget.bridge('uibutton', $.ui.button)
     </script>
+    {{-- custom js --}}
     <script src="{{ asset('assets/dist/js/script.js') }}"></script>
     <!-- Bootstrap 4 -->
     <script src="{{ asset('assets/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
