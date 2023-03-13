@@ -68,7 +68,7 @@ https://templatemo.com/tm-563-seo-dream
                             <li class="scroll-to-section"><a href="#features">Features</a></li>
                             <li class="scroll-to-section"><a href="#about">About Us</a></li>
                             <li class="scroll-to-section"><a href="#services">Services</a></li>
-                            <li class="scroll-to-section"><a href="#portfolio">Portfolio</a></li>
+                            {{-- <li class="scroll-to-section"><a href="#portfolio">Portfolio</a></li> --}}
                             <li class="scroll-to-section"><a href="#contact">Contact Us</a></li>
                             <li class="scroll-to-section">
                                 <div class="main-blue-button"><a href="{{ url('online-portal') }}">Online Portal</a>
@@ -92,7 +92,7 @@ https://templatemo.com/tm-563-seo-dream
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright © 2021 S-GUIDE., Ltd. All Rights Reserved.
+                    <p>Copyright © 2023 S-GUIDE., Ltd. All Rights Reserved.
 
                         <br>Web Designed by S-GUIDE
                     </p>
