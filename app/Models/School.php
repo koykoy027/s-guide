@@ -14,7 +14,8 @@ class School extends Model
     protected $fillable = [
         "name",
         "year_level",
-        // "slug",
+
+
     ];
 
     public function users()

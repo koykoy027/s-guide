@@ -100,7 +100,8 @@
             <div class="row mb-3">
                 <div class="col-md">
                     <p class="text-bold">Reporter</p>
-                    <p>{{ $profile->usersReport->name }}</p>
+                    <p>{{ $profile->usersReport->lastname }}, {{ $profile->usersReport->firstname }}
+                        {{ $profile->usersReport->middlename }}</p>
 
 
                 </div>

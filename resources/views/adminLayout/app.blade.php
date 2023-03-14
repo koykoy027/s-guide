@@ -24,19 +24,8 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <style>
         body {
-
             background: rgb(58, 218, 234);
             background: radial-gradient(circle, rgba(58, 218, 234, 1) 0%, rgba(37, 182, 213, 1) 50%, rgba(13, 139, 188, 1) 100%);
-
-
-        }
-
-
-        .transparent {
-            background: rgba(0, 0, 0, 0.3);
-            color: #fff;
-            padding: 3% 30%;
-            border-radius: 10px;
         }
 
         sup {

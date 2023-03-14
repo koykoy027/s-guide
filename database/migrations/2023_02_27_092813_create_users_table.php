@@ -15,14 +15,14 @@ return new class extends Migration
     {
         Schema::enableForeignKeyConstraints();
         Schema::create('users', function (Blueprint $table) {
-             $table->id();
+            $table->id();
 
             $table->unsignedBigInteger('school_id');
             $table->foreign('school_id')->references('id')->on('schools')->onDelete('cascade');
             $table->string('employee_number');
             $table->string('firstname');
             $table->string('lastname');
-            $table->string('MI');
+            $table->string('middlename')->nullable();
             $table->string('gender');
             // $table->string('slug');
             $table->string('email')->unique();

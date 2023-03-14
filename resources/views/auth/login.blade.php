@@ -5,10 +5,6 @@
         <div class="col-xl-10">
             <div class="card">
                 <div class="row">
-                    <!-- nadagdag -->
-                    <div class="col-md">
-                        <img src="{{ asset('index/assets/images/banner-right-image.png') }}">
-                    </div>
                     <div class="col-md">
                         <div class="card-body p-lg-5 text-black">
 
@@ -81,6 +77,10 @@
                             </form>
 
                         </div>
+                    </div>
+
+                    <div class="col-md">
+                        <img src="{{ asset('index/assets/images/banner-right-image.png') }}">
                     </div>
                 </div>
             </div>

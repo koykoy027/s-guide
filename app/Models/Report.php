@@ -12,7 +12,9 @@ class Report extends Model
     protected $fillable = [
         // personal info
         "report_id",
-        "fullname",
+        "lastname",
+        "firstname",
+        "middlename",
         "gender",
         "birthday",
         "contact_number",

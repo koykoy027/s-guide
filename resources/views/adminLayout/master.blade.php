@@ -38,44 +38,7 @@
     <link rel="stylesheet" href="{{ asset('assets/plugins/daterangepicker/daterangepicker.css') }}">
     <!-- summernote -->
     <link rel="stylesheet" href="{{ asset('assets/plugins/summernote/summernote-bs4.min.css') }}">
-</head>
 
-<body class="hold-transition sidebar-mini layout-fixed">
-    <div class="wrapper">
-        <!-- Preloader -->
-        {{-- <div class="preloader flex-column justify-content-center align-items-center">
-          <img class="animation__shake" src="{{asset('assets/dist/img/logo.png')}}" alt="Real Faith Logo" height="120" width="120">
-        </div> --}}
-
-        @include('admin.modal')
-        @include('adminLayout.navbar')
-        @include('adminLayout.sidenav')
-
-        <div class="content-wrapper">
-            <section class="content">
-                <div class="container-fluid">
-                    {{-- BREADCRUMB --}}
-                    <div class="content-header">
-                        <div class="container-fluid">
-                            <div class="row mb-2">
-                                <div class="col">
-                                    <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="{{ route('dashboard') }}"><i
-                                                    class="bi bi-house-door text-dark"></i></a></li>
-                                        <li class="breadcrumb-item active">@yield('title')</li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    @yield('content')
-                </div>
-            </section>
-        </div>
-
-        @include('adminLayout.footer')
-
-    </div>
 
     <!-- jQuery -->
 
@@ -132,27 +95,44 @@
     <script src="{{ asset('js/select2.min.js') }}"></script>
     {{-- sweet alert --}}
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    {{-- alert message --}}
-    @if (session()->has('message'))
-        {{-- <div class="alert alert-success">{{ session('message') }}</div> --}}
-        <script>
-            const Toast = Swal.mixin({
-                toast: true,
-                position: 'top-end',
-                showConfirmButton: false,
-                timer: 3000,
-                timerProgressBar: true,
-                didOpen: (toast) => {
-                    toast.addEventListener('mouseenter', Swal.stopTimer)
-                    toast.addEventListener('mouseleave', Swal.resumeTimer)
-                }
-            })
-            Toast.fire({
-                icon: 'success',
-                title: '{{ session('message') }}'
-            })
-        </script>
-    @endif
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+        <!-- Preloader -->
+        {{-- <div class="preloader flex-column justify-content-center align-items-center">
+          <img class="animation__shake" src="{{asset('assets/dist/img/logo.png')}}" alt="Real Faith Logo" height="120" width="120">
+        </div> --}}
+
+        @include('admin.modal')
+        @include('adminLayout.navbar')
+        @include('adminLayout.sidenav')
+
+        <div class="content-wrapper">
+            <section class="content">
+                <div class="container-fluid">
+                    {{-- BREADCRUMB --}}
+                    <div class="content-header">
+                        <div class="container-fluid">
+                            <div class="row mb-2">
+                                <div class="col">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="{{ route('dashboard') }}"><i
+                                                    class="bi bi-house-door text-dark"></i></a></li>
+                                        <li class="breadcrumb-item active">@yield('title')</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @yield('content')
+                </div>
+            </section>
+        </div>
+
+        @include('adminLayout.footer')
+
+    </div>
 </body>
 
 </html>

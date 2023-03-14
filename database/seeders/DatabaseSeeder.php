@@ -41,8 +41,8 @@ class DatabaseSeeder extends Seeder
         $user1 = new User([
             'lastname' => 'Hiloma',
             'firstname' => 'Francis Oliver',
+            'middlename' => 'O',
             'employee_number' => '5897485',
-            'MI' => 'O',
             'gender' => 'Male',
             'email' => 'hilomafrancisoliver@gmail.com',
             'password' => bcrypt('Pa$$w0rd!')
@@ -53,8 +53,8 @@ class DatabaseSeeder extends Seeder
         $user2 = new User([
             'lastname' => 'Villanueva',
             'firstname' => 'Joshua',
+            'middlename' => 'A',
             'employee_number' => '5869874',
-            'MI' => 'A',
             'gender' => 'Male',
             'email' => 'villanuevajoshua27@gmail.com',
             'password' => bcrypt('Pa$$w0rd!')
@@ -64,7 +64,9 @@ class DatabaseSeeder extends Seeder
 
         //create report
         $report1 = new Report([
-            'fullname' => 'Francis Oliver Hiloma',
+            'lastname' => 'Hiloma',
+            'firstname' => 'Francis Oliver',
+            'middlename' => 'O',
             'gender' => 'Male',
             'birthday' => '11/21/2001',
             'contact_number' => '09460070541',

@@ -23,11 +23,10 @@
                         @foreach ($table as $tables)
                             <tr>
                                 <td>
-                                    <b>{{ $tables->fullname }}</b>
+                                    <b>{{ $tables->lastname }} {{ $tables->firstname }} {{ $tables->middlename }}</b>
                                     <br>
                                     <span>{{ $tables->student_number }}</span>
                                 </td>
-
 
                                 <td class="d-flex justify-content-between">
                                     <p>{{ $tables->program }}</p>

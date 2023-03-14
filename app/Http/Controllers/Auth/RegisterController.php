@@ -56,10 +56,10 @@ class RegisterController extends Controller
             'employee_number' => ['required', 'integer', 'max:9999999', 'min:6'],
             'lastname' => ['required', 'string', 'max:255'],
             'firstname' => ['required', 'string', 'max:255'],
-            'MI' => ['required', 'string', 'max:3'],
+            'middlename' => ['max:255'],
             'gender' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed',],
+            'password' => ['required', 'string', 'min:8', 'confirmed', 'regex:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$/'],
         ]);
     }
 
@@ -78,10 +78,12 @@ class RegisterController extends Controller
             'employee_number' => $data['employee_number'],
             'lastname' => $data['lastname'],
             'firstname' => $data['firstname'],
-            'MI' => $data['MI'],
+            'middlename' => $data['middlename'],
             'gender' => $data['gender'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+
+        return with('message', 'Hello world');
     }
 }

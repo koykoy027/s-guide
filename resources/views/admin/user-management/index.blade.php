@@ -23,7 +23,7 @@
                         @foreach ($data as $datas)
                             <tr>
                                 <th>
-                                    {{ $datas->lastname }} , {{ $datas->firstname }} {{ $datas->MI }}.
+                                    {{ $datas->lastname }} , {{ $datas->firstname }} {{ $datas->middlename }}
                                 </th>
 
                                 <td> {{ $datas->email }} </td>

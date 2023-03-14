@@ -33,7 +33,9 @@ class ReportController extends Controller
         $request->validate([
             // personal info
             'report_id' => 'required',
-            'fullname' => 'required',
+            'lastname' => 'required',
+            'firstname' => 'required',
+            'middlename' => 'required',
             'student_number' => 'required',
             'gender' => 'required',
             'birthday' => 'required',

@@ -1,7 +1,6 @@
 @extends('adminLayout.master')
 @section('title', 'Dashboard')
 @section('content')
-
     <div class="row">
         <div class="col-lg-3 col-6">
             <div class="small-box bg-info">
@@ -99,7 +98,7 @@
                 <h3 class="card-title">
                   <i class="fas fa-map-marker-alt mr-1"></i>
                   Purok
-                </h3>                
+                </h3>
                 <div class="card-tools">
                   <button type="button" class="btn btn-primary btn-sm daterange" title="Date range">
                     <i class="far fa-calendar-alt"></i>
@@ -118,16 +117,16 @@
                     <div id="sparkline-1"></div>
                     <div class="text-white">Purok</div>
                   </div>
-                  
+
                   <div class="col-4 text-center">
                     <div id="sparkline-2"></div>
                     <div class="text-white">Registered voters</div>
                   </div>
-                  
+
                   <div class="col-4 text-center">
                     <div id="sparkline-3"></div>
                     <div class="text-white">Non-registered voters</div>
-                  </div>                  
+                  </div>
                 </div>
               </div>
             </div> --}}
@@ -151,7 +150,7 @@
               </div>
               <div class="card-body">
                 <canvas class="chart" id="line-chart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
-              </div>              
+              </div>
               <div class="card-footer bg-transparent">
                 <div class="row">
                   <div class="col-4 text-center">
@@ -164,15 +163,15 @@
                            data-fgColor="#39CCCC">
 
                     <div class="text-white">Registered Voters</div>
-                  </div>                  
+                  </div>
                   <div class="col-4 text-center">
                     <input type="text" class="knob" data-readonly="true" value="30" data-width="60" data-height="60"
                            data-fgColor="#39CCCC">
 
                     <div class="text-white">Non Registered Voters</div>
-                  </div>                  
+                  </div>
                 </div>
-              </div>              
+              </div>
             </div>             --}}
 
             <!-- Calendar -->

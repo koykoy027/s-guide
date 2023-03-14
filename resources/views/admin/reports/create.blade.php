@@ -1,6 +1,26 @@
 @extends('adminLayout.master')
 @section('title', 'Reports / Create')
 @section('content')
+    {{-- alert message --}}
+    @if (session()->has('message'))
+        <script>
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 3000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+            })
+            Toast.fire({
+                icon: 'success',
+                title: '{{ session('message') }}'
+            })
+        </script>
+    @endif
 
     <form action="{{ url('dashboard/reports/store') }}" method="POST">
         @csrf
@@ -21,9 +41,30 @@
                                 <p>Name</p>
                             </div>
                             <div class="col-md">
-                                <input type="text" class="form-control @error('fullname') is-invalid @enderror"
-                                    value="{{ old('fullname') }}" autocomplete="on" autofocus name="fullname">
-                                @error('fullname')
+                                <input type="text" class="form-control @error('lastname') is-invalid @enderror"
+                                    value="{{ old('lastname') }}" autocomplete="on" autofocus name="lastname"
+                                    placeholder="Lastname">
+                                @error('lastname')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                            <div class="col-md">
+                                <input type="text" class="form-control @error('firstname') is-invalid @enderror"
+                                    value="{{ old('firstname') }}" autocomplete="on" autofocus name="firstname"
+                                    placeholder="Firstname">
+                                @error('firstname')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                            <div class="col-md">
+                                <input type="text" class="form-control @error('middlename') is-invalid @enderror"
+                                    value="{{ old('middlename') }}" autocomplete="on" autofocus name="middlename"
+                                    placeholder="Middlename">
+                                @error('middlename')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -160,8 +201,8 @@
                             </div>
                             <div class="col-md">
                                 <input type="number" class="form-control @error('year') is-invalid @enderror"
-                                    value="{{ old('year') }}" autocomplete="on" autofocus min="1" max="4"
-                                    name="year">
+                                    value="{{ old('year') }}" autocomplete="on" autofocus min="1"
+                                    max="4" name="year">
                                 @error('year')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>

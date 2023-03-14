@@ -20,7 +20,9 @@ return new class extends Migration
             $table->unsignedBigInteger('report_id');
             $table->foreign('report_id')->references('id')->on('users')->onDelete('cascade');
             // personal information
-            $table->string('fullname');
+            $table->string('lastname');
+            $table->string('firstname');
+            $table->string('middlename');
             $table->string('gender');
             $table->string('birthday');
             $table->string('contact_number');
