@@ -10,24 +10,24 @@
                                 <div class="row">
                                     <div class="col-lg-4 col-sm-4">
                                         <div class="info-stat">
-                                            <h6>Agency Status:</h6>
+                                            <h6>System Status:</h6>
                                             <h4>Ready Work</h4>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-sm-4">
                                         <div class="info-stat">
-                                            <h6>Price:</h6>
-                                            <h4>$720/Month</h4>
+                                            <h6></h6>
+                                            <h4></h4>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-sm-4">
                                         <div class="info-stat">
-                                            <h6>Schedules</h6>
-                                            <h4>$450/Meeting</h4>
+                                            <h6></h6>
+                                            <h4></h4>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
-                                        <h2>SEO &amp; Digital Marketing Agency</h2>
+                                        <h2>Navigate your path with our guidance by your side.</h2>
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="main-green-button scroll-to-section">
@@ -109,7 +109,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-12">
+                {{-- <div class="col-lg-12">
                     <div class="skills-content">
                         <div class="row">
                             <div class="col-lg-3">
@@ -190,7 +190,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <div id="about" class="about-us section">
         <div class="container">
@@ -225,11 +225,7 @@
                             </div>
                         </div>
                     </div>
-                    <p><a rel="nofollow" href="https://templatemo.com/tm-563-seo-dream" target="_parent">SEO
-                            Dream</a> is free digital marketing CSS template provided by TemplateMo website. You are
-                        allowed to use this template for your business websites. Please DO NOT redistribute this
-                        template ZIP file on any Free CSS collection websites. You may contact us for more information.
-                        Thank you.</p>
+                    <p><a rel="nofollow" href="https://templatemo.com/tm-563-seo-dream" target="_parent"></a> School Guidance Management system is a software application designed to assist schools in managing and providing guidance services to students. It allows school counselors to track and monitor student progress, as well as create and manage student profiles and case files.</p>
                     <div class="main-green-button"><a href="#">Discover company</a></div>
                 </div>
             </div>
@@ -361,7 +357,7 @@
         </div>
     </div>
 
-    <div id="portfolio" class="our-portfolio section">
+    {{-- <div id="portfolio" class="our-portfolio section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
@@ -492,7 +488,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <div id="contact" class="contact-us section">
         <div class="container">
