@@ -38,6 +38,8 @@
     <link rel="stylesheet" href="{{ asset('assets/plugins/daterangepicker/daterangepicker.css') }}">
     <!-- summernote -->
     <link rel="stylesheet" href="{{ asset('assets/plugins/summernote/summernote-bs4.min.css') }}">
+    {{-- ICON --}}
+    <link rel="shortcut icon" href="{{ asset('images/SG 2.png') }}" type="image/x-icon">
 
 
     <!-- jQuery -->
@@ -101,7 +103,8 @@
     <div class="wrapper">
         <!-- Preloader -->
         {{-- <div class="preloader flex-column justify-content-center align-items-center">
-          <img class="animation__shake" src="{{asset('assets/dist/img/logo.png')}}" alt="Real Faith Logo" height="120" width="120">
+            <img class="animation__shake" src="{{ asset('assets/dist/img/logo.png') }}" alt="Real Faith Logo"
+                height="120" width="120">
         </div> --}}
 
         @include('admin.modal')
