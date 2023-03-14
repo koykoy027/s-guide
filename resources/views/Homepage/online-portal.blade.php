@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div>
-                    <a href="" class="btn"> Go Back to website</a>
+                    <a href="{{ url('/') }}" class="btn"> Go Back to website</a>
                     <hr>
                 </div>
                 <h3>Lorem, ipsum dolor.</h3>

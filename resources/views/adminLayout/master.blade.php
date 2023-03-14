@@ -128,13 +128,8 @@
     <script type="text/javascript"
         src="https://cdn.datatables.net/v/bs5/jq-3.6.0/jszip-2.5.0/dt-1.13.1/b-2.3.3/b-html5-2.3.3/datatables.min.js">
     </script>
-
-
-
     {{-- Install the Select2 package using npm: --}}
     <script src="{{ asset('js/select2.min.js') }}"></script>
-
-
     {{-- sweet alert --}}
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     {{-- alert message --}}

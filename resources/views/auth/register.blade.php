@@ -1,13 +1,13 @@
-@extends('adminLayout.app')
-
+@extends('Homepage.layout.master')
+@section('title', ' - REGISTER')
 @section('content')
-    <div class="container my-5 shadow-lg" style="background: #fff">
+    <section class="container my-5 shadow-lg" style="background: #fff">
         <div class="row">
             <form class="p-5" method="POST" action="{{ route('register') }}">
                 @csrf
 
                 <div class="d-flex justify-content-center">
-                    <img src="{{ asset('images/SG 2.png') }}" alt="S-GUIDE">
+                    {{-- <img src="{{ asset('images/SG 2.png') }}" alt="S-GUIDE"> --}}
                 </div>
 
                 <h4>Register Account</h4>
@@ -145,5 +145,5 @@
 
             </form>
         </div>
-    </div>
+    </section>
 @endsection

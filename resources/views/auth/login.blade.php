@@ -1,15 +1,13 @@
-@extends('adminLayout.app')
-
-
+@extends('Homepage.layout.master')
+@section('title', ' - LOGIN')
 @section('content')
-    <div class="row d-flex justify-content-center align-items-center">
+    <section class="row d-flex justify-content-center align-items-center">
         <div class="col-xl-10">
             <div class="card">
                 <div class="row">
                     <!-- nadagdag -->
                     <div class="col-md">
-                        <img src="{{ asset('images/GuidanceCounsellingsystem.png') }}" alt="login form" class="img-fluid"
-                            style="border-radius: 1rem 0 0 1rem;" />
+                        <img src="{{ asset('index/assets/images/banner-right-image.png') }}">
                     </div>
                     <div class="col-md">
                         <div class="card-body p-lg-5 text-black">
@@ -18,7 +16,7 @@
                                 @csrf
 
                                 <div class="d-flex justify-content-center mb-3 pb-1">
-                                    <img src="{{ asset('images/SG 2.png') }}" alt="S-GUIDE">
+                                    {{-- <img src="{{ asset('images/SG 2.png') }}" alt="S-GUIDE"> --}}
                                 </div>
 
                                 <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">
@@ -86,4 +84,6 @@
                     </div>
                 </div>
             </div>
-        @endsection
+        </div>
+    </section>
+@endsection

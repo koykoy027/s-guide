@@ -26,7 +26,7 @@ Route::get('online-portal', function () {
     return view('homepage.online-portal');
 });
 Route::get('online-reporting', function () {
-    return view('homepage.online-reporting');
+    return view('homepage.online-reporting.create');
 });
 
 Route::prefix('dashboard')->middleware('auth')->group(function () {

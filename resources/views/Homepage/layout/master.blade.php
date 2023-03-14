@@ -56,7 +56,7 @@ https://templatemo.com/tm-563-seo-dream
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        <a href="{{ url('/') }}" class="logo">
+                        <a href="{{ url('/#top') }}" class="logo">
                             <h4>
                                 <img src="{{ asset('images/SG 2.png') }}" alt="" /> - GUIDE
                             </h4>
@@ -64,16 +64,18 @@ https://templatemo.com/tm-563-seo-dream
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="{{ url('/#top') }}" class="active">Home</a></li>
                             <li class="scroll-to-section"><a href="#features">Features</a></li>
                             <li class="scroll-to-section"><a href="#about">About Us</a></li>
                             <li class="scroll-to-section"><a href="#services">Services</a></li>
                             <li class="scroll-to-section"><a href="#portfolio">Portfolio</a></li>
                             <li class="scroll-to-section"><a href="#contact">Contact Us</a></li>
                             <li class="scroll-to-section">
-                                <div class="main-blue-button"><a href="{{ url('online-portal') }}">Online Portal</a>
+                                <div class="main-blue-button">
+                                    <a href="{{ url('online-portal') }}">Online Portal</a>
                                 </div>
                             </li>
+
                         </ul>
                         <a class='menu-trigger'>
                             <span>Menu</span>
