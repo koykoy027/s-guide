@@ -20,13 +20,13 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', function () {
-    return view('homepage.home');
+    return view('homepage.index');
 });
 Route::get('online-portal', function () {
     return view('homepage.online-portal');
 });
 Route::get('online-reporting', function () {
-    return view('homepage.online-reporting');
+    return view('homepage.online-reporting.create');
 });
 
 Route::prefix('dashboard')->middleware('auth')->group(function () {

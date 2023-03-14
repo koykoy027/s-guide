@@ -2,7 +2,7 @@
 @section('title', 'Reports / Create')
 @section('content')
 
-    <form action="{{ url('reports/store') }}" method="POST">
+    <form action="{{ url('dashboard/reports/store') }}" method="POST">
         @csrf
 
         <div class="card shadow-lg mb-3">

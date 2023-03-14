@@ -7,7 +7,6 @@
             <div class="d-flex justify-content-between">
                 <span>REPORTS</span>
                 <a class="btn btn-primary btn-sm" href="{{ url('dashboard/reports/create') }}">Add report</a>
-
             </div>
         </div>
         <div class="card-body">
