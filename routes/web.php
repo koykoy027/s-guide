@@ -28,7 +28,7 @@ Route::get('online-portal', function () {
 Route::get('online-reporting', [ReportController::class, 'createOnlineReport']); //create records
 Route::post('store', [ReportController::class, 'storeOnlineReport']); //store records
 
-Route::prefix('dashboard')->middleware('auth')->group(function () {
+Route::prefix('dashboard')->middleware('auth', 'verified')->group(function () {
     // reports endpoint
     Route::prefix('reports')->group(function () {
         Route::get('list', [ReportController::class, 'index']); //show records
@@ -51,6 +51,14 @@ Route::controller(SchoolController::class)->group(function () {
 
 });
 
+Route::get('/email/verify/{id}/{hash}', function (EmailVerificationRequest $request) {
+    $request->fulfill();
+
+    return redirect('/home');
+})->middleware(['auth', 'verified'])->name('verification.verify');
+
 
 
 Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard'); //show dashboard
+
+Auth::routes(['verify' => true]);
