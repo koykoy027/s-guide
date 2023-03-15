@@ -1,5 +1,5 @@
 @extends('adminLayout.master')
-@section('title', 'Reports / Create')
+@section('title', 'REPORTS - CREATE')
 @section('content')
     {{-- alert message --}}
     @if (session()->has('message'))
@@ -29,7 +29,7 @@
             <div class="card-header">
                 <div class="d-flex justify-content-between">
                     <span>STUDENT PROFILE</span>
-                    <a class="btn btn-primary btn-sm" href="{{ url('dashboard/reports/list') }}">Back</a>
+                    {{-- <a class="btn btn-primary btn-sm" href="{{ url('dashboard/reports/walk-in') }}">Back</a> --}}
 
                 </div>
             </div>

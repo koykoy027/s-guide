@@ -35,7 +35,7 @@
                 <li class="nav-item">
                     <a href="{{ url('dashboard/reports/create') }}"
                         class="nav-link {{ 'dashboard/reports/create' == request()->path() ? 'bg-primary' : '' }}">
-                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <i class="nav-icon fas fa-plus"></i>
                         <p>
                             Add reports
                         </p>
@@ -43,14 +43,24 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="{{ url('dashboard/reports/list') }}"
-                        class="nav-link {{ 'dashboard/reports/list' == request()->path() ? 'bg-primary' : '' }}">
-                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                    <a href="{{ url('dashboard/reports/walk-in') }}"
+                        class="nav-link {{ 'dashboard/reports/walk-in' == request()->path() ? 'active' : '' }}">
+                        <i class="nav-icon bi bi-arrow-down-right-circle"></i>
                         <p>
-                            Record and Reports
+                            Walk-in reports
                         </p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="{{ url('dashboard/reports/online') }}"
+                        class="nav-link {{ 'dashboard/reports/online' == request()->path() ? 'active' : '' }}">
+                        <i class="nav-icon bi bi-globe"></i>
+                        <p>
+                            Online reports
+                        </p>
+                    </a>
+                </li>
+
 
                 <li class="nav-header">User management</li>
                 <li class="nav-item">

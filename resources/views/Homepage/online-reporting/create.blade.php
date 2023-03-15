@@ -23,6 +23,11 @@
         </script>
     @endif
 
+
+
+
+
+
     <section class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-11 col-sm-9 col-md-7 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2">
@@ -32,7 +37,7 @@
 
                     <form id="msform" method="POST" action="{{ url('store') }}">
                         @csrf
-                        <!-- progressbar -->
+
                         <ul id="progressbar">
                             <li class="active" id="account"><strong>School</strong></li>
                             <li id="personal"><strong>Complainant</strong></li>
@@ -40,11 +45,9 @@
                             <li id="report"><strong>Report</strong></li>
 
                         </ul>
-                        {{-- <div class="progress">
-                    	<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-                	</div> --}}
+
                         <br>
-                        <!-- fieldsets -->
+
                         <fieldset>
                             <div class="form-card">
                                 <input type="hidden" class="form-control" value="1" name="report_id">
@@ -306,11 +309,9 @@
                                                 <strong>{{ $message }}</strong>
                                             </span>
                                         @enderror
-                                        {{-- <p>{{ $datas->usersReport->name }}</p> --}}
 
                                         <input type="text" class="form-control" placeholder="Please specify"
                                             style="display: none">
-
                                     </div>
                                 </div>
                                 <p class="text-bold mt-3">Place of Incidence</p>
@@ -339,8 +340,6 @@
                             <input type="button" name="previous" class="previous action-button-previous"
                                 value="Previous" />
                         </fieldset>
-
-
                     </form>
                 </div>
             </div>

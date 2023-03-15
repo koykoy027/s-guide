@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\OnlineReportController;
 use App\Http\Controllers\ReportController;
 use App\Http\Controllers\SchoolController;
 use App\Http\Controllers\UserController;
@@ -25,13 +26,13 @@ Route::get('/', function () {
 Route::get('online-portal', function () {
     return view('homepage.online-portal');
 });
-Route::get('online-reporting', [ReportController::class, 'createOnlineReport']); //create records
-Route::post('store', [ReportController::class, 'storeOnlineReport']); //store records
+Route::get('online-reporting', [OnlineReportController::class, 'create']); //create records
+Route::post('store', [OnlineReportController::class, 'store']); //store records
 
 Route::prefix('dashboard')->middleware('auth')->group(function () {
     // reports endpoint
     Route::prefix('reports')->group(function () {
-        Route::get('list', [ReportController::class, 'index']); //show records
+        Route::get('walk-in', [ReportController::class, 'index']); //show records
         Route::get('create', [ReportController::class, 'create']); //create records
         Route::post('store', [ReportController::class, 'store']); //store records
         Route::get('profile/{id}', [ReportController::class, 'profile']); //show profile
