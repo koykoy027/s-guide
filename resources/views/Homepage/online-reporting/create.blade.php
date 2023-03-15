@@ -4,7 +4,7 @@
 @section('content')
     {{-- alert message --}}
     @if (session()->has('message'))
-        <script>
+        {{-- <script>
             const Toast = Swal.mixin({
                 toast: true,
                 position: 'top-end',
@@ -20,14 +20,59 @@
                 icon: 'success',
                 title: '{{ session('message') }}'
             })
-        </script>
+        </script> --}}
     @endif
 
+    {{-- validation --}}
+    {{-- <section class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-11 col-sm-9 col-md-7 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2">
+                <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+                    <h2 id="heading">Online Report</h2>
+                    <p>Validate your school code first</p>
+                    <hr>
+
+
+                    <strong>{{ session('message') }}</strong>
+                    <form method="GET" action="{{ url('getData') }}">
+                        <div class="form-card">
+                            <div class="row mb-3">
+                                <div class="col-md">
+                                    <label class="fieldlabels">School code</label>
+                                    <input type="num" class="form-control @error('id') is-invalid @enderror"
+                                        name="id" placeholder="6 digit school code" />
+                                    @error('id')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+
+                                    @foreach ($data as $item)
+                                        <div>{{ $item->name }}</div>
+                                    @endforeach
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-end">
+                            <button type="submit" class="btn btn-primary">
+                                Validate
+                            </button>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </section> --}}
 
 
 
 
 
+    {{-- step bar --}}
     <section class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-11 col-sm-9 col-md-7 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2">

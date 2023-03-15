@@ -1,5 +1,7 @@
 <?php
 
+
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\OnlineReportController;
 use App\Http\Controllers\ReportController;
 use App\Http\Controllers\SchoolController;
@@ -27,9 +29,20 @@ Route::get('online-portal', function () {
     return view('homepage.online-portal');
 });
 Route::get('online-reporting', [OnlineReportController::class, 'create']); //create records
+
 Route::post('store', [OnlineReportController::class, 'store']); //store records
+Route::get('getData', [SchoolController::class, 'getData']); //store records
+// Route::get('online-reporting', [SchoolController::class, 'getData']); //store records
+
+
+
 
 Route::prefix('dashboard')->middleware('auth')->group(function () {
+
+    // dashboard endpoint
+
+    Route::get('/', [HomeController::class, 'index'])->name('dashboard'); //show dashboard
+
     // reports endpoint
     Route::prefix('reports')->group(function () {
         Route::get('walk-in', [ReportController::class, 'index']); //show records
@@ -49,9 +62,4 @@ Route::controller(SchoolController::class)->group(function () {
     Route::get('register', 'showInRegister')->name('register'); //show Schools in register
     // Route::get('reports/create', 'showInCreateRecord');
 
-
 });
-
-
-
-Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard'); //show dashboard
