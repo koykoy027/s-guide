@@ -8,12 +8,12 @@
                         <div class="col-lg-6 align-self-center">
                             <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                                 <div class="row">
-                                    <div class="col-lg-4 col-sm-4">
+                                    {{-- <div class="col-lg-4 col-sm-4">
                                         <div class="info-stat">
                                             <h6>System Status:</h6>
                                             <h4>Ready Work</h4>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     <div class="col-lg-4 col-sm-4">
                                         <div class="info-stat">
                                             <h6></h6>
@@ -27,11 +27,12 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
-                                        <h2>Navigate your path with our guidance by your side.</h2>
+                                        <h2>You're in Good Hands with S-Guide</h2>
                                     </div>
+
                                     <div class="col-lg-12">
                                         <div class="main-green-button scroll-to-section">
-                                            <a href="#contact">Get Your Quote</a>
+                                            <a href="{{ url('register') }}">Register</a>
                                         </div>
                                     </div>
                                 </div>
@@ -48,7 +49,7 @@
         </div>
     </div>
 
-    <div id="features" class="features section">
+    {{-- <div id="features" class="features section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -109,7 +110,7 @@
                         </div>
                     </div>
                 </div>
-                {{-- <div class="col-lg-12">
+                <div class="col-lg-12">
                     <div class="skills-content">
                         <div class="row">
                             <div class="col-lg-3">
@@ -225,7 +226,11 @@
                             </div>
                         </div>
                     </div>
-                    <p><a rel="nofollow" href="https://templatemo.com/tm-563-seo-dream" target="_parent"></a> School Guidance Management system is a software application designed to assist schools in managing and providing guidance services to students. It allows school counselors to track and monitor student progress, as well as create and manage student profiles and case files.</p>
+                    <p><a rel="nofollow" href="https://templatemo.com/tm-563-seo-dream" target="_parent"></a>
+                        School Guidance Management system is a software application designed to assist schools
+                        in managing and providing guidance services to students. It allows school counselors to
+                        track and monitor student progress, as well as create and manage student profiles and
+                        case files.</p>
                     <div class="main-green-button"><a href="#">Discover company</a></div>
                 </div>
             </div>
@@ -256,7 +261,8 @@
                             <div class="col-lg-8">
                                 <div class="right-content">
                                     <h4>Similar Websites</h4>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                        accusantium
                                         dormque laudantium.</p>
                                 </div>
                             </div>
@@ -274,7 +280,8 @@
                             <div class="col-lg-8">
                                 <div class="right-content">
                                     <h4>Website Trends</h4>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                        accusantium
                                         dormque laudantium.</p>
                                 </div>
                             </div>
@@ -292,7 +299,8 @@
                             <div class="col-lg-8">
                                 <div class="right-content">
                                     <h4>Traffic Analysis</h4>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                        accusantium
                                         dormque laudantium.</p>
                                 </div>
                             </div>
@@ -310,7 +318,8 @@
                             <div class="col-lg-8">
                                 <div class="right-content">
                                     <h4>Optimizing Keywords</h4>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                        accusantium
                                         dormque laudantium.</p>
                                 </div>
                             </div>
@@ -328,7 +337,8 @@
                             <div class="col-lg-8">
                                 <div class="right-content">
                                     <h4>Page Optimizations</h4>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                        accusantium
                                         dormque laudantium.</p>
                                 </div>
                             </div>
@@ -346,7 +356,8 @@
                             <div class="col-lg-8">
                                 <div class="right-content">
                                     <h4>Deep URL Analysis</h4>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                        accusantium
                                         dormque laudantium.</p>
                                 </div>
                             </div>
@@ -491,7 +502,7 @@
     </div> --}}
 
     <div id="contact" class="contact-us section">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
                     <form id="contact" action="" method="post">
@@ -499,7 +510,8 @@
                             <div class="col-lg-6 offset-lg-3">
                                 <div class="section-heading">
                                     <h6>Contact Us</h6>
-                                    <h2>Fill Out The Form Below To <span>Get</span> In <em>Touch</em> With Us</h2>
+                                    <h2>Fill Out The Form Below To <span>Get</span> In <em>Touch</em> With Us
+                                    </h2>
                                 </div>
                             </div>
                             <div class="col-lg-9">
@@ -535,7 +547,8 @@
                                     </div>
                                     <div class="col-lg-12">
                                         <fieldset>
-                                            <button type="submit" id="form-submit" class="main-button ">Send Message
+                                            <button type="submit" id="form-submit" class="main-button ">Send
+                                                Message
                                                 Now</button>
                                         </fieldset>
                                     </div>

@@ -79,6 +79,13 @@ class DatabaseSeeder extends Seeder
             'status' => 'Minor offense',
             'place_of_incidence' => 'Outside Campus',
             'summary' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolor magnam suscipit excepturi sequi, nihil eius. Molestias, harum nobis quod iure quisquam perspiciatis vero fugiat! Dicta iure rem nesciunt neque illum quisquam alias eligendi possimus modi ab eius sit cum hic, est voluptatum, odit obcaecati dolor non qui corporis? Distinctio.',
+            // online report
+            'type' => 'online',
+            'complainant' => 'Parents / Guardian',
+            'name_of_complainant' => 'Villanueva, Joshua Alfaro',
+            'email' => 'villanuevajoshua27@gmail.com',
+
+
         ]);
         $report1->usersReport()->associate($user1);
         $report1->save();

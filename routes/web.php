@@ -25,9 +25,8 @@ Route::get('/', function () {
 Route::get('online-portal', function () {
     return view('homepage.online-portal');
 });
-Route::get('online-reporting', function () {
-    return view('homepage.online-reporting.create');
-});
+Route::get('online-reporting', [ReportController::class, 'createOnlineReport']); //create records
+Route::post('store', [ReportController::class, 'storeOnlineReport']); //store records
 
 Route::prefix('dashboard')->middleware('auth')->group(function () {
     // reports endpoint

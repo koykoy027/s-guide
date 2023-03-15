@@ -33,6 +33,16 @@
 
                 <li class="nav-header">CASE REPORTS</li>
                 <li class="nav-item">
+                    <a href="{{ url('dashboard/reports/create') }}"
+                        class="nav-link {{ 'dashboard/reports/create' == request()->path() ? 'bg-primary' : '' }}">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>
+                            Add reports
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
                     <a href="{{ url('dashboard/reports/list') }}"
                         class="nav-link {{ 'dashboard/reports/list' == request()->path() ? 'bg-primary' : '' }}">
                         <i class="nav-icon fas fa-tachometer-alt"></i>

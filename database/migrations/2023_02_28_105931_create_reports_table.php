@@ -26,6 +26,7 @@ return new class extends Migration
             $table->string('gender');
             $table->string('birthday');
             $table->string('contact_number');
+            $table->string('email');
 
             // school information
             $table->string('student_number');
@@ -39,6 +40,16 @@ return new class extends Migration
             $table->string('status');
             $table->string('place_of_incidence');
             $table->longText('summary');
+
+            // online report
+            $table->string('type');
+            $table->string('complainant');
+            $table->string('name_of_complainant');
+
+
+
+
+
 
             $table->timestamps();
         });

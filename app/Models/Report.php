@@ -18,6 +18,7 @@ class Report extends Model
         "gender",
         "birthday",
         "contact_number",
+        "email",
 
         // school info
         "student_number",
@@ -31,6 +32,10 @@ class Report extends Model
         "status",
         "place_of_incidence",
         "summary",
+        // online report
+        'type',
+        'complainant',
+        'name_of_complainant',
     ];
 
     public function usersReport()
