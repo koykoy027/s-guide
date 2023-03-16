@@ -25,6 +25,16 @@
     <link rel="stylesheet" href="{{ asset('index/assets/css/animated.css') }}">
     <link rel="stylesheet" href="{{ asset('index/assets/css/owl.css') }}">
 
+
+    <!-- Scripts -->
+    <script src="{{ asset('index/vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('index/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('index/assets/js/owl-carousel.js') }}"></script>
+    <script src="{{ asset('index/assets/js/animation.js') }}"></script>
+    <script src="{{ asset('index/assets/js/imagesloaded.js') }}"></script>
+    <script src="{{ asset('index/assets/js/custom.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <!--
 TemplateMo 563 SEO Dream
 
@@ -103,13 +113,7 @@ https://templatemo.com/tm-563-seo-dream
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="{{ asset('index/vendor/jquery/jquery.min.js') }}"></script>
-    <script src="{{ asset('index/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('index/assets/js/owl-carousel.js') }}"></script>
-    <script src="{{ asset('index/assets/js/animation.js') }}"></script>
-    <script src="{{ asset('index/assets/js/imagesloaded.js') }}"></script>
-    <script src="{{ asset('index/assets/js/custom.js') }}"></script>
+
 
 
 

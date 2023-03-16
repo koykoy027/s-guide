@@ -250,19 +250,19 @@
                             <option value="Failure to wear prescribed uniform">Failure to wear prescribed uniform</option>
                             <option value="Use or Posses drugs">Use or Posses drugs</option>
 
-                            <option value="Others">Others</option>
+                            {{-- <option value="Others">Others</option> --}}
                         </select>
                         @error('type_of_complain')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
                         @enderror
-                        {{-- <p>{{ $datas->usersReport->name }}</p> --}}
 
-                        <input type="text" class="form-control" placeholder="Please specify" style="display: none">
+
+                        {{-- <input type="text" class="form-control" placeholder="Please specify" style="display: none"> --}}
 
                     </div>
-                    <div class="col-md mb-3">
+                    {{-- <div class="col-md mb-3">
                         <p class="text-bold">Status</p>
                         <select class="form-control @error('status') is-invalid @enderror" value="{{ old('status') }}"
                             autocomplete="on" autofocusname="status" name="status">
@@ -274,7 +274,7 @@
                                 <strong>{{ $message }}</strong>
                             </span>
                         @enderror
-                    </div>
+                    </div> --}}
                 </div>
                 <p class="text-bold mt-3">Place of Incidence</p>
                 <input type="text" class="form-control @error('place_of_incidence') is-invalid @enderror"

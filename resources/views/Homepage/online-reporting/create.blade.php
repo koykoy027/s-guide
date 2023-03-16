@@ -4,7 +4,7 @@
 @section('content')
     {{-- alert message --}}
     @if (session()->has('message'))
-        {{-- <script>
+        <script>
             const Toast = Swal.mixin({
                 toast: true,
                 position: 'top-end',
@@ -20,7 +20,7 @@
                 icon: 'success',
                 title: '{{ session('message') }}'
             })
-        </script> --}}
+        </script>
     @endif
 
     {{-- validation --}}

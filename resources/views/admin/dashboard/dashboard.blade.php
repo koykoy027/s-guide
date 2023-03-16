@@ -6,7 +6,7 @@
         <div class="col-lg col-6">
             <div class="small-box bg-info">
                 <div class="inner">
-                    <h3>350</h3>
+                    <h3>97</h3>
                     <p>Total Case reports</p>
                 </div>
 

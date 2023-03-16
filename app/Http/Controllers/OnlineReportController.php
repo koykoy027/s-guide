@@ -9,6 +9,12 @@ class OnlineReportController extends Controller
 {
     //
 
+    public function index()
+    {
+        $table = OnlineReport::all();
+        return view('admin.reports.online', compact('table'));
+    }
+
     public function create()
     {
         return view('HomePage.online-reporting.create');
@@ -43,6 +49,6 @@ class OnlineReportController extends Controller
             'summary' => 'required',
         ]);
         OnlineReport::create($request->all());
-        return redirect()->back()->with(['message' => 'Case added successfully!']);
+        return redirect()->back()->with(['message' => 'Thank you!, Your reports has been sent.']);
     }
 }

@@ -6,6 +6,7 @@ use App\Http\Controllers\OnlineReportController;
 use App\Http\Controllers\ReportController;
 use App\Http\Controllers\SchoolController;
 use App\Http\Controllers\UserController;
+use App\Models\OnlineReport;
 use Illuminate\Routing\RouteGroup;
 use Illuminate\Support\Facades\Route;
 
@@ -25,6 +26,7 @@ Auth::routes();
 Route::get('/', function () {
     return view('homepage.index');
 });
+
 Route::get('online-portal', function () {
     return view('homepage.online-portal');
 });
@@ -45,6 +47,7 @@ Route::prefix('dashboard')->middleware('auth')->group(function () {
 
     // reports endpoint
     Route::prefix('reports')->group(function () {
+        Route::get('online', [OnlineReportController::class, 'index']); //show records
         Route::get('walk-in', [ReportController::class, 'index']); //show records
         Route::get('create', [ReportController::class, 'create']); //create records
         Route::post('store', [ReportController::class, 'store']); //store records
