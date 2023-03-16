@@ -204,9 +204,10 @@
                 <div class="col-lg-6 align-self-center wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
                     <div class="section-heading">
                         <h6>About Us</h6>
-                        <h2>Top <em>marketing</em> agency &amp; consult your website <span>with us</span></h2>
+                        <h2>School <em>Case Analysis</em> using <span>Data Science</span></h2>
+
                     </div>
-                    <div class="row">
+                    {{-- <div class="row">
                         <div class="col-lg-4 col-sm-4">
                             <div class="about-item">
                                 <h4>750+</h4>
@@ -225,9 +226,9 @@
                                 <h6>awards</h6>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     <p><a rel="nofollow" href="https://templatemo.com/tm-563-seo-dream" target="_parent"></a>
-                        School Guidance Management system is a software application designed to assist schools
+                        S-GUIDE is a software application designed to assist schools
                         in managing and providing guidance services to students. It allows school counselors to
                         track and monitor student progress, as well as create and manage student profiles and
                         case files.</p>
@@ -505,7 +506,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
-                    <form id="contact" action="" method="post">
+                    <form id="contact">
                         <div class="row">
                             <div class="col-lg-6 offset-lg-3">
                                 <div class="section-heading">
@@ -562,7 +563,7 @@
                                                 <img src="{{ asset('index/assets/images/contact-icon-01.png') }}"
                                                     alt="email icon">
                                             </div>
-                                            <a href="#">info@company.com</a>
+                                            <a href="#">sguide-support@gmail.com</a>
                                         </li>
                                         <li>
                                             <div class="icon">
@@ -571,13 +572,13 @@
                                             </div>
                                             <a href="#">+001-002-0034</a>
                                         </li>
-                                        <li>
+                                        {{-- <li>
                                             <div class="icon">
                                                 <img src="{{ asset('index/assets/images/contact-icon-03.png') }}"
                                                     alt="location">
                                             </div>
                                             <a href="#">26th Street, Digital Villa</a>
-                                        </li>
+                                        </li> --}}
                                     </ul>
                                 </div>
                             </div>
