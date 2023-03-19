@@ -49,7 +49,7 @@
         </div>
     </div>
 
-    {{-- <div id="features" class="features section">
+    <div id="features" class="features section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -64,8 +64,7 @@
                                     <div class="icon"></div>
                                     <h4>Reach Out</h4>
                                     <div class="line-dec"></div>
-                                    <p>This HTML5 template is based on Bootstrap 5 CSS. You are free to customize
-                                        anything.</p>
+                                    <p>"Connecting people, one conversation at a time."</p>
                                 </div>
                             </div>
                             <div class="col-lg-3">
@@ -75,9 +74,9 @@
                                         <h6>02</h6>
                                     </div>
                                     <div class="icon"></div>
-                                    <h4>Develop a Strategy</h4>
+                                    <h4>Develop Strategy Collaborate and communicate</h4>
                                     <div class="line-dec"></div>
-                                    <p>Lorem ipsum dolor sit ameter consectetur adipiscing li elit sed do eiusmod.</p>
+                                    <p>We work closely with our clients to understand their unique needs and goals, fostering a collaborative and communicative approach to strategy development.</p>
                                 </div>
                             </div>
                             <div class="col-lg-3">
@@ -87,10 +86,9 @@
                                         <h6>03</h6>
                                     </div>
                                     <div class="icon"></div>
-                                    <h4>Implementation</h4>
+                                    <h4>Implementation Clear communication</h4>
                                     <div class="line-dec"></div>
-                                    <p>If this template is useful for your website, please consider to <a rel="nofollow"
-                                            href="https://www.paypal.me/templatemo" target="_blank">support us</a> a little.
+                                    <p>Our Guidance counselor prioritizes communication throughout the implementation process, keeping clients informed and engaged at every step to ensure alignment and confidentiality.
                                     </p>
                                 </div>
                             </div>
@@ -101,16 +99,17 @@
                                         <h6>04</h6>
                                     </div>
                                     <div class="icon"></div>
-                                    <h4>Analyze the result</h4>
+                                    <h4>Analyze Result Informed decision-making</h4>
                                     <div class="line-dec"></div>
-                                    <p>Below circular progress bar animation supports those CSS values 10, 20, 30, till
-                                        100.</p>
+                                    <p>
+                                        Our analysis provides clients with the information they need to make informed decisions, identify opportunities, and address challenges. Strategic optimization: We use our analysis to identify areas for improvement and optimization, helping clients achieve their goals with greater efficiency and effectiveness. Continuous improvement: We believe in a continuous improvement mindset, using ongoing analysis to refine strategies and improve performance over time.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-12">
+                {{-- <div class="col-lg-12">
                     <div class="skills-content">
                         <div class="row">
                             <div class="col-lg-3">
@@ -188,10 +187,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
-    </div> --}}
+    </div>
 
     <div id="about" class="about-us section">
         <div class="container">
@@ -204,9 +203,10 @@
                 <div class="col-lg-6 align-self-center wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
                     <div class="section-heading">
                         <h6>About Us</h6>
-                        <h2>Top <em>marketing</em> agency &amp; consult your website <span>with us</span></h2>
+                        <h2>School <em>Case Analysis</em> using <span>Data Science</span></h2>
+
                     </div>
-                    <div class="row">
+                    {{-- <div class="row">
                         <div class="col-lg-4 col-sm-4">
                             <div class="about-item">
                                 <h4>750+</h4>
@@ -225,9 +225,9 @@
                                 <h6>awards</h6>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     <p><a rel="nofollow" href="https://templatemo.com/tm-563-seo-dream" target="_parent"></a>
-                        School Guidance Management system is a software application designed to assist schools
+                        S-GUIDE is a software application designed to assist schools
                         in managing and providing guidance services to students. It allows school counselors to
                         track and monitor student progress, as well as create and manage student profiles and
                         case files.</p>
@@ -505,7 +505,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
-                    <form id="contact" action="" method="post">
+                    <form id="contact">
                         <div class="row">
                             <div class="col-lg-6 offset-lg-3">
                                 <div class="section-heading">
@@ -562,7 +562,7 @@
                                                 <img src="{{ asset('index/assets/images/contact-icon-01.png') }}"
                                                     alt="email icon">
                                             </div>
-                                            <a href="#">info@company.com</a>
+                                            <a href="#">sguide-support@gmail.com</a>
                                         </li>
                                         <li>
                                             <div class="icon">
@@ -571,13 +571,13 @@
                                             </div>
                                             <a href="#">+001-002-0034</a>
                                         </li>
-                                        <li>
+                                        {{-- <li>
                                             <div class="icon">
                                                 <img src="{{ asset('index/assets/images/contact-icon-03.png') }}"
                                                     alt="location">
                                             </div>
                                             <a href="#">26th Street, Digital Villa</a>
-                                        </li>
+                                        </li> --}}
                                     </ul>
                                 </div>
                             </div>
