@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\School;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
 class SchoolController extends Controller
 {
@@ -20,16 +19,5 @@ class SchoolController extends Controller
         return view('admin.reports.create', compact('table'));
     }
 
-    public function getData(Request $request)
-    {
-        $request->validate([
-            'id' => ['required', 'exists:schools,id'],
-        ]);
-        $data = DB::table('schools')
-            ->where('id', '=', request('id'))
-            ->get();
-        // return view('Homepage.online-reporting.create', compact('data'));
-
-        return redirect()->back()->with(compact('data'));
-    }
+    
 }

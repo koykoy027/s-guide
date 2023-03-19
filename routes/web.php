@@ -1,12 +1,9 @@
 <?php
 
-
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\OnlineReportController;
 use App\Http\Controllers\ReportController;
 use App\Http\Controllers\SchoolController;
 use App\Http\Controllers\UserController;
-use App\Models\OnlineReport;
+use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use Illuminate\Routing\RouteGroup;
 use Illuminate\Support\Facades\Route;
 
@@ -26,29 +23,17 @@ Auth::routes();
 Route::get('/', function () {
     return view('homepage.index');
 });
-
 Route::get('online-portal', function () {
     return view('homepage.online-portal');
 });
-Route::get('online-reporting', [OnlineReportController::class, 'create']); //create records
+Route::get('online-reporting', [ReportController::class, 'createOnlineReport']); //create records
+Route::post('store', [ReportController::class, 'storeOnlineReport']); //store records
 
-Route::post('store', [OnlineReportController::class, 'store']); //store records
-Route::get('getData', [SchoolController::class, 'getData']); //store records
-// Route::get('online-reporting', [SchoolController::class, 'getData']); //store records
-
-
-
-
-Route::prefix('dashboard')->middleware('auth')->group(function () {
-
-    // dashboard endpoint
-
-    Route::get('/', [HomeController::class, 'index'])->name('dashboard'); //show dashboard
-
+Route::prefix('dashboard')->middleware('auth', 'verified')->group(function () {
+    Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard'); //show dashboard
     // reports endpoint
     Route::prefix('reports')->group(function () {
-        Route::get('online', [OnlineReportController::class, 'index']); //show records
-        Route::get('walk-in', [ReportController::class, 'index']); //show records
+        Route::get('list', [ReportController::class, 'index']); //show records
         Route::get('create', [ReportController::class, 'create']); //create records
         Route::post('store', [ReportController::class, 'store']); //store records
         Route::get('profile/{id}', [ReportController::class, 'profile']); //show profile
@@ -65,4 +50,17 @@ Route::controller(SchoolController::class)->group(function () {
     Route::get('register', 'showInRegister')->name('register'); //show Schools in register
     // Route::get('reports/create', 'showInCreateRecord');
 
+
 });
+
+Route::get('/email/verify/{id}/{hash}', function (EmailVerificationRequest $request) {
+    $request->fulfill();
+
+    return redirect('/home');
+})->middleware(['auth', 'verified'])->name('verification.verify');
+
+
+
+
+
+Auth::routes(['verify' => true]);

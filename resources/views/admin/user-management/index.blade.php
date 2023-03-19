@@ -1,5 +1,5 @@
 @extends('adminLayout.master')
-@section('title', 'USER')
+@section('title', 'User')
 @section('content')
 
     <div class="card shadow-lg">

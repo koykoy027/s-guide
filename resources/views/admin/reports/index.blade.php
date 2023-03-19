@@ -1,12 +1,12 @@
 @extends('adminLayout.master')
-@section('title', 'REPORTS - WALK-IN')
+@section('title', 'Reports / List')
 @section('content')
 
     <div class="card shadow-lg">
         <div class="card-header">
             <div class="d-flex justify-content-between">
-                <span>WALK-IN REPORTS</span>
-                {{-- <a class="btn btn-primary btn-sm" href="{{ url('dashboard/reports/create') }}">Add report</a> --}}
+                <span>REPORTS</span>
+                <a class="btn btn-primary btn-sm" href="{{ url('dashboard/reports/create') }}">Add report</a>
             </div>
         </div>
         <div class="card-body">

@@ -3,52 +3,49 @@
 @section('content')
 
     <div class="row">
-        <div class="col-lg col-6">
+        <div class="col-lg-3 col-6">
             <div class="small-box bg-info">
                 <div class="inner">
-                    <h3>97</h3>
-                    <p>Total Case reports</p>
+                    <h3>350</h3>
+                    <p>Total Case Report</p>
                 </div>
 
                 <div class="icon">
                     <i class="ion ion-bag"></i>
                 </div>
 
-                <a href="{{ url('dashboard/reports/create') }}" class="small-box-footer">More info <i
-                        class="fas fa-arrow-circle-right"></i></a>
+                <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
 
         </div>
-        <div class="col-lg col-6">
+        <div class="col-lg-3 col-6">
             <div class="small-box bg-success">
                 <div class="inner">
                     <h3>53</h3>
-                    <p>Total Walk-in reports</p>
+                    <p>Total Elementary Reports</p>
                 </div>
                 <div class="icon">
                     <i class="ion ion-stats-bars"></i>
                 </div>
-                <a href="{{ url('dashboard/reports/walk-in') }}" class="small-box-footer">More info <i
-                        class="fas fa-arrow-circle-right"></i></a>
+                <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
         </div>
 
-        <div class="col-lg col-6">
+        <div class="col-lg-3 col-6">
             <div class="small-box bg-warning">
                 <div class="inner">
                     <h3>44</h3>
 
-                    <p>Total Online reports</p>
+                    <p>Total Highschool Reports</p>
                 </div>
                 <div class="icon">
                     <i class="ion ion-person-add"></i>
                 </div>
-                <a href="{{ url('dashboard/reports/online') }}" class="small-box-footer">More info <i
-                        class="fas fa-arrow-circle-right"></i></a>
+                <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
         </div>
 
-        {{-- <div class="col-lg-3 col-6">
+        <div class="col-lg-3 col-6">
             <div class="small-box bg-danger">
                 <div class="inner">
                     <h3>65</h3>
@@ -59,7 +56,7 @@
                 </div>
                 <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
-        </div> --}}
+        </div>
     </div>
 
     <div class="row">
