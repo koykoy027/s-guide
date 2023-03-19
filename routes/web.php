@@ -3,6 +3,7 @@
 use App\Http\Controllers\ReportController;
 use App\Http\Controllers\SchoolController;
 use App\Http\Controllers\UserController;
+use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use Illuminate\Routing\RouteGroup;
 use Illuminate\Support\Facades\Route;
 
@@ -29,6 +30,7 @@ Route::get('online-reporting', [ReportController::class, 'createOnlineReport']);
 Route::post('store', [ReportController::class, 'storeOnlineReport']); //store records
 
 Route::prefix('dashboard')->middleware('auth', 'verified')->group(function () {
+    Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard'); //show dashboard
     // reports endpoint
     Route::prefix('reports')->group(function () {
         Route::get('list', [ReportController::class, 'index']); //show records
@@ -59,6 +61,6 @@ Route::get('/email/verify/{id}/{hash}', function (EmailVerificationRequest $requ
 
 
 
-Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard'); //show dashboard
+
 
 Auth::routes(['verify' => true]);
