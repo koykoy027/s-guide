@@ -7,6 +7,7 @@ use App\Http\Controllers\ReportController;
 use App\Http\Controllers\SchoolController;
 use App\Http\Controllers\UserController;
 use App\Models\OnlineReport;
+use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use Illuminate\Routing\RouteGroup;
 use Illuminate\Support\Facades\Route;
 
@@ -20,6 +21,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 
 Auth::routes();
 
@@ -39,7 +41,7 @@ Route::get('getData', [SchoolController::class, 'getData']); //store records
 
 
 
-Route::prefix('dashboard')->middleware('auth')->group(function () {
+Route::prefix('dashboard')->middleware('auth', 'verified')->group(function () {
 
     // dashboard endpoint
 
@@ -66,3 +68,10 @@ Route::controller(SchoolController::class)->group(function () {
     // Route::get('reports/create', 'showInCreateRecord');
 
 });
+
+Route::get('/email/verify/{id}/{hash}', function (EmailVerificationRequest $request) {
+    $request->fulfill();
+    return redirect('/dashboard');
+})->middleware(['auth', 'verified'])->name('verification.verify');
+
+Auth::routes(['verify' => true]);
