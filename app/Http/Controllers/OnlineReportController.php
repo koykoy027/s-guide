@@ -12,7 +12,7 @@ class OnlineReportController extends Controller
     public function index()
     {
         $table = OnlineReport::all();
-        return view('admin.reports.online', compact('table'));
+        return view('admin.online.index', compact('table'));
     }
 
     public function create()

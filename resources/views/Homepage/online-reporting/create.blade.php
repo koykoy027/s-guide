@@ -1,6 +1,6 @@
 @extends('Homepage.layout.master')
 
-@section('title', '| Online Reporting')
+@section('title', '| ONLINE - REPORTING')
 @section('content')
     {{-- alert message --}}
     @if (session()->has('message'))

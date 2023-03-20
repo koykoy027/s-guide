@@ -14,7 +14,8 @@
                             <p>Name</p>
                         </div>
                         <div class="col-md">
-                            <p class="text-bold">{{ $profile->fullname }}</p>
+                            <p class="text-bold">{{ $profile->lastname }}, {{ $profile->firstname }}
+                                {{ $profile->middlename }}</p>
                         </div>
                     </div>
                     <div class="row">

@@ -1,6 +1,27 @@
 @extends('adminLayout.master')
 @section('title', 'EMAIL - VERIFICATION')
 @section('content')
+    {{-- alert message --}}
+    @if (session()->has('resent'))
+        <script>
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 3000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+            })
+            Toast.fire({
+                icon: 'success',
+                title: 'Verification link has been sent to your email address.'
+            })
+        </script>
+    @endif
+
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
@@ -8,11 +29,11 @@
                     <div class="card-header">{{ __('Verify Your Email Address') }}</div>
 
                     <div class="card-body">
-                        @if (session('resent'))
+                        {{-- @if (session('resent'))
                             <div class="alert alert-success" role="alert">
                                 {{ __('A fresh verification link has been sent to your email address.') }}
                             </div>
-                        @endif
+                        @endif --}}
 
                         {{ __('Before proceeding, please check your email for a verification link.') }}
                         {{ __('If you did not receive the email') }},
