@@ -50,17 +50,17 @@ class DatabaseSeeder extends Seeder
         $user1->schools()->associate($school1);
         $user1->save();
 
-        // $user2 = new User([
-        //     'lastname' => 'Villanueva',
-        //     'firstname' => 'Joshua',
-        //     'middlename' => 'A',
-        //     'employee_number' => '5869874',
-        //     'gender' => 'Male',
-        //     'email' => 'villanuevajoshua27@gmail.com',
-        //     'password' => bcrypt('Pa$$w0rd!')
-        // ]);
-        // $user2->schools()->associate($school2);
-        // $user2->save();
+        $user2 = new User([
+            'lastname' => 'Villanueva',
+            'firstname' => 'Joshua',
+            'middlename' => 'A',
+            'employee_number' => '5869874',
+            'gender' => 'Male',
+            'email' => 'villanuevajoshua27@gmail.com',
+            'password' => bcrypt('Pa$$w0rd!')
+        ]);
+        $user2->schools()->associate($school2);
+        $user2->save();
 
         //create report
         $report1 = new Report([
