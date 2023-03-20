@@ -4,7 +4,7 @@
 
     <div class="card shadow-lg">
         <div class="card-header">
-            <span>Case reports</span>
+            <span>USERS TABLE</span>
             {{-- <button class="btn btn-primary float-right btn-sm" data-bs-toggle="modal" data-bs-target="#viewCase">Add Officials</button> --}}
         </div>
         <div class="card-body">
@@ -15,7 +15,8 @@
                             <th scope="col">Name</th>
                             <th scope="col">Email</th>
                             <th scope="col">Gender</th>
-                            <th scope="col">School</th>
+                            <th scope="col">Status</th>
+                            {{-- <th scope="col">School</th> --}}
 
                         </tr>
                     </thead>
@@ -42,11 +43,18 @@
                                     </div> --}}
                                 </td>
                                 <td>
+                                    @if ($datas->email_verified_at == null)
+                                        <span class="badge bg-danger">Not verified</span>
+                                    @else
+                                        <span class="badge bg-success">Verified</span>
+                                    @endif
+                                </td>
+                                {{-- <td>
                                     <b> {{ $datas->schools->name }} </b>
 
                                     <br>
                                     <span> {{ $datas->schools->year_level }} </span>
-                                </td>
+                                </td> --}}
 
 
 

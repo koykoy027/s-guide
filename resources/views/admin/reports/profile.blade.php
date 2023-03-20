@@ -14,8 +14,9 @@
                             <p>Name</p>
                         </div>
                         <div class="col-md">
-                            <p class="text-bold">{{ $profile->lastname }}, {{ $profile->firstname }}
-                                {{ $profile->middlename }}</p>
+                            <p class="text-bold">
+                                {{ $profile->lastname }}, {{ $profile->firstname }} {{ $profile->middlename }}
+                            </p>
                         </div>
                     </div>
                     <div class="row">
@@ -53,14 +54,14 @@
                 </div>
 
                 <div class="col-md">
-                    <div class="row">
+                    {{-- <div class="row">
                         <div class="col-md">
                             <p>School</p>
                         </div>
                         <div class="col-md">
-                            <p class="text-bold">{{ $profile->school }}</p>
+                            <p class="text-bold">{{ $profile->school }} </p>
                         </div>
-                    </div>
+                    </div> --}}
                     <div class="row">
                         <div class="col-md">
                             <p>Program</p>
@@ -101,8 +102,10 @@
             <div class="row mb-3">
                 <div class="col-md">
                     <p class="text-bold">Reporter</p>
-                    <p>{{ $profile->usersReport->lastname }}, {{ $profile->usersReport->firstname }}
-                        {{ $profile->usersReport->middlename }}</p>
+                    <p>
+                        {{ $profile->usersReport->lastname }}, {{ $profile->usersReport->firstname }}
+                        {{ $profile->usersReport->middlename }}
+                    </p>
 
 
                 </div>

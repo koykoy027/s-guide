@@ -39,9 +39,10 @@ class DatabaseSeeder extends Seeder
 
         // Create users
         $user1 = new User([
+            'email_verified_at' => '2023-03-20 12:07:23',
             'lastname' => 'Hiloma',
             'firstname' => 'Francis Oliver',
-            'middlename' => 'O',
+            'middlename' => 'Ducusin',
             'employee_number' => '5897485',
             'gender' => 'Male',
             'email' => 'hilomafrancisoliver@gmail.com',
@@ -51,9 +52,10 @@ class DatabaseSeeder extends Seeder
         $user1->save();
 
         $user2 = new User([
+            'email_verified_at' => '2023-03-20 12:07:23',
             'lastname' => 'Villanueva',
             'firstname' => 'Joshua',
-            'middlename' => 'A',
+            'middlename' => 'Alfaro',
             'employee_number' => '5869874',
             'gender' => 'Male',
             'email' => 'villanuevajoshua27@gmail.com',
@@ -64,13 +66,13 @@ class DatabaseSeeder extends Seeder
 
         //create report
         $report1 = new Report([
-            'lastname' => 'Hiloma',
-            'firstname' => 'Francis Oliver',
-            'middlename' => 'O',
+            'school_id' => '1',
+            'lastname' => 'Elmo',
+            'firstname' => 'Kenneth',
+            'middlename' => 'Golden',
             'gender' => 'Male',
             'birthday' => '11/21/2001',
             'contact_number' => '09460070541',
-            'school' => 'University of Caloocan City - Congressional Campus',
             'student_number' => '20190001',
             'program' => 'Bachelor of Science in Computer Science',
             'year' => '4',
@@ -80,10 +82,10 @@ class DatabaseSeeder extends Seeder
             'place_of_incidence' => 'Outside Campus',
             'summary' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolor magnam suscipit excepturi sequi, nihil eius. Molestias, harum nobis quod iure quisquam perspiciatis vero fugiat! Dicta iure rem nesciunt neque illum quisquam alias eligendi possimus modi ab eius sit cum hic, est voluptatum, odit obcaecati dolor non qui corporis? Distinctio.',
             // online report
-            'type' => 'online',
-            'complainant' => 'Parents / Guardian',
-            'name_of_complainant' => 'Villanueva, Joshua Alfaro',
-            'email' => 'villanuevajoshua27@gmail.com',
+            // 'type' => 'online',
+            // 'complainant' => 'Parents / Guardian',
+            // 'name_of_complainant' => 'Villanueva, Joshua Alfaro',
+            // 'email' => 'villanuevajoshua27@gmail.com',
 
 
         ]);

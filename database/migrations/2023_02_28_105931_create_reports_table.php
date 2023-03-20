@@ -18,7 +18,9 @@ return new class extends Migration
             $table->id();
 
             $table->unsignedBigInteger('report_id');
+            $table->string('school_id');
             $table->foreign('report_id')->references('id')->on('users')->onDelete('cascade');
+
             // personal information
             $table->string('lastname');
             $table->string('firstname');
@@ -26,11 +28,11 @@ return new class extends Migration
             $table->string('gender');
             $table->string('birthday');
             $table->string('contact_number');
-            $table->string('email');
+            // $table->string('email');
 
             // school information
             $table->string('student_number');
-            $table->string('school');
+
             $table->string('program');
             $table->string('year');
             $table->string('section');
@@ -42,9 +44,9 @@ return new class extends Migration
             $table->longText('summary');
 
             // online report
-            $table->string('type');
-            $table->string('complainant');
-            $table->string('name_of_complainant');
+            // $table->string('type');
+            // $table->string('complainant');
+            // $table->string('name_of_complainant');
 
 
 

@@ -11,6 +11,7 @@ class Report extends Model
     protected $table = "reports";
     protected $fillable = [
         // personal info
+        "school_id",
         "report_id",
         "lastname",
         "firstname",
@@ -18,11 +19,11 @@ class Report extends Model
         "gender",
         "birthday",
         "contact_number",
-        "email",
+        // "email",
 
         // school info
         "student_number",
-        "school",
+
         "program",
         "year",
         "section",
@@ -33,9 +34,9 @@ class Report extends Model
         "place_of_incidence",
         "summary",
         // online report
-        'type',
-        'complainant',
-        'name_of_complainant',
+        // 'type',
+        // 'complainant',
+        // 'name_of_complainant',
     ];
 
     public function usersReport()

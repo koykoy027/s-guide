@@ -139,14 +139,16 @@
                                 <p>School</p>
                             </div>
                             <div class="col-md">
-                                <select name="school" class="form-control">
+
+                                {{-- <select name="school" class="form-control">
                                     @foreach ($table as $tables)
                                         <option value="{{ $tables->name }}">{{ $tables->name }} </option>
                                     @endforeach
-                                </select>
+                                </select> --}}
 
 
-
+                                <input type="hidden" class="form-control" value="{{ Auth::user()->school_id }}"
+                                    name="school_id">
                                 <input type="hidden" class="form-control" value="{{ Auth::user()->id }}" name="report_id">
 
 
@@ -262,6 +264,7 @@
                         {{-- <input type="text" class="form-control" placeholder="Please specify" style="display: none"> --}}
 
                     </div>
+                    <input type="hidden" class="form-control" name="status" value="Minor offense">
                     {{-- <div class="col-md mb-3">
                         <p class="text-bold">Status</p>
                         <select class="form-control @error('status') is-invalid @enderror" value="{{ old('status') }}"

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\School;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 
 
@@ -13,7 +14,9 @@ class UserController extends Controller
 
     public function index()
     {
-        $data = User::all();
+        $user = Auth::user();
+        $data = User::where('school_id', $user->school_id)->get();
+        // $data = User::all();
         return view('admin.user-management.index', compact('data'));
     }
 
@@ -31,8 +34,6 @@ class UserController extends Controller
         $school->users()->create([
             'name' => $request->name,
             'year_level' => $request->year_level,
-            // 'year_level' => Str::slug($request->slug),
-            // 'slug' => $request->slug,
         ]);
 
         return redirect()->back()->with('message', 'success');
@@ -45,8 +46,6 @@ class UserController extends Controller
         $school->users()->create([
             'name' => $request->name,
             'year_level' => $request->year_level,
-            // 'year_level' => Str::slug($request->slug),
-            // 'slug' => $request->slug,
         ]);
 
         return redirect()->back()->with('message', 'success');
@@ -58,7 +57,9 @@ class UserController extends Controller
     {
         $user = User::findOrFail($request->report_id);
         $user->usersReport()->create([
-            'fullname' => $request->fullname,
+            'lastname' => $request->lastname,
+            'middlename' => $request->middlename,
+            'firstname' => $request->firstname,
             'gender' => $request->gender,
             'birthday' => $request->birthday,
             'contact_number' => $request->contact_number,
