@@ -24,6 +24,8 @@
 
     <form action="{{ url('dashboard/reports/store') }}" method="POST">
         @csrf
+        <input readonly type="hidden" class="form-control" name="school_code" value="{{ Auth::user()->school_code }}">
+        <input readonly type="hidden" class="form-control" name="report_id" value="{{ Auth::user()->id }}">
 
         <div class="card shadow-lg mb-3">
             <div class="card-header">
@@ -134,44 +136,18 @@
                     </div>
 
                     <div class="col-md">
-                        <div class="row mb-3">
+                        {{-- <div class="row mb-3">
                             <div class="col-md-3">
                                 <p>School</p>
                             </div>
                             <div class="col-md">
-
-                                {{-- <select name="school" class="form-control">
+                                <select name="school" class="form-control">
                                     @foreach ($table as $tables)
                                         <option value="{{ $tables->name }}">{{ $tables->name }} </option>
                                     @endforeach
-                                </select> --}}
-
-
-                                <input type="hidden" class="form-control" value="{{ Auth::user()->school_id }}"
-                                    name="school_id">
-                                <input type="hidden" class="form-control" value="{{ Auth::user()->id }}" name="report_id">
-
-
-
-                                {{-- <select class="form-control @error('school') is-invalid @enderror"
-                                    value="{{ old('school') }}" autocomplete="on" autofocus id="school" name="school">
-                                    <option value="University of Caloocan City - Main Campus">University of Caloocan City -
-                                        Main
-                                        Campus</option>
-                                    <option value="University of Caloocan City - Congressional Campus">University of
-                                        Caloocan
-                                        City - Congressional Campus</option>
-                                    <option value="University of Caloocan City - Camarin Campus">University of Caloocan City
-                                        -
-                                        Camarin Campus</option>
                                 </select>
-                                @error('school')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror --}}
                             </div>
-                        </div>
+                        </div> --}}
                         <div class="row mb-3">
                             <div class="col-md-3">
                                 <p>Program</p>

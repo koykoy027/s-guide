@@ -12,7 +12,7 @@ class ReportController extends Controller
     {
 
         $user = Auth::user();
-        $table = Report::where('school_id', $user->school_id)->get();
+        $table = Report::where('school_code', $user->school_code)->get();
         // $table = Report::all();
         return view('admin.reports.index', compact('table'));
     }
@@ -37,7 +37,7 @@ class ReportController extends Controller
         // dd($request->all());
         $request->validate([
             // personal info
-            'school_id' => 'required',
+            'school_code' => 'required',
             'report_id' => 'required',
             'lastname' => 'required',
             'firstname' => 'required',

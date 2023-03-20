@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('online_reports', function (Blueprint $table) {
             $table->id();
+            $table->string('school_code');
             $table->string('complainant');
             $table->string('name_of_complainant');
             // personal information
@@ -28,7 +29,7 @@ return new class extends Migration
 
             // school information
             $table->string('student_number');
-            $table->string('school');
+
             $table->string('program');
             $table->string('year');
             $table->string('section');

@@ -15,7 +15,7 @@ class UserController extends Controller
     public function index()
     {
         $user = Auth::user();
-        $data = User::where('school_id', $user->school_id)->get();
+        $data = User::where('school_code', $user->school_code)->get();
         // $data = User::all();
         return view('admin.user-management.index', compact('data'));
     }
@@ -30,7 +30,7 @@ class UserController extends Controller
     // connect users table into create reports
     public function usersToReports(Request $request)
     {
-        $school = School::findOrFail($request->school_id);
+        $school = School::findOrFail($request->school_code);
         $school->users()->create([
             'name' => $request->name,
             'year_level' => $request->year_level,
@@ -42,7 +42,7 @@ class UserController extends Controller
     // connect users table into schools
     public function store(Request $request)
     {
-        $school = School::findOrFail($request->school_id);
+        $school = School::findOrFail($request->school_code);
         $school->users()->create([
             'name' => $request->name,
             'year_level' => $request->year_level,

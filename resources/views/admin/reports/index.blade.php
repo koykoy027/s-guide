@@ -42,12 +42,12 @@
                                                     View
                                                 </a>
                                             </li>
-                                            <li>
+                                            {{-- <li>
                                                 <a class="dropdown-item" data-bs-toggle="modal"
                                                     data-bs-target="#delete-confirm">
                                                     Delete
                                                 </a>
-                                            </li>
+                                            </li> --}}
                                         </ul>
                                     </div>
                                 </td>

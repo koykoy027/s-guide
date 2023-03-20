@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\OnlineReport;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class OnlineReportController extends Controller
 {
@@ -11,7 +12,9 @@ class OnlineReportController extends Controller
 
     public function index()
     {
-        $table = OnlineReport::all();
+        $user = Auth::user();
+        $table = OnlineReport::where('school_code', $user->school_code)->get();
+        // $table = OnlineReport::all();
         return view('admin.online.index', compact('table'));
     }
 

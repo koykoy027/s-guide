@@ -107,9 +107,9 @@
                                 <div class="row">
                                     <div class="col-md">
                                         <label class="fieldlabels">School code</label>
-                                        <input type="num" class="form-control @error('school_id') is-invalid @enderror"
-                                            name="school_id" />
-                                        @error('school_id')
+                                        <input type="num" class="form-control @error('school_code') is-invalid @enderror"
+                                            name="school_code" />
+                                        @error('school_code')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
                                             </span>

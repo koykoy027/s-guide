@@ -18,18 +18,18 @@ class SchoolSeeder extends Seeder
         // School::truncate();
 
         // School::create([
-        //     'school_id' => '001',
+        //     'school_code' => '001',
         //     'name' => 'University of Caloocan City - Congressional Campus',
         //     'year_level' => 'College',
         // ]);
 
         // School::create([
-        //     'school_id' => '002',
+        //     'school_code' => '002',
         //     'name' => 'University of Caloocan City - Camarin Campus',
         //     'year_level' => 'College',
         // ]);
         // School::create([
-        //     'school_id' => '003',
+        //     'school_code' => '003',
         //     'name' => 'University of Caloocan City - Main Campus',
         //     'year_level' => 'College',
         // ]);

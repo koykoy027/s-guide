@@ -22,7 +22,7 @@ class User extends Authenticatable implements MustVerifyEmail
      */
     protected $table = 'users';
     protected $fillable = [
-        'school_id',
+        'school_code',
         'employee_number',
         'firstname',
         'lastname',
@@ -37,7 +37,7 @@ class User extends Authenticatable implements MustVerifyEmail
 
     public function schools()
     {
-        return $this->belongsTo(School::class, 'school_id', 'id');
+        return $this->belongsTo(School::class, 'school_code', 'id');
     }
 
     public function reports()
@@ -49,7 +49,7 @@ class User extends Authenticatable implements MustVerifyEmail
     {
         $this->notify(new VerifyEmail);
     }
-    
+
     /**
      * The attributes that should be hidden for serialization.
      *

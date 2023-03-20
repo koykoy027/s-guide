@@ -9,29 +9,29 @@ class OnlineReport extends Model
 {
     use HasFactory;
     protected $table = 'online_reports';
-    protected $fillable=[
-            'complainant',
-            'name_of_complainant',
-            // personal information
-            'lastname',
-            'firstname',
-            'middlename',
-            'gender',
-            'birthday',
-            'contact_number',
-            'email',
+    protected $fillable = [
+        'school_code',
+        'complainant',
+        'name_of_complainant',
+        // personal information
+        'lastname',
+        'firstname',
+        'middlename',
+        'gender',
+        'birthday',
+        'contact_number',
+        'email',
 
-            // school information
-            'student_number',
-            'school',
-            'program',
-            'year',
-            'section',
+        // school information
+        'student_number',
 
-            // case information
-            'type_of_complain',
-            'place_of_incidence',
-            'summary',
+        'program',
+        'year',
+        'section',
+
+        // case information
+        'type_of_complain',
+        'place_of_incidence',
+        'summary',
     ];
-
 }

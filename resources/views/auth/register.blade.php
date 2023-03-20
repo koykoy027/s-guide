@@ -23,9 +23,9 @@
                                 <div class="row my-3">
                                     <div class="col-md">
                                         <input placeholder="Enter School code" type="text"
-                                            class="form-control @error('school_id') is-invalid @enderror" name="school_id"
-                                            value="{{ old('school_id') }}" required autocomplete="school_id" autofocus>
-                                        @error('school_id')
+                                            class="form-control @error('school_code') is-invalid @enderror" name="school_code"
+                                            value="{{ old('school_code') }}" required autocomplete="school_code" autofocus>
+                                        @error('school_code')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
                                             </span>
@@ -45,7 +45,7 @@
                                 </div>
                                 {{-- <div class="row my-3">
                                     <div class="col-md">
-                                        <select name="school_id" class="form-control">
+                                        <select name="school_code" class="form-control">
                                             @foreach ($table as $tables)
                                                 <option value="{{ $tables->id }}">{{ $tables->name }}</option>
                                             @endforeach
@@ -186,9 +186,9 @@
                 <div class="row my-3">
                     <div class="col-md">
                         <input placeholder="Enter School code" type="text"
-                            class="form-control @error('school_id') is-invalid @enderror" name="school_id"
-                            value="{{ old('school_id') }}" required autocomplete="school_id" autofocus>
-                        @error('school_id')
+                            class="form-control @error('school_code') is-invalid @enderror" name="school_code"
+                            value="{{ old('school_code') }}" required autocomplete="school_code" autofocus>
+                        @error('school_code')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
@@ -207,7 +207,7 @@
                 </div>
                 <div class="row my-3">
                     <div class="col-md">
-                        <select name="school_id" class="form-control">
+                        <select name="school_code" class="form-control">
                             @foreach ($table as $tables)
                                 <option value="{{ $tables->id }}">{{ $tables->name }}</option>
                             @endforeach

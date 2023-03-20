@@ -11,7 +11,7 @@ class Report extends Model
     protected $table = "reports";
     protected $fillable = [
         // personal info
-        "school_id",
+        "school_code",
         "report_id",
         "lastname",
         "firstname",

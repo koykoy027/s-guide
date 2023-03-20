@@ -66,7 +66,7 @@ class DatabaseSeeder extends Seeder
 
         //create report
         $report1 = new Report([
-            'school_id' => '1',
+            'school_code' => '1',
             'lastname' => 'Elmo',
             'firstname' => 'Kenneth',
             'middlename' => 'Golden',

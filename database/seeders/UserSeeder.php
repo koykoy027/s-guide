@@ -19,7 +19,7 @@ class UserSeeder extends Seeder
         // User::truncate();
 
         // User::create([
-        //     'school_id' => '1',
+        //     'school_code' => '1',
         //     'name' => 'Joshua Villanueva',
         //     'gender' => 'Male',
         //     'slug' => 'slugTest',

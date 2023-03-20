@@ -18,7 +18,7 @@ return new class extends Migration
             $table->id();
 
             $table->unsignedBigInteger('report_id');
-            $table->string('school_id');
+            $table->string('school_code');
             $table->foreign('report_id')->references('id')->on('users')->onDelete('cascade');
 
             // personal information
