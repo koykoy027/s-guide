@@ -47,9 +47,8 @@ class ReportController extends Controller
             'birthday' => 'required',
             'contact_number' => 'required',
             // school info
-
             'program' => 'required',
-            'year' => 'required|min:1|max:4',
+            'year' => 'required',
             'section' => 'required',
             // case info
             'type_of_complain' => 'required',

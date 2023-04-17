@@ -178,9 +178,12 @@
                                 <p>Year</p>
                             </div>
                             <div class="col-md">
-                                <input type="number" class="form-control @error('year') is-invalid @enderror"
-                                    value="{{ old('year') }}" autocomplete="on" autofocus min="1"
-                                    max="4" name="year">
+                                <select class="form-control @error('year') is-invalid @enderror" name="year">
+                                            <option value="1st year College">1st year College</option>
+                                            <option value="2nd year College">2nd year College</option>
+                                            <option value="3rd year College">3rd year College</option>
+                                            <option value="4th year College">4th year College</option>
+                                        </select>
                                 @error('year')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
