@@ -76,7 +76,8 @@
                                     <div class="icon"></div>
                                     <h4>Develop Strategy Collaborate and communicate</h4>
                                     <div class="line-dec"></div>
-                                    <p>We work closely with our clients to understand their unique needs and goals, fostering a collaborative and communicative approach to strategy development.</p>
+                                    <p>We work closely with our clients to understand their unique needs and goals,
+                                        fostering a collaborative and communicative approach to strategy development.</p>
                                 </div>
                             </div>
                             <div class="col-lg-3">
@@ -88,7 +89,9 @@
                                     <div class="icon"></div>
                                     <h4>Implementation Clear communication</h4>
                                     <div class="line-dec"></div>
-                                    <p>Our Guidance counselor prioritizes communication throughout the implementation process, keeping clients informed and engaged at every step to ensure alignment and confidentiality.
+                                    <p>Our Guidance counselor prioritizes communication throughout the implementation
+                                        process, keeping clients informed and engaged at every step to ensure alignment and
+                                        confidentiality.
                                     </p>
                                 </div>
                             </div>
@@ -102,7 +105,12 @@
                                     <h4>Analyze Result Informed decision-making</h4>
                                     <div class="line-dec"></div>
                                     <p>
-                                        Our analysis provides clients with the information they need to make informed decisions, identify opportunities, and address challenges. Strategic optimization: We use our analysis to identify areas for improvement and optimization, helping clients achieve their goals with greater efficiency and effectiveness. Continuous improvement: We believe in a continuous improvement mindset, using ongoing analysis to refine strategies and improve performance over time.
+                                        Our analysis provides clients with the information they need to make informed
+                                        decisions, identify opportunities, and address challenges. Strategic optimization:
+                                        We use our analysis to identify areas for improvement and optimization, helping
+                                        clients achieve their goals with greater efficiency and effectiveness. Continuous
+                                        improvement: We believe in a continuous improvement mindset, using ongoing analysis
+                                        to refine strategies and improve performance over time.
                                     </p>
                                 </div>
                             </div>
@@ -562,14 +570,15 @@
                                                 <img src="{{ asset('index/assets/images/contact-icon-01.png') }}"
                                                     alt="email icon">
                                             </div>
-                                            <a href="#">sguide-support@gmail.com</a>
+                                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sguide-support@gmail.com"
+                                                target="_blank">sguide-support@gmail.com</a>
                                         </li>
                                         <li>
                                             <div class="icon">
                                                 <img src="{{ asset('index/assets/images/contact-icon-02.png') }}"
                                                     alt="phone">
                                             </div>
-                                            <a href="#">+001-002-0034</a>
+                                            <a href="tel:044-7647978">044-7647978</a>
                                         </li>
                                         {{-- <li>
                                             <div class="icon">
