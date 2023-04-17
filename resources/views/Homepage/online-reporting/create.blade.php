@@ -31,8 +31,6 @@
                     <h2 id="heading">Online Report</h2>
                     <p>Validate your school code first</p>
                     <hr>
-
-
                     <strong>{{ session('message') }}</strong>
                     <form method="GET" action="{{ url('getData') }}">
                         <div class="form-card">
@@ -61,8 +59,6 @@
                             </button>
                         </div>
                     </form>
-
-
                 </div>
             </div>
         </div>
@@ -107,7 +103,8 @@
                                 <div class="row">
                                     <div class="col-md">
                                         <label class="fieldlabels">School code</label>
-                                        <input type="num" class="form-control @error('school_code') is-invalid @enderror"
+                                        <input type="num"
+                                            class="form-control @error('school_code') is-invalid @enderror"
                                             name="school_code" />
                                         @error('school_code')
                                             <span class="invalid-feedback" role="alert">
@@ -320,7 +317,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <input type="button" name="next" class="next action-button" value="Submit" />
+                            <input type="button" name="next" class="next action-button" value="Next" />
                             <input type="button" name="previous" class="previous action-button-previous"
                                 value="Previous" />
                         </fieldset>
