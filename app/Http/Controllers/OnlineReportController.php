@@ -41,7 +41,8 @@ class OnlineReportController extends Controller
 
             // school information
             'student_number' => 'required',
-            'school' => 'required',
+            'school_code' => ['required', 'exists:schools,id'],
+            // 'school_code' => 'required exists:school id',
             'program' => 'required',
             'year' => 'required',
             'section' => 'required',

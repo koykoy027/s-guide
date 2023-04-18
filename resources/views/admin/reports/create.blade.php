@@ -179,11 +179,11 @@
                             </div>
                             <div class="col-md">
                                 <select class="form-control @error('year') is-invalid @enderror" name="year">
-                                            <option value="1st year College">1st year College</option>
-                                            <option value="2nd year College">2nd year College</option>
-                                            <option value="3rd year College">3rd year College</option>
-                                            <option value="4th year College">4th year College</option>
-                                        </select>
+                                    <option value="1st year College">1st year College</option>
+                                    <option value="2nd year College">2nd year College</option>
+                                    <option value="3rd year College">3rd year College</option>
+                                    <option value="4th year College">4th year College</option>
+                                </select>
                                 @error('year')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
