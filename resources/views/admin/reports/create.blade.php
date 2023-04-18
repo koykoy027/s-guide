@@ -268,14 +268,35 @@
                     </span>
                 @enderror
 
-                <p class="text-bold mt-3">Summary</p>
-                <textarea class="form-control  @error('summary') is-invalid @enderror" value="{{ old('summary') }}"
-                    autocomplete="on" autofocusname="status" cols="30" rows="10" name="summary"></textarea>
+                <div class="">
+                    <p class="text-bold mt-3">Summary</p>
+                    <button type="button" id="speak" class="btn btn-primary btn-sm">
+                        Click to Speak
+                    </button>
+                </div>
+                <textarea class="form-control  @error('summary') is-invalid @enderror" autocomplete="on" autofocusname="status"
+                    cols="30" rows="10" name="summary" id="textarea">{{ old('summary') }}</textarea>
                 @error('summary')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
                     </span>
                 @enderror
+                <script>
+                    var speak = document.getElementById('speak');
+                    var textarea = document.getElementById('textarea');
+                    var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+                    var recognition = new SpeechRecognition();
+                    speak.addEventListener('click', function() {
+                        recognition.start();
+                        speak.innerHTML = '...speaking';
+                    })
+
+                    recognition.onresult = function(e) {
+                        var transcript = e.results[0][0].transcript;
+                        textarea.innerHTML += transcript + ' ';
+                        speak.innerHTML = 'Click to speak';
+                    }
+                </script>
                 <button class="btn btn-primary btn-block btn-sm" type="submit">Submit</button>
             </div>
 
