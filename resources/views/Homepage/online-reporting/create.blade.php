@@ -635,15 +635,32 @@
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
-
                                 <p class="text-bold mt-3">Summary</p>
-                                <textarea class="form-control  @error('summary') is-invalid @enderror" value="{{ old('summary') }}"
-                                    autocomplete="on" autofocusname="status" cols="30" rows="10" name="summary"></textarea>
+                                <button type="button" id="speak" class="btn btn-info btn-sm mb-3 text-white">Click
+                                    to Speak</button>
+                                <textarea class="form-control  @error('summary') is-invalid @enderror" cols="30" rows="10" name="summary"
+                                    id="textarea">{{ old('summary') }}</textarea>
                                 @error('summary')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
+                                <script>
+                                    var speak = document.getElementById('speak');
+                                    var textarea = document.getElementById('textarea');
+                                    var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+                                    var recognition = new SpeechRecognition();
+                                    speak.addEventListener('click', function() {
+                                        recognition.start();
+                                        speak.innerHTML = '...speaking';
+                                    })
+
+                                    recognition.onresult = function(e) {
+                                        var transcript = e.results[0][0].transcript;
+                                        textarea.innerHTML += transcript + ' ';
+                                        speak.innerHTML = 'Click to speak';
+                                    }
+                                </script>
                             </div>
                             <button type="submit" name="next" class="next action-button">
                                 Submit
