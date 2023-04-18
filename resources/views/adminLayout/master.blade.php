@@ -39,7 +39,7 @@
     <!-- summernote -->
     <link rel="stylesheet" href="{{ asset('assets/plugins/summernote/summernote-bs4.min.css') }}">
     {{-- ICON --}}
-    <link rel="shortcut icon" href="{{ asset('images/SG 2.png') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('images/S-Guide.png') }}" type="image/x-icon">
 
 
     <!-- jQuery -->
