@@ -27,7 +27,7 @@ Auth::routes();
 
 Route::get('/', function () {
     return view('homepage.index');
-});
+}); 
 
 Route::get('online-portal', function () {
     return view('homepage.online-portal');
