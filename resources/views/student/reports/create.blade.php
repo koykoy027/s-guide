@@ -1,4 +1,4 @@
-@extends('counselor.layout.master')
+@extends('student.layout.master')
 @section('title', 'REPORTS - CREATE')
 @section('content')
     {{-- alert message --}}

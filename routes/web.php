@@ -71,18 +71,15 @@ Route::prefix('student')->middleware('auth', 'verified', 'isStudent')->group(fun
 
     // reports endpoint
     Route::prefix('reports')->group(function () {
-        Route::get('online', [OnlineReportController::class, 'index']); //show records
-        Route::get('walk-in', [ReportController::class, 'index']); //show records
-        Route::get('create', [ReportController::class, 'create']); //create records
-        Route::post('store', [ReportController::class, 'store']); //store records
-        Route::get('profile/{id}', [ReportController::class, 'profile']); //show profile
-        Route::get('create', [SchoolController::class, 'showInCreateRecord']);
+
+        Route::get('create', function () {
+            return view('student.reports.create');
+        });
+        
+        
     });
 
-    // user management endpoint
-    Route::prefix('user')->group(function () {
-        Route::get('list', [UserController::class, 'index']); //show records
-    });
+    
 });
 
 Route::controller(SchoolController::class)->group(function () {

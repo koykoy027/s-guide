@@ -204,6 +204,16 @@
                             </a>
                         </li>
                         <li class="nav-item">
+                            <a href="{{ url('student/reports/create') }}"
+                                class="nav-link {{ 'student/reports/create' == request()->path() ? 'active' : '' }}">
+                                <i class="nav-icon fas fa-plus"></i>
+                                <p>
+                                    Add report
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
                             <a type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#logout">
                                 <i class="nav-icon bi bi-box-arrow-right"></i> Logout
                             </a>
