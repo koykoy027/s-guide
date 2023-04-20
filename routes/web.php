@@ -9,6 +9,7 @@ use App\Http\Controllers\UserController;
 use App\Models\OnlineReport;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use Illuminate\Routing\RouteGroup;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -41,7 +42,7 @@ Route::get('getData', [SchoolController::class, 'getData']); //store records
 
 
 
-Route::prefix('counselor')->middleware('auth', 'verified')->group(function () {
+Route::prefix('counselor')->middleware('auth', 'verified', 'isCounselor')->group(function () {
 
     // dashboard endpoint
 
