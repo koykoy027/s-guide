@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-class Counselor
+class student
 {
     /**
      * Handle an incoming request.
@@ -17,17 +17,17 @@ class Counselor
      */
     public function handle(Request $request, Closure $next)
     {
-        if (Auth::check()) {
 
-            if (Auth::user()->role == 'counselor') {
+        if(Auth::check()){
+            if(Auth::user()->role == 'student'){
                 return $next($request);
-            } else {
-                return redirect('student/dashboard')->with('message', 'Access Denied');
+            }else{
+                return redirect('counselor/dashboard')->with('message', 'Access Denied');
             }
-        } else {
+
+        }else{
             return redirect()->back()->with('message', 'Login to access the website');
         }
-
         return $next($request);
     }
 }

@@ -28,7 +28,7 @@ Auth::routes();
 
 Route::get('/', function () {
     return view('homepage.index');
-}); 
+});
 
 Route::get('online-portal', function () {
     return view('homepage.online-portal');
@@ -44,9 +44,30 @@ Route::get('getData', [SchoolController::class, 'getData']); //store records
 
 Route::prefix('counselor')->middleware('auth', 'verified', 'isCounselor')->group(function () {
 
-    // dashboard endpoint
-
     Route::get('dashboard', [HomeController::class, 'index'])->name('dashboard'); //show dashboard
+
+    // reports endpoint
+    Route::prefix('reports')->group(function () {
+        Route::get('online', [OnlineReportController::class, 'index']); //show records
+        Route::get('walk-in', [ReportController::class, 'index']); //show records
+        Route::get('create', [ReportController::class, 'create']); //create records
+        Route::post('store', [ReportController::class, 'store']); //store records
+        Route::get('profile/{id}', [ReportController::class, 'profile']); //show profile
+        Route::get('create', [SchoolController::class, 'showInCreateRecord']);
+    });
+
+    // user management endpoint
+    Route::prefix('user')->group(function () {
+        Route::get('list', [UserController::class, 'index']); //show records
+    });
+});
+
+
+Route::prefix('student')->middleware('auth', 'verified', 'isStudent')->group(function () {
+
+    Route::get('dashboard', function () {
+        return ('Hello world');
+    });
 
     // reports endpoint
     Route::prefix('reports')->group(function () {
