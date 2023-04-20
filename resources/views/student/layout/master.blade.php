@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>S-GUIDE | @yield('title')</title>
+    <title>{{ Auth::user()->firstname }} {{ Auth::user()->lastname }} | @yield('title')</title>
 
     {{-- Install the Select2 package using npm --}}
     <link href="{{ asset('css/select2.min.css') }}" rel="stylesheet" />
@@ -173,9 +173,11 @@
             <!-- Brand Logo -->
             <br>
             <a href="{{ route('dashboard') }}" class="brand-link">
-                <img src="{{ asset('images/SG 2.png') }}" alt="S-GUIDE LOGO" class="brand-image img-circle elevation-3"
-                    style="opacity: .8">
-                <span class="brand-text font-weight-light">S-GUIDE Dashboard</span>
+                <img src="https://placeholder.pics/svg/300"
+                    alt="{{ Auth::user()->firstname }} {{ Auth::user()->lastname }}"
+                    class="brand-image img-circle elevation-3" style="opacity: .8">
+                <span class="brand-text font-weight-light">{{ Auth::user()->firstname }}
+                    {{ Auth::user()->lastname }}</span>
 
             </a>
             <br>
@@ -193,53 +195,11 @@
 
                         <li class="nav-header">MENU</li>
                         <li class="nav-item">
-                            <a href="{{ route('dashboard') }}"
-                                class="nav-link {{ 'counselor/dashboard' == request()->path() ? 'active' : '' }}">
+                            <a href="{{ url('student/profile') }}"
+                                class="nav-link {{ 'student/profile' == request()->path() ? 'active' : '' }}">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
-                                    Dashboard
-                                </p>
-                            </a>
-                        </li>
-
-                        <li class="nav-header">CASE REPORTS</li>
-                        <li class="nav-item">
-                            <a href="{{ url('counselor/reports/create') }}"
-                                class="nav-link {{ 'counselor/reports/create' == request()->path() ? 'bg-primary' : '' }}">
-                                <i class="nav-icon fas fa-plus"></i>
-                                <p>
-                                    Add reports
-                                </p>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="{{ url('counselor/reports/walk-in') }}"
-                                class="nav-link {{ 'counselor/reports/walk-in' == request()->path() ? 'active' : '' }}">
-                                <i class="nav-icon bi bi-arrow-down-right-circle"></i>
-                                <p>
-                                    Walk-in reports
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ url('counselor/reports/online') }}"
-                                class="nav-link {{ 'counselor/reports/online' == request()->path() ? 'active' : '' }}">
-                                <i class="nav-icon bi bi-globe"></i>
-                                <p>
-                                    Online reports
-                                </p>
-                            </a>
-                        </li>
-
-
-                        <li class="nav-header">User management</li>
-                        <li class="nav-item">
-                            <a href="{{ url('counselor/user/list') }}"
-                                class="nav-link {{ 'counselor/user/list' == request()->path() ? 'active' : '' }}">
-                                <i class="nav-icon bi bi-person-fill"></i>
-                                <p>
-                                    User
+                                    Profile
                                 </p>
                             </a>
                         </li>
@@ -248,7 +208,6 @@
                                 <i class="nav-icon bi bi-box-arrow-right"></i> Logout
                             </a>
                         </li>
-                        
                     </ul>
                 </nav>
             </div>

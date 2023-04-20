@@ -65,8 +65,8 @@ Route::prefix('counselor')->middleware('auth', 'verified', 'isCounselor')->group
 
 Route::prefix('student')->middleware('auth', 'verified', 'isStudent')->group(function () {
 
-    Route::get('dashboard', function () {
-        return ('Hello world');
+    Route::get('profile', function () {
+        return view('student.profile.index');
     });
 
     // reports endpoint

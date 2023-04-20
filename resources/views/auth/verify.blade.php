@@ -1,4 +1,4 @@
-@extends('adminLayout.app')
+@extends('counselor.layout.app')
 @section('title', 'EMAIL - VERIFICATION')
 @section('content')
     {{-- alert message --}}
