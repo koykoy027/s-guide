@@ -17,14 +17,14 @@ class UserController extends Controller
         $user = Auth::user();
         $data = User::where('school_code', $user->school_code)->get();
         // $data = User::all();
-        return view('admin.user-management.index', compact('data'));
+        return view('counselor.user-management.index', compact('data'));
     }
 
 
     public function showInCreateRecords()
     {
         $data = User::all();
-        return view('admin.reports.create', compact('data'));
+        return view('counselor.reports.create', compact('data'));
     }
 
     // connect users table into create reports

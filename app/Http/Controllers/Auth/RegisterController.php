@@ -32,15 +32,15 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
-    // protected function authenticated(Request $request, $user)
-    // {
-    //     if ($user->isCounselor()) {
-    //         return redirect()->route('counselor/dashboard');
-    //     } else {
-    //         return redirect('student/dashboard');
-    //     }
-    // }
+    // protected $redirectTo = RouteServiceProvider::HOME;
+    protected function authenticated(Request $request, $user)
+    {
+        if ($user->isCounselor()) {
+            return redirect('counselor/dashboard');
+        } else {
+            return redirect('student/dashboard');
+        }
+    }
 
     /**
      * Create a new controller instance.

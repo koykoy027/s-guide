@@ -41,11 +41,11 @@ Route::get('getData', [SchoolController::class, 'getData']); //store records
 
 
 
-Route::prefix('dashboard')->middleware('auth', 'verified')->group(function () {
+Route::prefix('counselor')->middleware('auth', 'verified')->group(function () {
 
     // dashboard endpoint
 
-    Route::get('/', [HomeController::class, 'index'])->name('dashboard'); //show dashboard
+    Route::get('dashboard', [HomeController::class, 'index'])->name('dashboard'); //show dashboard
 
     // reports endpoint
     Route::prefix('reports')->group(function () {

@@ -107,7 +107,7 @@
                 height="120" width="120">
         </div> --}}
 
-        @include('admin.modal')
+        {{-- @include('admin.modal') --}}
         @include('adminLayout.navbar')
         @include('adminLayout.sidenav')
 

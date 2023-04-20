@@ -14,20 +14,20 @@ class ReportController extends Controller
         $user = Auth::user();
         $table = Report::where('school_code', $user->school_code)->get();
         // $table = Report::all();
-        return view('admin.reports.index', compact('table'));
+        return view('counselor.reports.index', compact('table'));
     }
 
     // view profile
     public function profile($id)
     {
         $profile = Report::find($id);
-        return view('admin.reports.profile', compact('profile'));
+        return view('counselor.reports.profile', compact('profile'));
     }
 
     // create case
     public function create()
     {
-        return view('admin.reports.create');
+        return view('counselor.reports.create');
     }
 
 

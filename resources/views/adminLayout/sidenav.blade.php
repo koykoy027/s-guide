@@ -2,7 +2,7 @@
 
     <!-- Brand Logo -->
     <br>
-    <a href="{{ url('dashboard') }}" class="brand-link">
+    <a href="{{ route('dashboard') }}" class="brand-link">
         <img src="{{ asset('images/SG 2.png') }}" alt="S-GUIDE LOGO" class="brand-image img-circle elevation-3"
             style="opacity: .8">
         <span class="brand-text font-weight-light">S-GUIDE Dashboard</span>
@@ -23,8 +23,8 @@
 
                 <li class="nav-header">MENU</li>
                 <li class="nav-item">
-                    <a href="{{ url('dashboard') }}"
-                        class="nav-link {{ 'dashboard' == request()->path() ? 'active' : '' }}">
+                    <a href="{{ route('dashboard') }}"
+                        class="nav-link {{ 'counselor/dashboard' == request()->path() ? 'active' : '' }}">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
                             Dashboard
@@ -34,8 +34,8 @@
 
                 <li class="nav-header">CASE REPORTS</li>
                 <li class="nav-item">
-                    <a href="{{ url('dashboard/reports/create') }}"
-                        class="nav-link {{ 'dashboard/reports/create' == request()->path() ? 'bg-primary' : '' }}">
+                    <a href="{{ url('counselor/reports/create') }}"
+                        class="nav-link {{ 'counselor/reports/create' == request()->path() ? 'bg-primary' : '' }}">
                         <i class="nav-icon fas fa-plus"></i>
                         <p>
                             Add reports
@@ -44,8 +44,8 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="{{ url('dashboard/reports/walk-in') }}"
-                        class="nav-link {{ 'dashboard/reports/walk-in' == request()->path() ? 'active' : '' }}">
+                    <a href="{{ url('counselor/reports/walk-in') }}"
+                        class="nav-link {{ 'counselor/reports/walk-in' == request()->path() ? 'active' : '' }}">
                         <i class="nav-icon bi bi-arrow-down-right-circle"></i>
                         <p>
                             Walk-in reports
@@ -53,8 +53,8 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{ url('dashboard/reports/online') }}"
-                        class="nav-link {{ 'dashboard/reports/online' == request()->path() ? 'active' : '' }}">
+                    <a href="{{ url('counselor/reports/online') }}"
+                        class="nav-link {{ 'counselor/reports/online' == request()->path() ? 'active' : '' }}">
                         <i class="nav-icon bi bi-globe"></i>
                         <p>
                             Online reports
@@ -65,8 +65,8 @@
 
                 <li class="nav-header">User management</li>
                 <li class="nav-item">
-                    <a href="{{ url('dashboard/user/list') }}"
-                        class="nav-link {{ 'dashboard/user/list' == request()->path() ? 'active' : '' }}">
+                    <a href="{{ url('counselor/user/list') }}"
+                        class="nav-link {{ 'counselor/user/list' == request()->path() ? 'active' : '' }}">
                         <i class="nav-icon bi bi-person-fill"></i>
                         <p>
                             User

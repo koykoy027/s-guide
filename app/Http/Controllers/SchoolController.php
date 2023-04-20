@@ -17,7 +17,7 @@ class SchoolController extends Controller
     public function showInCreateRecord()
     {
         $table = School::all();
-        return view('admin.reports.create', compact('table'));
+        return view('counselor.reports.create', compact('table'));
     }
 
     public function getData(Request $request)

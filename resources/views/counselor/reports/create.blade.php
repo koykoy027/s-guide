@@ -22,7 +22,7 @@
         </script>
     @endif
 
-    <form action="{{ url('dashboard/reports/store') }}" method="POST">
+    <form action="{{ url('counselor/reports/store') }}" method="POST">
         @csrf
         <input readonly type="hidden" class="form-control" name="school_code" value="{{ Auth::user()->school_code }}">
         <input readonly type="hidden" class="form-control" name="report_id" value="{{ Auth::user()->id }}">

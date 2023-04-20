@@ -15,7 +15,7 @@ class OnlineReportController extends Controller
         $user = Auth::user();
         $table = OnlineReport::where('school_code', $user->school_code)->get();
         // $table = OnlineReport::all();
-        return view('admin.online.index', compact('table'));
+        return view('counselor.online.index', compact('table'));
     }
 
     public function create()
