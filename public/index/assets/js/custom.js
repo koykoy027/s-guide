@@ -1,3 +1,15 @@
+function btnRegAsCouncilor(){
+    document.getElementById("counsilor").style.display= "none";
+    document.getElementById("student").style.display= "flex";
+}
+function btnRegAsStudent(){
+    document.getElementById("counsilor").style.display= "flex";
+    document.getElementById("student").style.display= "none";
+}
+
+
+
+
 $(document).ready(function () {
 
     var current_fs, next_fs, previous_fs; //fieldsets

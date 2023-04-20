@@ -40,6 +40,7 @@ class DatabaseSeeder extends Seeder
         // Create users
         $user1 = new User([
             'email_verified_at' => '2023-03-20 12:07:23',
+            'role' => 'counselor',
             'lastname' => 'Hiloma',
             'firstname' => 'Francis Oliver',
             'middlename' => 'Ducusin',
@@ -53,6 +54,7 @@ class DatabaseSeeder extends Seeder
 
         $user2 = new User([
             'email_verified_at' => '2023-03-20 12:07:23',
+            'role' => 'counselor',
             'lastname' => 'Villanueva',
             'firstname' => 'Joshua',
             'middlename' => 'Alfaro',

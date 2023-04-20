@@ -20,6 +20,7 @@ return new class extends Migration
             $table->unsignedBigInteger('school_code');
             $table->foreign('school_code')->references('id')->on('schools')->onDelete('cascade');
             $table->string('employee_number');
+            $table->string('role');
             $table->string('firstname');
             $table->string('lastname');
             $table->string('middlename')->nullable();

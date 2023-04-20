@@ -23,6 +23,7 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $table = 'users';
     protected $fillable = [
         'school_code',
+        'role',
         'employee_number',
         'firstname',
         'lastname',
@@ -30,9 +31,15 @@ class User extends Authenticatable implements MustVerifyEmail
         'gender',
         'email',
         'password',
-        // 'slug',
     ];
-
+    public function isStudent()
+    {
+        return $this->role === 'student';
+    }
+    public function isCounselor()
+    {
+        return $this->role === 'counselor';
+    }
 
 
     public function schools()

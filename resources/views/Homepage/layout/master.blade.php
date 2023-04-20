@@ -34,6 +34,7 @@
     <script src="{{ asset('index/assets/js/imagesloaded.js') }}"></script>
     <script src="{{ asset('index/assets/js/custom.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="{{ asset('') }}"></script>
 
     <!--
 TemplateMo 563 SEO Dream

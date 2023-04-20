@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
@@ -32,6 +33,14 @@ class RegisterController extends Controller
      * @var string
      */
     protected $redirectTo = RouteServiceProvider::HOME;
+    // protected function authenticated(Request $request, $user)
+    // {
+    //     if ($user->isCounselor()) {
+    //         return redirect()->route('counselor/dashboard');
+    //     } else {
+    //         return redirect('student/dashboard');
+    //     }
+    // }
 
     /**
      * Create a new controller instance.
@@ -53,7 +62,8 @@ class RegisterController extends Controller
     {
         return Validator::make($data, [
             'school_code' => ['required', 'integer',  'exists:schools,id'],
-            'employee_number' => ['required', 'integer', 'max:9999999', 'min:6'],
+            'role' => ['required'],
+            'employee_number' => ['required', 'integer'],
             'lastname' => ['required', 'string', 'max:255'],
             'firstname' => ['required', 'string', 'max:255'],
             'middlename' => ['max:255'],
@@ -75,6 +85,7 @@ class RegisterController extends Controller
     {
         return User::create([
             'school_code' => $data['school_code'],
+            'role' => $data['role'],
             'employee_number' => $data['employee_number'],
             'lastname' => $data['lastname'],
             'firstname' => $data['firstname'],
