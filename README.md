@@ -35,3 +35,8 @@
     crtl + /? = comment / uncomment
 </li>
 </ol>
+
+#################################
+CHANGES 04/20/23
+- Case Analysis (yung mag dedecide ng minor or major yung incedent
+- Yung QR code for login
