@@ -1,4 +1,4 @@
-@extends('adminLayout.master')
+@extends('counselor.layout.master')
 @section('title', 'REPORTS - WALK-IN')
 @section('content')
 
