@@ -154,10 +154,10 @@
                     <p class="text-bold">Type of complain</p>
                     <p>{{ $profile->type_of_complain }}</p>
                 </div>
-                <div class="col-md">
+                {{-- <div class="col-md">
                     <p class="text-bold">Status</p>
                     <p>{{ $profile->status }}</p>
-                </div>
+                </div> --}}
             </div>
             <hr />
             <p class="text-bold">Place of incidence</p>

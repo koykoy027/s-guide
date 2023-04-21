@@ -235,15 +235,6 @@
                                 </p>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="{{ url('counselor/reports/student') }}"
-                                class="nav-link {{ 'counselor/reports/student' == request()->path() ? 'active' : '' }}">
-                                <i class="bi bi-mortarboard-fill"></i>
-                                <p>
-                                    Student reports
-                                </p>
-                            </a>
-                        </li>
 
 
                         <li class="nav-header">User management</li>
