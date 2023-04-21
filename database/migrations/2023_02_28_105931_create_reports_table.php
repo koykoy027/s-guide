@@ -43,15 +43,10 @@ return new class extends Migration
             $table->string('place_of_incidence');
             $table->longText('summary');
 
-            // online report
-            // $table->string('type');
-            // $table->string('complainant');
-            // $table->string('name_of_complainant');
-
-
-
-
-
+            $table->string('offender_name')->nullable();
+            $table->string('offender_program')->nullable();
+            $table->string('offender_year')->nullable();
+            $table->string('offender_section')->nullable();
 
             $table->timestamps();
         });

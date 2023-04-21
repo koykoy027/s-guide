@@ -23,6 +23,11 @@ class ReportController extends Controller
         $profile = Report::find($id);
         return view('counselor.reports.profile', compact('profile'));
     }
+    public function onlineprofile($id)
+    {
+        $profile = Report::find($id);
+        return view('counselor.online.profile', compact('profile'));
+    }
 
     // create case
     public function create()
@@ -55,10 +60,12 @@ class ReportController extends Controller
             'status' => 'required',
             'place_of_incidence' => 'required',
             'summary' => 'required',
-            // online report
-            // 'type' => 'required',
-            // 'complainant' => 'required',
-            // 'name_of_complainant' => 'required',
+
+            // 'offender_name' => 'nullable',
+            // 'offender_program' => 'nullable',
+            // 'offender_year' => 'nullable',
+            // 'offender_section' => 'nullable',
+            
         ]);
         Report::create($request->all());
         return redirect()->back()->with(['message' => 'Report added successfully!']);
