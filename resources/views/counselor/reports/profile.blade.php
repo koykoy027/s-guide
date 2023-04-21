@@ -4,7 +4,7 @@
 
     <div class="card shadow-lg mb-3">
         <div class="card-header">
-            <span>STUDENT PROFILE</span>
+            <span>VICTIM DETAILS</span>
         </div>
         <div class="card-body">
             <div class="row">
@@ -114,7 +114,7 @@
             <div class="row">
                 <div class="col-md">
                     <p class="text-bold">Name</p>
-                    <p>{{ $profile->offender_name }}</p>
+                    <p>{{ $profile->offender_lastname }} {{ $profile->offender_firstname }}</p>
                 </div>
                 <div class="col-md">
                     <p class="text-bold">Program</p>

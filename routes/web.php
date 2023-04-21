@@ -50,10 +50,11 @@ Route::prefix('counselor')->middleware('auth', 'verified', 'isCounselor')->group
 
     Route::get('dashboard', [HomeController::class, 'index'])->name('dashboard'); //show dashboard
 
+
     // reports endpoint
     Route::prefix('reports')->group(function () {
         Route::get('online', [OnlineReportController::class, 'index']); //show records
-        // Route::get('online/profile/{id}', [ReportController::class, 'onlineprofile']);
+        Route::get('online/profile/{id}', [OnlineReportController::class, 'profile']);
         Route::get('walk-in', [ReportController::class, 'index']); //show records
         Route::get('create', [ReportController::class, 'create']); //create records
         Route::post('store', [ReportController::class, 'store']); //store records
@@ -87,11 +88,11 @@ Route::prefix('student')->middleware('auth', 'verified', 'isStudent')->group(fun
         Route::get('create', function () {
             return view('student.reports.create');
         });
-        
-        
+
+
     });
 
-    
+
 });
 Route::get('generate-qrcode', [QRController::class, 'index']);
 Route::post('qrlogin', [QRController::class, 'checkUser']);

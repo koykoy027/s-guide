@@ -30,7 +30,7 @@
         <div class="card shadow-lg mb-3">
             <div class="card-header">
                 <div class="d-flex justify-content-between">
-                    <span>STUDENT PROFILE</span>
+                    <span>VICTIM DETAILS</span>
                     {{-- <a class="btn btn-primary btn-sm" href="{{ url('dashboard/reports/walk-in') }}">Back</a> --}}
 
                 </div>
@@ -219,20 +219,37 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col-md mb-3">
-                        <p class="text-bold">Name</p>
-                        <input class="form-control @error('offender_name') is-invalid @enderror"
-                            value="{{ old('offender_name') }}" autocomplete="on" autofocus name="offender_name" />
+                        <p class="text-bold">Lastname</p>
+                        <input class="form-control @error('offender_lastname') is-invalid @enderror"
+                            value="{{ old('offender_lastname') }}" autocomplete="on" autofocus
+                            name="offender_lastname" />
 
-                        @error('offender_name')
+                        @error('offender_lastname')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
                         @enderror
                     </div>
                     <div class="col-md mb-3">
+                        <p class="text-bold">Firstname</p>
+                        <input class="form-control @error('offender_firstname') is-invalid @enderror"
+                            value="{{ old('offender_firstname') }}" autocomplete="on" autofocus
+                            name="offender_firstname" />
+
+                        @error('offender_firstname')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md mb-3">
                         <p class="text-bold">Program</p>
-                        <select class="form-control @error('program') is-invalid @enderror" value="{{ old('program') }}"
-                            autocomplete="on" autofocus id="program" name="program">
+                        <select class="form-control @error('offender_program') is-invalid @enderror"
+                            value="{{ old('offender_program') }}" autocomplete="on" autofocus id="offender_program"
+                            name="offender_program">
                             <option value="Bachelor of Science in Entertainment and Multimedia Computing">Bachelor
                                 of
                                 Science in Entertainment and Multimedia Computing</option>
@@ -251,9 +268,6 @@
                             </span>
                         @enderror
                     </div>
-                </div>
-
-                <div class="row">
                     <div class="col-md mb-3">
                         <p class="text-bold">Year</p>
                         <select class="form-control @error('offender_year') is-invalid @enderror" name="offender_year">
@@ -269,12 +283,27 @@
                             </span>
                         @enderror
                     </div>
+                </div>
+                <div class="row">
                     <div class="col-md mb-3">
                         <p class="text-bold">Section</p>
                         <input class="form-control @error('offender_section') is-invalid @enderror"
                             value="{{ old('offender_section') }}" autocomplete="on" autofocus name="offender_section" />
 
                         @error('offender_section')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+                    <div class="col-md">
+                        <label class="fieldlabels">Gender</label>
+                        <select class="form-control @error('offender_gender') is-invalid @enderror"
+                            name="offender_gender" value="{{ old('offender_gender') }}" autofocus>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                        @error('offender_gender')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
@@ -345,7 +374,7 @@
 
                 <div class="">
                     <p class="text-bold mt-3">Summary</p>
-                    <button type="button" id="speak" class="btn btn-primary btn-sm">
+                    <button type="button" id="speak" class="btn-primary">
                         Click to Speak
                     </button>
                 </div>

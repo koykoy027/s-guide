@@ -38,7 +38,7 @@
                                         <ul class="dropdown-menu text-sm">
                                             <li>
                                                 <a class="dropdown-item"
-                                                    href="{{ url('counselor/reports/profile', ['id' => $tables->id]) }}">
+                                                    href="{{ url('counselor/reports/online/profile', ['id' => $tables->id]) }}">
                                                     View
                                                 </a>
                                             </li>

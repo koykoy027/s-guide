@@ -19,6 +19,7 @@ class SchoolController extends Controller
         $table = School::all();
         return view('counselor.reports.create', compact('table'));
     }
+    
 
     public function getData(Request $request)
     {

@@ -22,6 +22,13 @@ class OnlineReportController extends Controller
     {
         return view('HomePage.online-reporting.create');
     }
+
+    public function profile($id)
+    {
+        $profile = OnlineReport::find($id);
+        return view('counselor.online.profile', compact('profile'));
+    }
+
     // store case
     public function store(Request $request)
     {

@@ -33,11 +33,13 @@ class Report extends Model
         "status",
         "place_of_incidence",
         "summary",
-        "offender_name",
+        "offender_lastname",
+        "offender_firstname",
         "offender_program",
         "offender_year",
         "offender_section",
-        
+        "offender_gender",
+
     ];
 
     public function usersReport()

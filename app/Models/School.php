@@ -22,4 +22,8 @@ class School extends Model
     {
         return $this->hasMany(User::class, 'school_code', 'id');
     }
+    public function onlineReport()
+    {
+        return $this->hasMany(OnlineReport::class, 'school_code', 'id');
+    }
 }

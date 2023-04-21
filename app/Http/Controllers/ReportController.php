@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Report;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Str;
+use PhpParser\Node\Expr\Cast\String_;
 
 class ReportController extends Controller
 {
@@ -23,11 +25,6 @@ class ReportController extends Controller
         $profile = Report::find($id);
         return view('counselor.reports.profile', compact('profile'));
     }
-    public function onlineprofile($id)
-    {
-        $profile = Report::find($id);
-        return view('counselor.online.profile', compact('profile'));
-    }
 
     // create case
     public function create()
@@ -35,13 +32,11 @@ class ReportController extends Controller
         return view('counselor.reports.create');
     }
 
-
     // store case
     public function store(Request $request)
     {
         // dd($request->all());
         $request->validate([
-            // personal info
             'school_code' => 'required',
             'report_id' => 'required',
             'lastname' => 'required',
@@ -51,21 +46,13 @@ class ReportController extends Controller
             'gender' => 'required',
             'birthday' => 'required',
             'contact_number' => 'required',
-            // school info
             'program' => 'required',
             'year' => 'required',
             'section' => 'required',
-            // case info
             'type_of_complain' => 'required',
             'status' => 'required',
             'place_of_incidence' => 'required',
             'summary' => 'required',
-
-            // 'offender_name' => 'nullable',
-            // 'offender_program' => 'nullable',
-            // 'offender_year' => 'nullable',
-            // 'offender_section' => 'nullable',
-            
         ]);
         Report::create($request->all());
         return redirect()->back()->with(['message' => 'Report added successfully!']);

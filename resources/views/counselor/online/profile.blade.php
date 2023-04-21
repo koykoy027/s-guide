@@ -4,7 +4,7 @@
 
     <div class="card shadow-lg mb-3">
         <div class="card-header">
-            <span>STUDENT PROFILE</span>
+            <span>VICTIM DETAILS</span>
         </div>
         <div class="card-body">
             <div class="row">
@@ -54,14 +54,14 @@
                 </div>
 
                 <div class="col-md">
-                    {{-- <div class="row">
+                    <div class="row">
                         <div class="col-md">
                             <p>School</p>
                         </div>
                         <div class="col-md">
-                            <p class="text-bold">{{ $profile->school }} </p>
+                            <p class="text-bold">{{ $profile->school_code }} </p>
                         </div>
-                    </div> --}}
+                    </div>
                     <div class="row">
                         <div class="col-md">
                             <p>Program</p>
@@ -101,11 +101,27 @@
         <div class="card-body">
             <div class="row mb-3">
                 <div class="col-md">
-                    <p class="text-bold">Reporter</p>
-                    <p>
-                        {{ $profile->usersReport->lastname }}, {{ $profile->usersReport->firstname }}
-                        {{ $profile->usersReport->middlename }}
-                    </p>
+                    <p class="text-bold">Complainant</p>
+                    <div class="row">
+                        <div class="col-md">
+                            <p class="text-bold">Name</p>
+                            <p>{{ $profile->name_of_complainant }}</p>
+                        </div>
+                        <div class="col-md">
+                            <p class="text-bold">Relationship</p>
+                            <p>{{ $profile->complainant }}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <p class="text-bold">Email address</p>
+                            <p>{{ $profile->email }}</p>
+                        </div>
+                        <div class="col-md">
+                            <p class="text-bold">Contact number</p>
+                            <p>{{ $profile->contact_number }}</p>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -114,7 +130,7 @@
             <div class="row">
                 <div class="col-md">
                     <p class="text-bold">Name</p>
-                    <p>{{ $profile->offender_name }}</p>
+                    <p>{{ $profile->offender_lastname }} {{ $profile->offender_firstname }}</p>
                 </div>
                 <div class="col-md">
                     <p class="text-bold">Program</p>

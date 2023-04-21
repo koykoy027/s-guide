@@ -181,6 +181,10 @@ p {
     font-family: FontAwesome;
     content: "\f05a";
 }
+#progressbar #offender:before {
+    font-family: FontAwesome;
+    content: "\f0e7";
+}
 #progressbar #report:before {
     font-family: FontAwesome;
     content: "\f15b";

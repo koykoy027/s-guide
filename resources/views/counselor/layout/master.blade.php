@@ -156,17 +156,17 @@
                         role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                         {{ Auth::user()->firstname }} {{ Auth::user()->lastname }}
                     </a>
-                    
+
                     <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown"
                         style="text-transform:none ">
                         <a class="dropdown-item text-sm" href="{{url('counselor/generate-qr')}}">
                             <i class="fa-solid fa-right-from-bracket"></i> {{ __('Generate QR') }}
                         </a>
-                        
+
                         <a class="dropdown-item text-sm" data-bs-toggle="modal" data-bs-target="#logout">
                             <i class="fa-solid fa-right-from-bracket"></i> {{ __('Logout') }}
                         </a>
-                        
+
                     </div>
                 </li>
             </ul>
@@ -235,6 +235,15 @@
                                 </p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="{{ url('counselor/reports/student') }}"
+                                class="nav-link {{ 'counselor/reports/student' == request()->path() ? 'active' : '' }}">
+                                <i class="bi bi-mortarboard-fill"></i>
+                                <p>
+                                    Student reports
+                                </p>
+                            </a>
+                        </li>
 
 
                         <li class="nav-header">User management</li>
@@ -252,7 +261,7 @@
                                 <i class="nav-icon bi bi-box-arrow-right"></i> Logout
                             </a>
                         </li>
-                        
+
                     </ul>
                 </nav>
             </div>

@@ -352,6 +352,7 @@
                             <li class="active" id="account"><strong>School</strong></li>
                             <li id="personal"><strong>Complainant</strong></li>
                             <li id="payment"><strong>Victim</strong></li>
+                            <li id="offender"><strong>Offender</strong></li>
                             <li id="report"><strong>Report</strong></li>
 
                         </ul>
@@ -587,6 +588,120 @@
                                         @enderror
                                     </div>
                                 </div>
+                            </div>
+                            <input type="button" name="next" class="next action-button" value="Next" />
+                            <input type="button" name="previous" class="previous action-button-previous"
+                                value="Previous" />
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-card">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h2 class="fs-title">Offender details</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+
+                                    <div class="col-md mb-3">
+                                        <label class="fieldlabels">Firstname</label>
+                                        <input type="text"
+                                            class="form-control @error('offender_firstname') is-invalid @enderror"
+                                            name="offender_firstname" value="{{ old('offender_firstname') }}" autofocus />
+                                        @error('offender_name')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                    </div>
+
+                                    <div class="col-md mb-3">
+                                        <label class="fieldlabels">Lastname</label>
+                                        <input type="text"
+                                            class="form-control @error('offender_lastname') is-invalid @enderror"
+                                            name="offender_lastname" value="{{ old('offender_lastname') }}" autofocus />
+                                        @error('offender_lastname')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col-md mb-3">
+                                        <label class="fieldlabels">Program</label>
+                                        <select class="form-control @error('offender_program') is-invalid @enderror"
+                                            value="{{ old('offender_program') }}" autocomplete="on" autofocus
+                                            id="offender_program" name="offender_program">
+                                            <option value="Bachelor of Science in Entertainment and Multimedia Computing">
+                                                Bachelor
+                                                of
+                                                Science in Entertainment and Multimedia Computing</option>
+                                            <option value="Bachelor of Science in Computer Science">Bachelor of Science in
+                                                Computer
+                                                Science</option>
+                                            <option value="Bachelor of Science in Information Techonology">Bachelor of
+                                                Science in
+                                                Information Techonology</option>
+                                            <option value="Bachelor of Science in Information System">Bachelor of Science
+                                                in
+                                                Information
+                                                System</option>
+                                        </select>
+
+                                        @error('offender_program')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                    </div>
+                                    <div class="col-md">
+                                        <label class="fieldlabels">Year</label>
+                                        <select class="form-control @error('offender_year') is-invalid @enderror"
+                                            name="offender_year">
+                                            <option value="1st year College">1st year College</option>
+                                            <option value="2nd year College">2nd year College</option>
+                                            <option value="3rd year College">3rd year College</option>
+                                            <option value="4th year College">4th year College</option>
+                                        </select>
+
+                                        @error('offender_year')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md">
+                                        <label class="fieldlabels">Section</label>
+                                        <input class="form-control @error('offender_section') is-invalid @enderror"
+                                            value="{{ old('offender_section') }}" autocomplete="on" autofocus
+                                            name="offender_section" />
+
+                                        @error('offender_section')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                    </div>
+                                    <div class="col-md">
+                                        <label class="fieldlabels">Gender</label>
+                                        <select class="form-control @error('offender_gender') is-invalid @enderror" name="offender_gender"
+                                            value="{{ old('offender_gender') }}" autofocus>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                        </select>
+                                        @error('offender_gender')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                    </div>
+
+                                </div>
+
                             </div>
                             <input type="button" name="next" class="next action-button" value="Next" />
                             <input type="button" name="previous" class="previous action-button-previous"

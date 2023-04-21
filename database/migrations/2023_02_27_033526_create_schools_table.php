@@ -17,7 +17,6 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('year_level');
-            // $table->string('slug');
             $table->timestamps();
         });
     }

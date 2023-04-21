@@ -13,7 +13,6 @@ class OnlineReport extends Model
         'school_code',
         'complainant',
         'name_of_complainant',
-        // personal information
         'lastname',
         'firstname',
         'middlename',
@@ -21,17 +20,23 @@ class OnlineReport extends Model
         'birthday',
         'contact_number',
         'email',
-
-        // school information
         'student_number',
-
         'program',
         'year',
         'section',
-
-        // case information
         'type_of_complain',
         'place_of_incidence',
         'summary',
+        "offender_lastname",
+        "offender_firstname",
+        "offender_program",
+        "offender_year",
+        "offender_section",
+        "offender_gender",
     ];
+
+    public function schools()
+    {
+        return $this->belongsTo(School::class, 'school_code', 'id');
+    }
 }
