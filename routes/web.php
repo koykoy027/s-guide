@@ -3,6 +3,7 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\OnlineReportController;
+use App\Http\Controllers\QRController;
 use App\Http\Controllers\ReportController;
 use App\Http\Controllers\SchoolController;
 use App\Http\Controllers\UserController;
@@ -11,6 +12,9 @@ use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use Illuminate\Routing\RouteGroup;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -56,6 +60,10 @@ Route::prefix('counselor')->middleware('auth', 'verified', 'isCounselor')->group
         Route::get('create', [SchoolController::class, 'showInCreateRecord']);
     });
 
+    Route::get('generate-qr', function () {
+        return view('counselor.settings.generate-qr');
+    });
+
     // user management endpoint
     Route::prefix('user')->group(function () {
         Route::get('list', [UserController::class, 'index']); //show records
@@ -69,6 +77,9 @@ Route::prefix('student')->middleware('auth', 'verified', 'isStudent')->group(fun
         return view('student.profile.index');
     });
 
+    Route::get('generate-qr', function () {
+        return view('student.settings.generate-qr');
+    });
     // reports endpoint
     Route::prefix('reports')->group(function () {
 
@@ -81,6 +92,8 @@ Route::prefix('student')->middleware('auth', 'verified', 'isStudent')->group(fun
 
     
 });
+Route::get('generate-qrcode', [QRController::class, 'index']);
+Route::post('qrlogin', [QRController::class, 'checkUser']);
 
 Route::controller(SchoolController::class)->group(function () {
     Route::get('register', 'showInRegister')->name('register'); //show Schools in register
