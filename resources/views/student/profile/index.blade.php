@@ -5,14 +5,15 @@
     <div class="row">
         <div class="card p-4 col-md-4 mx-1">
             <center>
-            
-                    <img src="https://placeholder.pics/svg/150" class="rounded-circle" width="150" height="150">
-                    <br><br>
-                    <h5>
-                        {{ Auth::user()->firstname }}
-                        {{ Auth::user()->lastname }}
-                    </h5>
-                
+
+                <img src="https://placeholder.pics/svg/150" class="rounded-circle" width="150" height="150">
+                <br><br>
+                <h5>
+                    {{ Auth::user()->firstname }}
+                    {{ Auth::user()->middlename }}
+                    {{ Auth::user()->lastname }}
+                </h5>
+
 
             </center>
 
@@ -21,13 +22,13 @@
             <h5>Personal Information</h5>
             <div class="row">
                 <p class="col-md-3 text-bold">
-                    Fullname
+                    Lastname
                 </p>
                 <div class="col-md">
-                    {{ Auth::user()->firstname }}
-                        {{ Auth::user()->lastname }}
+                    {{ Auth::user()->lastname }} ,{{ Auth::user()->firstname }} {{ Auth::user()->middlename }}
                 </div>
             </div>
+
             <hr>
             <div class="row">
                 <p class="col-md-3 text-bold">
@@ -35,7 +36,27 @@
                 </p>
                 <div class="col-md">
                     {{ Auth::user()->employee_number }}
-                        
+
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <p class="col-md-3 text-bold">
+                    Gender
+                </p>
+                <div class="col-md">
+                    {{ Auth::user()->gender }}
+
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <p class="col-md-3 text-bold">
+                    Gender
+                </p>
+                <div class="col-md">
+                    {{ Auth::user()->email }}
+
                 </div>
             </div>
             <hr>

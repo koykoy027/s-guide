@@ -158,14 +158,14 @@
                     </a>
                     <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown"
                         style="text-transform:none ">
-                        <a class="dropdown-item text-sm" href="{{url('student/generate-qr')}}">
+                        <a class="dropdown-item text-sm" href="{{ url('student/generate-qr') }}">
                             <i class="fa-solid fa-right-from-bracket"></i> {{ __('Generate QR') }}
                         </a>
-                        
+
                         <a class="dropdown-item text-sm" data-bs-toggle="modal" data-bs-target="#logout">
                             <i class="fa-solid fa-right-from-bracket"></i> {{ __('Logout') }}
                         </a>
-                        
+
                     </div>
                 </li>
             </ul>
@@ -207,8 +207,8 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('student/reports/create') }}"
-                                class="nav-link {{ 'student/reports/create' == request()->path() ? 'active' : '' }}">
+                            <a href="{{ url('student/online-reporting') }}"
+                                class="nav-link {{ 'student/online-reporting' == request()->path() ? 'active' : '' }}">
                                 <i class="nav-icon fas fa-plus"></i>
                                 <p>
                                     Add report

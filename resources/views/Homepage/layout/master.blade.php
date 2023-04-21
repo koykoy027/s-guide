@@ -81,11 +81,11 @@ https://templatemo.com/tm-563-seo-dream
                             <li class="scroll-to-section"><a href="#services">Services</a></li>
                             {{-- <li class="scroll-to-section"><a href="#portfolio">Portfolio</a></li> --}}
                             <li class="scroll-to-section"><a href="#contact">Contact Us</a></li>
-                            <li class="scroll-to-section"><a href="{{ url('online-reporting') }}">Online report</a>
+                            {{-- <li class="scroll-to-section"><a href="{{ url('online-reporting') }}">Online report</a> --}}
                             </li>
                             <li class="scroll-to-section">
                                 <div class="main-blue-button">
-                                    <a href="{{ url('login') }}">councilor </a>
+                                    <a href="{{ url('login') }}">Login </a>
                                 </div>
                             </li>
 
