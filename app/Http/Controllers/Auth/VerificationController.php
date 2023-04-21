@@ -33,7 +33,7 @@ class VerificationController extends Controller
         if ($user->isCounselor()) {
             return redirect('counselor/dashboard');
         } else {
-            return redirect('student/dashboard');
+            return redirect('student/profile');
         }
     }
 
