@@ -58,6 +58,15 @@
 
                                     </div>
                                 </div>
+                                <div class="row my-3">
+                                    <div class="col-md offset-md">
+                                        <a href="{{url ('generate-qrcode')}}" class="btn btn-outline-success btn-block w-100">
+                                            {{ __('QR Code Login') }}
+                                        </a>
+                                        <br>
+
+                                    </div>
+                                </div>
 
                                 <div class="row my-3 ">
                                     @if (Route::has('password.request'))
