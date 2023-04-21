@@ -213,6 +213,82 @@
         <div class="card shadow-lg mb-3">
             <div class="card-header">
                 <div class="d-flex justify-content-between">
+                    <span>OFFENDERS DETAILS</span>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md mb-3">
+                        <p class="text-bold">Name</p>
+                        <input class="form-control @error('offender_name') is-invalid @enderror"
+                            value="{{ old('offender_name') }}" autocomplete="on" autofocus name="offender_name" />
+
+                        @error('offender_name')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+                    <div class="col-md mb-3">
+                        <p class="text-bold">Program</p>
+                        <select class="form-control @error('program') is-invalid @enderror" value="{{ old('program') }}"
+                            autocomplete="on" autofocus id="program" name="program">
+                            <option value="Bachelor of Science in Entertainment and Multimedia Computing">Bachelor
+                                of
+                                Science in Entertainment and Multimedia Computing</option>
+                            <option value="Bachelor of Science in Computer Science">Bachelor of Science in Computer
+                                Science</option>
+                            <option value="Bachelor of Science in Information Techonology">Bachelor of Science in
+                                Information Techonology</option>
+                            <option value="Bachelor of Science in Information System">Bachelor of Science in
+                                Information
+                                System</option>
+                        </select>
+
+                        @error('offender_program')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md mb-3">
+                        <p class="text-bold">Year</p>
+                        <select class="form-control @error('offender_year') is-invalid @enderror" name="offender_year">
+                            <option value="1st year College">1st year College</option>
+                            <option value="2nd year College">2nd year College</option>
+                            <option value="3rd year College">3rd year College</option>
+                            <option value="4th year College">4th year College</option>
+                        </select>
+
+                        @error('offender_year')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+                    <div class="col-md mb-3">
+                        <p class="text-bold">Section</p>
+                        <input class="form-control @error('offender_section') is-invalid @enderror"
+                            value="{{ old('offender_section') }}" autocomplete="on" autofocus name="offender_section" />
+
+                        @error('offender_section')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card shadow-lg mb-3">
+            <div class="card-header">
+                <div class="d-flex justify-content-between">
                     <span>REPORT DETAILS</span>
                     {{-- <small>{{ $profile->created_at }}</small> --}}
                 </div>
@@ -238,7 +314,6 @@
                                 <strong>{{ $message }}</strong>
                             </span>
                         @enderror
-
 
                         {{-- <input type="text" class="form-control" placeholder="Please specify" style="display: none"> --}}
 
@@ -299,7 +374,6 @@
                 </script>
                 <button class="btn btn-primary btn-block btn-sm" type="submit">Submit</button>
             </div>
-
 
         </div>
     </form>

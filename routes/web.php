@@ -53,6 +53,7 @@ Route::prefix('counselor')->middleware('auth', 'verified', 'isCounselor')->group
     // reports endpoint
     Route::prefix('reports')->group(function () {
         Route::get('online', [OnlineReportController::class, 'index']); //show records
+        // Route::get('online/profile/{id}', [ReportController::class, 'onlineprofile']);
         Route::get('walk-in', [ReportController::class, 'index']); //show records
         Route::get('create', [ReportController::class, 'create']); //create records
         Route::post('store', [ReportController::class, 'store']); //store records
