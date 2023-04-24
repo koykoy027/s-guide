@@ -66,6 +66,20 @@ class DatabaseSeeder extends Seeder
         $user2->schools()->associate($school2);
         $user2->save();
 
+        $user3 = new User([
+            'email_verified_at' => '2023-03-20 12:07:23',
+            'role' => 'student',
+            'lastname' => 'Sebastian',
+            'firstname' => 'Czar Mcgokou ',
+            'middlename' => 'Salar',
+            'employee_number' => '5819212',
+            'gender' => 'Male',
+            'email' => 'sczarmcgokou03@gmail.com',
+            'password' => bcrypt('Pa$$w0rd!')
+        ]);
+        $user3->schools()->associate($school3);
+        $user3->save();
+
         //create report
         $report1 = new Report([
             'school_code' => '1',

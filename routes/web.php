@@ -34,10 +34,28 @@ Route::get('/', function () {
     return view('homepage.index');
 });
 
+Route::get('contact', function () {
+    return view('homepage.contact');
+});
+
+Route::get('about', function () {
+    return view('homepage.about');
+});
+
+Route::get('services', function () {
+    return view('homepage.services');
+});
+
+Route::get('FAQ', function () {
+    return view('homepage.FAQ');
+});
+
 Route::get('online-portal', function () {
     return view('homepage.online-portal');
 });
-Route::get('online-reporting', [OnlineReportController::class, 'create']); //create records
+
+
+
 
 Route::post('store', [OnlineReportController::class, 'store']); //store records
 Route::get('getData', [SchoolController::class, 'getData']); //store records
@@ -82,6 +100,7 @@ Route::prefix('student')->middleware('auth', 'verified', 'isStudent')->group(fun
     Route::get('generate-qr', function () {
         return view('student.settings.generate-qr');
     });
+    Route::get('online-reporting', [OnlineReportController::class, 'create']); //create records
     // reports endpoint
     Route::prefix('reports')->group(function () {
 
