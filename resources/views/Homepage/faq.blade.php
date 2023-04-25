@@ -13,7 +13,7 @@
                             <h2 class="fw-bolder mb-3"> How S-Guide System Works</h2>
                             <div class="accordion mb-5" id="accordionExample">
                                 <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingOne"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">#1 System Works</button></h3>
+                                    <h3 class="accordion-header" id="headingOne"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Website designed to support</button></h3>
                                     <div class="accordion-collapse collapse show" id="collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
                                             <strong>S-guide is a website designed to support</strong>
@@ -24,7 +24,7 @@
                                     </div>
                                 </div>
                                 <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingTwo"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">#2 System Works</button></h3>
+                                    <h3 class="accordion-header" id="headingTwo"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">The system that allows users</button></h3>
                                     <div class="accordion-collapse collapse" id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
                                             <strong>The system that allows users </strong>
@@ -35,7 +35,7 @@
                                     </div>
                                 </div>
                                 <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingThree"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">#3 System Works</button></h3>
+                                    <h3 class="accordion-header" id="headingThree"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">process of filing a complaint report</button></h3>
                                     <div class="accordion-collapse collapse" id="collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
                                             <strong>The process of filing a complaint report</strong>
@@ -45,23 +45,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingThree"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">#4</button></h3>
-                                    <div class="accordion-collapse collapse" id="collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <strong>Confidentiality means that the information shared</strong>
-                                            by the student during counseling sessions or in the complaint form is kept private and is only shared with authorized individuals, such as supervisors or other counselors, if necessary. It is the responsibility of the counselor to ensure that the confidentiality of the student's information is maintained at all times,
-                                            <code>as it is a fundamental aspect of building trust and establishing </code>
-                                            and any supporting documents or evidence related to the complaint.
-                                        </div>
-                                    </div>
-                                </div> -->
                             </div>
                             <!-- FAQ Accordion 2-->
                             <h2 class="fw-bolder mb-3">How S-guide handle Case Report?</h2>
                             <div class="accordion mb-5 mb-xl-0" id="accordionExample2">
                                 <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingOne"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">#1 Case Reports</button></h3>
+                                    <h3 class="accordion-header" id="headingOne"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">Case Reports</button></h3>
                                     <div class="accordion-collapse collapse show" id="collapseOne2" aria-labelledby="headingOne" data-bs-parent="#accordionExample2">
                                         <div class="accordion-body">
                                             <strong>When filing a case report, it can be classified as either major or minor depending on the nature and severity of the issue. </strong>                                           
@@ -71,7 +60,7 @@
                                     </div>
                                 </div>
                                 <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingTwo"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">#2 Case Reports</button></h3>
+                                    <h3 class="accordion-header" id="headingTwo"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">Major offense</button></h3>
                                     <div class="accordion-collapse collapse" id="collapseTwo2" aria-labelledby="headingTwo" data-bs-parent="#accordionExample2">
                                         <div class="accordion-body">
                                             <strong>A major case report typically involves a severe or urgent </strong>
@@ -81,7 +70,7 @@
                                     </div>
                                 </div>
                                 <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingThree"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">#3 Case Reports</button></h3>
+                                    <h3 class="accordion-header" id="headingThree"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">Minor offense</button></h3>
                                     <div class="accordion-collapse collapse" id="collapseThree2" aria-labelledby="headingThree" data-bs-parent="#accordionExample2">
                                         <div class="accordion-body">
                                             <strong>On the other hand, a minor case report involves an issue that is less severe or urgent and may not require immediate action.</strong>
