@@ -90,28 +90,28 @@
                             <div class="text-center">
                                 <img class="img-fluid rounded-circle mb-4 px-4" src="{{ asset('images/mj.png') }}" alt="..." />
                                 <h5 class="fw-bolder">Mark Joel Calimag</h5>
-                                <div class="fst-italic text-muted">Data Analysis &amp; Researcher / Papers</div>
+                                <div class="fst-italic text-muted">Data Analysis &amp; Researcher</div>
                             </div>
                         </div>
                         <div class="col mb-5 mb-5 mb-sm-0">
                             <div class="text-center">
                                 <img class="img-fluid rounded-circle mb-4 px-4" src="{{ asset('images/sua.png') }}" alt="..." />
                                 <h5 class="fw-bolder">Saturnino Ursua Jr</h5>
-                                <div class="fst-italic text-muted">Graphics designer &amp; Researcher / Papers</div>
+                                <div class="fst-italic text-muted">Graphics designer &amp; Researcher</div>
                             </div>
                         </div>
                         <div class="col mb-5">
                             <div class="text-center">
                                 <img class="img-fluid rounded-circle mb-4 px-4" src="{{ asset('images/bay.png') }}" alt="..." />
                                 <h5 class="fw-bolder">Christian Jamaybay</h5>
-                                <div class="fst-italic text-muted">Graphics designer &amp; Researcher / Papers</div>
+                                <div class="fst-italic text-muted">Graphics designer &amp; Researcher</div>
                             </div>
                         </div>
                         <div class="col mb-5">
                             <div class="text-center">
                                 <img class="img-fluid rounded-circle mb-4 px-4" src="{{ asset('images/jim.png') }}" alt="..." />
                                 <h5 class="fw-bolder">Jimuel Sanchez </h5>
-                                <div class="fst-italic text-muted">Front-End Developer &amp; Researcher / Papers</div>
+                                <div class="fst-italic text-muted">Front-End Developer &amp; Researcher</div>
                             </div>
                         </div>
                         <div class="col mb-5">
