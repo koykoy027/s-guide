@@ -30,6 +30,7 @@
                             <li class="nav-item"><a href="{{ url('services') }}" class="nav-link ">Services</a></li>
                             <li class="nav-item"><a href="{{ url('contact') }}" class="nav-link ">Contact Us</a></li>
                             <li class="nav-item"><a class="nav-link" href="{{ url('FAQ') }}">FAQ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{ url('login') }}">LOGIN</a></li>
                         </ul>   
                     </div>
                 </div>
