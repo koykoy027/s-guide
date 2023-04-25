@@ -1,7 +1,7 @@
-@extends('Homepage.layout.master')
-
-@section('title', '| ONLINE REPORTING')
+@extends('Homepage.layout.masterOld')
 @section('content')
+@section('title' , '| ONLINE REPORTING')
+
     {{-- alert message --}}
     @if (session()->has('message'))
         <script>
@@ -789,4 +789,5 @@
         </div>
     </section>
 
-@endsection
+
+    @endsection
