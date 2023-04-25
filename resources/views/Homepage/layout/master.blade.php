@@ -8,7 +8,7 @@
     <meta name="author" content="" />
     <title> S-GUIDE @yield('title')</title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/S-Guide.png') }}" />
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
@@ -30,20 +30,30 @@
                     aria-expanded="false" aria-label="Toggle navigation"><span
                         class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase">
                         <li class="nav-item"><a href="{{ url('/') }}"
-                                class="nav-link {{ '/' == request()->path() ? 'active' : '' }}">Home</a></li>
+                                class="nav-link {{ '/' == request()->path() ? 'active' : '' }}">HOME</a></li>
                         <li class="nav-item"><a href="{{ url('about') }}"
-                                class="nav-link {{ 'about' == request()->path() ? 'active' : '' }}">About Us</a></li>
+                                class="nav-link {{ 'about' == request()->path() ? 'active' : '' }}">ABOUT</a></li>
                         <li class="nav-item"><a href="{{ url('services') }}"
-                                class="nav-link {{ 'services' == request()->path() ? 'active' : '' }}">Services</a></li>
+                                class="nav-link {{ 'services' == request()->path() ? 'active' : '' }}">SERVICES</a></li>
                         <li class="nav-item"><a href="{{ url('contact') }}"
-                                class="nav-link {{ 'contact' == request()->path() ? 'active' : '' }}">Contact Us</a>
+                                class="nav-link {{ 'contact' == request()->path() ? 'active' : '' }}">CONTACT</a>
                         </li>
                         <li class="nav-item"><a href="{{ url('FAQ') }}"
                                 class="nav-link {{ 'FAQ' == request()->path() ? 'active' : '' }}">FAQ</a></li>
-                        <li class="nav-item"><a href="{{ url('login') }}"
-                                class="nav-link {{ 'login' == request()->path() ? 'active' : '' }}">LOGIN</a>
+                        <li class="nav-item">
+                            <a href="{{ url('login') }}"
+                                class="nav-link {{ 'login' == request()->path() ? 'active' : '' }}">
+                                @if (Route::has('login'))
+                                    @auth()
+                                        {{ Auth::user()->firstname }}
+                                        {{ Auth::user()->lastname }}
+                                    @else
+                                        LOGIN
+                                    @endauth
+                                @endif
+                            </a>
                         </li>
                     </ul>
                 </div>
