@@ -1,4 +1,4 @@
-@extends('student.layout.master')
+@extends('homepage.layout.master')
 @section('title', 'Generate QR')
 @section('content')
 
