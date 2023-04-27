@@ -65,18 +65,28 @@
                         </li>
                         <li class="nav-item"><a href="{{ url('FAQ') }}"
                                 class="nav-link {{ 'FAQ' == request()->path() ? 'active' : '' }}">FAQ</a></li>
-                        <li class="nav-item">
-                            <a href="{{ url('login') }}"
-                                class="nav-link {{ 'login' == request()->path() ? 'active' : '' }}">
-                                @if (Route::has('login'))
-                                    @auth()
+
+                        @if (Route::has('login'))
+                            @auth()
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle {{ 'student/profile' == request()->path() ? 'active' : '' }}"
+                                        id="profile" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
                                         {{ Auth::user()->firstname }}
                                         {{ Auth::user()->lastname }}
-                                    @else
-                                        LOGIN
-                                    @endauth
-                                @endif
-                            </a>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profile">
+                                        <li><a class="dropdown-item" href="{{ url('student/profile') }}">PROFILE</a></li>
+                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                data-bs-target="#logout">LOGOUT</a></li>
+                                    </ul>
+                                </li>
+                            @else
+                                <li class="nav-item"><a href="{{ url('login') }}"
+                                        class="nav-link {{ 'login' == request()->path() ? 'active' : '' }}">LOGIN</a></li>
+                            @endauth
+                        @endif
+                        </a>
                         </li>
                     </ul>
                 </div>
@@ -104,6 +114,31 @@
             </div>
         </div>
     </footer>
+    {{-- modal --}}
+    <div class="modal fade" id="logout" tabindex="-1" aria-labelledby="logoutLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title fs-5" id="logoutLabel">LOGOUT SESSION</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Do you want to logout your session?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">No. Cancel</button>
+
+                    <a type="button" class="btn btn-primary" href="{{ route('logout') }}"
+                        onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+                        Yes. Logout
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                            @csrf
+                        </form>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
