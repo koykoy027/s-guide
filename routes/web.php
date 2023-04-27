@@ -47,7 +47,7 @@ Route::get('services', function () {
 });
 
 Route::get('FAQ', function () {
-    return view('homepage.FAQ');
+    return view('homepage.faq');
 });
 
 Route::get('online-portal', function () {
