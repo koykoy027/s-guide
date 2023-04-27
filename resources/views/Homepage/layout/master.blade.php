@@ -77,6 +77,8 @@
                                     </a>
                                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profile">
                                         <li><a class="dropdown-item" href="{{ url('student/profile') }}">PROFILE</a></li>
+                                        <li><a class="dropdown-item" href="{{ url('student/online-reporting') }}">ONLINE
+                                                REPORT</a></li>
                                         <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
                                                 data-bs-target="#logout">LOGOUT</a></li>
                                     </ul>
