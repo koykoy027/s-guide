@@ -1,8 +1,9 @@
-@extends('counselor.layout.app')
+@extends('homepage.layout.master')
 @section('title', ' - LOGIN')
 
 @section('content')
-    <div class="container">
+    <center>
+        <div class="container my-5">
         <!-- this function of java Script play Camera -->
         <script src="https://reeteshghimire.com.np/wp-content/uploads/2021/05/html5-qrcode.min_.js"></script>
         <!-- Header -->
@@ -51,6 +52,8 @@
             </div>
         </div>
     </div>
+    </center>
+
     <hr />
     {{-- <div class="container">
         © {{ date('Y') }}. Created by Alireza Moosavi

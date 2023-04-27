@@ -1,4 +1,4 @@
-@extends('Homepage.layout.master')
+@extends('homepage.layout.master')
 @section('content')
             <!-- Page Content-->
             <section class="py-5">
@@ -28,7 +28,7 @@
                                     <div class="accordion-collapse collapse" id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
                                             <strong>The system that allows users </strong>
-                                            to file a complaint report through a complaint form is a convenient and efficient way of reporting issues.This process is typically used in organizations or companies to streamline the complaint process, making it easier for users to provide 
+                                            to file a complaint report through a complaint form is a convenient and efficient way of reporting issues.This process is typically used in organizations or companies to streamline the complaint process, making it easier for users to provide
                                             <code>relevant information </code>
                                             and enabling the organization to take appropriate action.
                                         </div>
@@ -53,7 +53,7 @@
                                     <h3 class="accordion-header" id="headingOne"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">Case Reports</button></h3>
                                     <div class="accordion-collapse collapse show" id="collapseOne2" aria-labelledby="headingOne" data-bs-parent="#accordionExample2">
                                         <div class="accordion-body">
-                                            <strong>When filing a case report, it can be classified as either major or minor depending on the nature and severity of the issue. </strong>                                           
+                                            <strong>When filing a case report, it can be classified as either major or minor depending on the nature and severity of the issue. </strong>
                                             <code>the appropriate  </code>
                                             level of response and resources required to address the issue.
                                         </div>
@@ -96,7 +96,7 @@
                                             <div class="h6 fw-bolder">Follow us</div>
                                             <a class="fs-5 px-2 link-dark" href="#!"><i class="bi-twitter"></i></a>
                                             <a class="fs-5 px-2 link-dark" href="#!"><i class="bi-facebook"></i></a>
-                                            
+
                                             <!-- <a class="fs-5 px-2 link-dark" href="#!"><i class="bi-youtube"></i></a> -->
                                         </div>
                                     </div>

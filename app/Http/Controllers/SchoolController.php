@@ -19,7 +19,7 @@ class SchoolController extends Controller
         $table = School::all();
         return view('counselor.reports.create', compact('table'));
     }
-    
+
 
     public function getData(Request $request)
     {
@@ -29,7 +29,7 @@ class SchoolController extends Controller
         $data = DB::table('schools')
             ->where('id', '=', request('id'))
             ->get();
-        // return view('Homepage.online-reporting.create', compact('data'));
+        // return view('homepage.online-reporting.create', compact('data'));
 
         return redirect()->back()->with(compact('data'));
     }

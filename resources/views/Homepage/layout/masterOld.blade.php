@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
         rel="stylesheet">
-        
+
     {{-- ICON --}}
     <link rel="shortcut icon" href="{{ asset('images/SG 2.png') }}" type="image/x-icon">
     <!-- Bootstrap core CSS -->
@@ -35,7 +35,6 @@
     <script src="{{ asset('index/assets/js/imagesloaded.js') }}"></script>
     <script src="{{ asset('index/assets/js/custom.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="{{ asset('') }}"></script>
 
     <!--
 TemplateMo 563 SEO Dream

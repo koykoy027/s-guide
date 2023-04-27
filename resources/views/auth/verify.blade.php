@@ -1,7 +1,7 @@
-@extends('counselor.layout.app')
+@extends('homepage.layout.master')
 @section('title', 'EMAIL - VERIFICATION')
 @section('content')
-    {{-- alert message --}}
+
     @if (session()->has('resent'))
         <script>
             const Toast = Swal.mixin({
@@ -22,7 +22,7 @@
         </script>
     @endif
 
-    <div class="container">
+    <div class="container my-5">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">

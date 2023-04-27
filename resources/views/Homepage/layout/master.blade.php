@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="description"
+        content="S-Guide stands for student and security guidance. we guide. we service. we respect the rights." />
+    <meta name="author" content="Joshua Villanueva" />
     <title> S-GUIDE @yield('title')</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="{{ asset('images/S-Guide.png') }}" />
@@ -15,7 +16,29 @@
     <!-- CDN of Link CSS Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="{{ asset('css/styles.css') }}" rel="stylesheet" />
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ asset('index/assets/js/custom.js') }}"></script>
+    <script src="{{ asset('index/vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('index/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <!-- Core theme JS-->
+    <script src="{{ asset('js/scripts.js') }}"></script>
+
+    {{-- sweet alert --}}
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+
+    <!-- Scripts -->
+
+    <script src="{{ asset('index/assets/js/custom.js') }}"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -36,7 +59,8 @@
                         <li class="nav-item"><a href="{{ url('about') }}"
                                 class="nav-link {{ 'about' == request()->path() ? 'active' : '' }}">ABOUT</a></li>
                         <li class="nav-item"><a href="{{ url('services') }}"
-                                class="nav-link {{ 'services' == request()->path() ? 'active' : '' }}">SERVICES</a></li>
+                                class="nav-link {{ 'services' == request()->path() ? 'active' : '' }}">SERVICES</a>
+                        </li>
                         <li class="nav-item"><a href="{{ url('contact') }}"
                                 class="nav-link {{ 'contact' == request()->path() ? 'active' : '' }}">CONTACT</a>
                         </li>
@@ -81,10 +105,7 @@
             </div>
         </div>
     </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+
 </body>
 
 </html>

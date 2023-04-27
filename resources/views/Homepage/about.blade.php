@@ -1,4 +1,4 @@
-@extends('Homepage.layout.master')
+@extends('homepage.layout.master')
 @section('content')
     <!-- Header-->
     <header class="py-5">

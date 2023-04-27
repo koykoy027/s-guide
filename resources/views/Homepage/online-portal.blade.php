@@ -1,4 +1,4 @@
-@extends('Homepage.layout.master')
+@extends('homepage.layout.master')
 @section('content')
     <section id="" class="features section">
         <div class="container">

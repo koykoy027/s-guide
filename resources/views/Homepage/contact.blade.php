@@ -1,4 +1,4 @@
-@extends('Homepage.layout.master')
+@extends('homepage.layout.master')
 @section('content')
             <!-- Page content-->
             <section class="py-5">
@@ -68,7 +68,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
             @endsection
 
 
