@@ -401,10 +401,16 @@
                                     <select class="form-control @error('complainant') is-invalid @enderror"
                                         name="complainant" value="{{ old('complainant') }}" autofocus>
                                         <option value="Self report">Self report</option>
-                                        <option value="Friend">Friend</option>
-                                        <option value="Classmate">Classmate</option>
-                                        <option value="Teacher / Professor">Teacher / Professor</option>
-                                        <option value="Parent / Guardian">Parent / Guardian</option>
+                                        <option value="I want to report about what happened to my classmate">I want to
+                                            report about what happened to my Classmate</option>
+                                        <option value="I want to report about what happened to my Friend">I want to
+                                            report about what happened to my Friend</option>
+                                        <option value="I want to report about what happened to my Classmate">I want to
+                                            report about what happened to my Classmate</option>
+                                        <option value="I want to report about what happened to my Teacher / Professor">I
+                                            want to report about what happened to my Teacher / Professor</option>
+                                        <option value="I want to report about what happened to School Ulitilty">I want
+                                            to report about what happened to School Ulitilty</option>
                                     </select>
                                     @error('complainant')
                                         <span class="invalid-feedback" role="alert">
@@ -418,7 +424,9 @@
                                     <label class="fieldlabels">Name of complainant</label>
                                     <input type="text"
                                         class="form-control @error('name_of_complainant') is-invalid @enderror"
-                                        name="name_of_complainant" value="{{ old('name_of_complainant') }}" autofocus />
+                                        name="name_of_complainant"
+                                        value="{{ Auth::user()->firstname }} {{ Auth::user()->lastname }}" autofocus
+                                        readonly />
                                     @error('name_of_complainant')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
@@ -430,7 +438,7 @@
                                 <div class="col-md">
                                     <label class="fieldlabels">Email address</label>
                                     <input type="email" class="form-control @error('email') is-invalid @enderror"
-                                        name="email" value="{{ old('email') }}" autofocus />
+                                        name="email" value="{{ Auth::user()->email }}" autofocus readonly />
                                     @error('email')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
@@ -635,13 +643,14 @@
                                     <select class="form-control @error('offender_program') is-invalid @enderror"
                                         value="{{ old('offender_program') }}" autocomplete="on" autofocus
                                         id="offender_program" name="offender_program">
+                                        <option value="Select program of the offender">
+                                            Select program of the offender
+                                        </option>
                                         <option value="Bachelor of Science in Entertainment and Multimedia Computing">
-                                            Bachelor
-                                            of
-                                            Science in Entertainment and Multimedia Computing</option>
-                                        <option value="Bachelor of Science in Computer Science">Bachelor of Science in
-                                            Computer
-                                            Science</option>
+                                            Bachelor of Science in Entertainment and Multimedia Computing</option>
+                                        <option value="Bachelor of Science in Computer Science">
+                                            Bachelor of Science in Computer Science
+                                        </option>
                                         <option value="Bachelor of Science in Information Techonology">Bachelor of
                                             Science in
                                             Information Techonology</option>
@@ -661,6 +670,8 @@
                                     <label class="fieldlabels">Year</label>
                                     <select class="form-control @error('offender_year') is-invalid @enderror"
                                         name="offender_year">
+                                        <option value="Select program of the offender">Select program of the offender
+                                        </option>
                                         <option value="1st year College">1st year College</option>
                                         <option value="2nd year College">2nd year College</option>
                                         <option value="3rd year College">3rd year College</option>

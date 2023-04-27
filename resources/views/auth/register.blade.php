@@ -7,7 +7,7 @@
 
             <div class="row">
                 <div class="col-md">
-                    <img src="{{ asset('index/assets/images/banner-right-image.png') }}">
+                    <img src="{{ asset('images/banner-right-image.png') }}">
                 </div>
 
                 <div class="col-md">

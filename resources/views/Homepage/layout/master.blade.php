@@ -15,16 +15,15 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <!-- CDN of Link CSS Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link href="{{ asset('css/styles.css') }}" rel="stylesheet" />
 
+    {{-- jquery --}}
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Custom JS-->
+    <script src="{{ asset('js/scripts.js') }}"></script>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="{{ asset('index/assets/js/custom.js') }}"></script>
-    <script src="{{ asset('index/vendor/jquery/jquery.min.js') }}"></script>
-    <script src="{{ asset('index/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <!-- Core theme JS-->
-    <script src="{{ asset('js/scripts.js') }}"></script>
+
 
     {{-- sweet alert --}}
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -34,7 +33,7 @@
 
     <!-- Scripts -->
 
-    <script src="{{ asset('index/assets/js/custom.js') }}"></script>
+    {{-- <script src="{{ asset('index/assets/js/custom.js') }}"></script> --}}
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
