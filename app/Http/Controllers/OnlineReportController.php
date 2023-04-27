@@ -20,7 +20,7 @@ class OnlineReportController extends Controller
 
     public function create()
     {
-        return view('HomePage.online-reporting.create');
+        return view('homepage.online-reporting.create');
     }
 
     public function profile($id)

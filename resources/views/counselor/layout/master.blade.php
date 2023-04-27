@@ -159,7 +159,7 @@
 
                     <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown"
                         style="text-transform:none ">
-                        <a class="dropdown-item text-sm" href="{{url('counselor/generate-qr')}}">
+                        <a class="dropdown-item text-sm" href="{{ url('counselor/generate-qr') }}">
                             <i class="fa-solid fa-right-from-bracket"></i> {{ __('Generate QR') }}
                         </a>
 
