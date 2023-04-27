@@ -13,6 +13,7 @@
                     {{ Auth::user()->middlename }}
                     {{ Auth::user()->lastname }}
                 </h5>
+                <h6>Student</h6>
 
 
             </center>
