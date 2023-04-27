@@ -1,4 +1,4 @@
-@extends('counselor.layout.app')
+@extends('homepage.layout.master')
 @section('title', '- RESET PASSWORD')
 @section('content')
     {{-- alert message --}}
