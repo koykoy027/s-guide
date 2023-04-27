@@ -22,7 +22,7 @@
             <h5>Personal Information</h5>
             <div class="row">
                 <p class="col-md-3 text-bold">
-                    Lastname
+                    Fullname
                 </p>
                 <div class="col-md">
                     {{ Auth::user()->lastname }} ,{{ Auth::user()->firstname }} {{ Auth::user()->middlename }}
@@ -52,7 +52,7 @@
             <hr>
             <div class="row">
                 <p class="col-md-3 text-bold">
-                    Gender
+                    Email
                 </p>
                 <div class="col-md">
                     {{ Auth::user()->email }}
@@ -60,6 +60,15 @@
                 </div>
             </div>
             <hr>
+            <div class="row">
+                <p class="col-md-3 text-bold">
+                    Contact
+                </p>
+                <div class="col-md">
+                    {{ Auth::user()->contact }}
+
+                </div>
+            </div>
         </div>
     </div>
 

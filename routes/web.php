@@ -54,6 +54,15 @@ Route::get('online-portal', function () {
     return view('homepage.online-portal');
 });
 
+Route::get('privacy', function () {
+    return view('homepage.privacy');
+});
+
+Route::get('terms', function () {
+    return view('homepage.terms');
+});
+
+
 
 
 
@@ -107,11 +116,7 @@ Route::prefix('student')->middleware('auth', 'verified', 'isStudent')->group(fun
         Route::get('create', function () {
             return view('student.reports.create');
         });
-
-
     });
-
-
 });
 Route::get('generate-qrcode', [QRController::class, 'index']);
 Route::post('qrlogin', [QRController::class, 'checkUser']);
