@@ -18,14 +18,13 @@ class student
     public function handle(Request $request, Closure $next)
     {
 
-        if(Auth::check()){
-            if(Auth::user()->role == 'student'){
+        if (Auth::check()) {
+            if (Auth::user()->role == 'student') {
                 return $next($request);
-            }else{
-                return redirect('counselor/dashboard')->with('message', 'Access Denied');
+            } else {
+                return redirect('counselor/dashboard')->with('message', 'Access Denied'); //abort(401, 'Unauthorized action')
             }
-
-        }else{
+        } else {
             return redirect()->back()->with('message', 'Login to access the website');
         }
         return $next($request);

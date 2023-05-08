@@ -22,7 +22,7 @@ class Counselor
             if (Auth::user()->role == 'counselor') {
                 return $next($request);
             } else {
-                return redirect('student/profile')->with('message', 'Access Denied');
+                return redirect('student/profile')->with('message', 'Access Denied'); //abort(401, 'Unauthorized action')
             }
         } else {
             return redirect()->back()->with('message', 'Login to access the website');
