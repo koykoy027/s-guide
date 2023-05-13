@@ -7,13 +7,25 @@
             <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="{{ asset('images/LandingPage.png') }}"
                     alt="..." /></div>
             <div class="col-lg-5">
-                <h1 class="font-weight-light">You're in good hands in S-guide</h1>
+                <h1 class="font-weight-light" style="font-size: 25px">Relax and enjoy your journey,<span> you're in good hands
+                        with
+                        us.</span></h1>
                 {{-- <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it
                     makes a great use of the standard Bootstrap core components. Feel free to use this template for any
                     project you want!</p> --}}
                 <br>
                 <br>
-                <a class="btn btn-primary" href="#!">Call to Action!</a>
+                {{-- <a class="btn btn-primary" href="#!">Call to Action!</a> --}}
+                <ul>
+                    <p><strong>"Our team of experts will take care of everything, so you can rest easy knowing you're in
+                            good hands.""</strong></p>
+                    <p><strong>"Leave the details to us, we've got you covered and you're in good hands."."</strong></p>
+                    <p><strong>"Trust us to guide you through every step of the way, you're in good hands with our
+                            experienced team."</strong></p>
+                    <p><strong>"Sit back and enjoy the ride, you're in good hands with our reliable and knowledgeable
+                            staff."</strong></p>
+
+                </ul>
             </div>
         </div>
         <!-- Call to Action-->
@@ -31,7 +43,8 @@
                             For more info click below.
                         </p>
                     </div>
-                    <div class="card-footer"><a class="btn btn-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#student">More Info</a></div>
+                    <div class="card-footer"><a class="btn btn-primary btn-sm" type="button" data-bs-toggle="modal"
+                            data-bs-target="#student">Students</a></div>
                 </div>
             </div>
             <div class="col-md-4 mb-5">
@@ -42,17 +55,19 @@
                             students. They're also the one who can complaint . Listen and decide properly. For more info
                             click below.</p>
                     </div>
-                    <div class="card-footer"><a class="btn btn-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#teacher">More Info</a></div>
+                    <div class="card-footer"><a class="btn btn-primary btn-sm" type="button" data-bs-toggle="modal"
+                            data-bs-target="#teacher">Teachers</a></div>
                 </div>
             </div>
             <div class="col-md-4 mb-5">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h2 class="card-title">Counsilor</h2>
+                        <h2 class="card-title">Counselor</h2>
                         <p class="card-text">Counselor was the initiative they are the responsible and guide. they're the
                             one can control the system and take responsibility. For more info click below</p>
                     </div>
-                    <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+                    <div class="card-footer"><a class="btn btn-primary btn-sm" type="button" data-bs-toggle="modal"
+                            data-bs-target="#counselor">Counselor</a></div>
                 </div>
             </div>
             <div class="col-md-4 mb-5">
@@ -63,7 +78,8 @@
                             Parents has also the one who can complaint. they are the guardian of the students so they have
                             the rights to protect child. For more info click below</p>
                     </div>
-                    <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+                    <div class="card-footer"><a class="btn btn-primary btn-sm" type="button" data-bs-toggle="modal"
+                            data-bs-target="#parent">Parent</a></div>
                 </div>
             </div>
             <div class="col-md-4 mb-5">
@@ -76,7 +92,8 @@
                             Protect and save them. For more info click below
                         </p>
                     </div>
-                    <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+                    <div class="card-footer"><a class="btn btn-primary btn-sm" type="button" data-bs-toggle="modal"
+                            data-bs-target="#friends">Friends</a></div>
                 </div>
             </div>
             <div class="col-md-4 mb-5">
@@ -86,7 +103,8 @@
                         <p class="card-text"> You're classmate can also access the system and can complain for you.
                             Classmate is not just a classmate. For more info click below</p>
                     </div>
-                    <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+                    <div class="card-footer"><a class="btn btn-primary btn-sm" type="button" data-bs-toggle="modal"
+                            data-bs-target="#classmate">Classmate</a></div>
                 </div>
             </div>
         </div>
