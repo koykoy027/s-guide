@@ -54,7 +54,7 @@ class DatabaseSeeder extends Seeder
 
         $user2 = new User([
             'email_verified_at' => '2023-03-20 12:07:23',
-            'role' => 'counselor',
+            'role' => 'student',
             'lastname' => 'Villanueva',
             'firstname' => 'Joshua',
             'middlename' => 'Alfaro',

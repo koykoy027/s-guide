@@ -345,7 +345,7 @@
                 <h2 id="heading">Online Report</h2>
                 <p>Fill all form field to go to next step</p>
 
-                <form id="msform" method="POST" action="{{ url('store') }}">
+                <form id="msform" method="POST" action="{{ url('store') }}" enctype="multipart/form-data">
                     @csrf
 
                     <ul id="progressbar">
@@ -449,9 +449,13 @@
                             <div class="row mb-3">
                                 <div class="col-md">
                                     <label class="fieldlabels">Contact number</label>
-                                    <input type="tel"
-                                        class="form-control @error('contact_number') is-invalid @enderror"
-                                        name="contact_number" value="{{ old('contact_number') }}" autofocus />
+                                    <div class="input-group">
+                                        <span class="input-group-text">+63</span>
+                                        <input type="tel"
+                                            class="form-control @error('contact_number') is-invalid @enderror"
+                                            name="contact_number" value="{{ old('contact_number') }}" maxlength="10"
+                                            autofocus />
+                                    </div>
                                     @error('contact_number')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
@@ -739,7 +743,7 @@
                                         <option value="Failure to wear prescribed uniform">Failure to wear prescribed
                                             uniform</option>
                                         <option value="Use or Posses drugs">Use or Posses drugs</option>
-                                        <option value="Others">Others</option>
+                                        {{-- <option value="Others">Others</option> --}}
                                     </select>
                                     @error('type_of_complain')
                                         <span class="invalid-feedback" role="alert">
@@ -761,6 +765,24 @@
                                     <strong>{{ $message }}</strong>
                                 </span>
                             @enderror
+
+                            {{-- image --}}
+                            <p class="text-bold mt-3">Upload Video</p>
+                            {{-- <video width="320" height="240" controls>
+                                <source src="" type="video/mp4" id="video-source">
+                                Your browser does not support the video tag.
+                            </video> --}}
+                            <input type="file" class="form-control" name="videos" />
+
+
+                            {{-- end of image --}}
+
+
+
+
+
+
+
                             <p class="text-bold mt-3">Summary</p>
                             <button type="button" id="speak" class="btn btn-info btn-sm mb-3 text-white">Click
                                 to Speak</button>

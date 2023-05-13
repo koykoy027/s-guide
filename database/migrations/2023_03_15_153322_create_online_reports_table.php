@@ -32,6 +32,7 @@ return new class extends Migration
             $table->string('type_of_complain');
             $table->string('place_of_incidence');
             $table->longText('summary');
+            $table->text('videos')->nullable();
             $table->string('offender_lastname')->nullable();
             $table->string('offender_firstname')->nullable();
             $table->string('offender_program')->nullable();

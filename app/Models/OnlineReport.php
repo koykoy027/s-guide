@@ -27,6 +27,7 @@ class OnlineReport extends Model
         'type_of_complain',
         'place_of_incidence',
         'summary',
+        "videos",
         "offender_lastname",
         "offender_firstname",
         "offender_program",

@@ -58,8 +58,19 @@ class OnlineReportController extends Controller
             'type_of_complain' => 'required',
             'place_of_incidence' => 'required',
             'summary' => 'required',
+            'videos' => 'mimes:mp4|max:50000'
         ]);
-        OnlineReport::create($request->all());
-        return redirect()->back()->with(['message' => 'Thank you!, Your reports has been sent.']);
+            $videoName = time().'.'.$request->videos->getClientOriginalExtension();
+            $request->videos->move(public_path('videos'), $videoName);
+
+            // $file = time().'.'.$request->videos->getClientOriginalExtension();
+            // $request->file->move('videos', $file);
+
+
+
+
+
+            OnlineReport::create($request->all());
+            return redirect()->back()->with(['message' => 'Thank you!, Your reports has been sent.']);
     }
 }
