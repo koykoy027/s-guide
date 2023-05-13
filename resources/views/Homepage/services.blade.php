@@ -31,7 +31,7 @@
                             For more info click below.
                         </p>
                     </div>
-                    <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+                    <div class="card-footer"><a class="btn btn-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#student">More Info</a></div>
                 </div>
             </div>
             <div class="col-md-4 mb-5">
@@ -42,7 +42,7 @@
                             students. They're also the one who can complaint . Listen and decide properly. For more info
                             click below.</p>
                     </div>
-                    <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+                    <div class="card-footer"><a class="btn btn-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#teacher">More Info</a></div>
                 </div>
             </div>
             <div class="col-md-4 mb-5">

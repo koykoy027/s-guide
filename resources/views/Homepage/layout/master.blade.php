@@ -41,7 +41,7 @@
 </head>
 
 <body class="d-flex flex-column h-100">
-    @include('modal');
+    @include('modal')
     <main class="flex-shrink-0">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
