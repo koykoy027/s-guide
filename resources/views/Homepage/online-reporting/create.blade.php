@@ -336,12 +336,11 @@
         </div>
     </section> --}}
 
-
 {{-- step bar --}}
 <section class="container-fluid">
     <div class="row justify-content-center">
-        <div class="col-11 col-sm-9 col-md-7 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2">
-            <div class="px-0 pt-4 pb-0 mt-3 mb-3">
+        <div class="col-11 col-sm-9 col-md-7 col-lg-6 col-xl-5 mt-3 mb-2 p-0 text-center">
+            <div class="mt-3 mb-3 px-0 pt-4 pb-0">
                 <h2 id="heading">Online Report</h2>
                 <p>Fill all form field to go to next step</p>
 
@@ -774,19 +773,12 @@
                             </video> --}}
                             <input type="file" class="form-control" name="videos" />
 
-
                             {{-- end of image --}}
-
-
-
-
-
-
 
                             <p class="text-bold mt-3">Summary</p>
                             <button type="button" id="speak" class="btn btn-info btn-sm mb-3 text-white">Click
                                 to Speak</button>
-                            <textarea class="form-control  @error('summary') is-invalid @enderror" cols="30" rows="10" name="summary"
+                            <textarea class="form-control @error('summary') is-invalid @enderror" cols="30" rows="10" name="summary"
                                 id="textarea">{{ old('summary') }}</textarea>
                             @error('summary')
                                 <span class="invalid-feedback" role="alert">
@@ -821,6 +813,5 @@
         </div>
     </div>
 </section>
-
 
 @endsection

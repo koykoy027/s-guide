@@ -2,7 +2,7 @@
 @section('title', 'REPORTS - PROFILE ')
 @section('content')
 
-    <div class="card shadow-lg mb-3">
+    <div class="card mb-3 shadow-lg">
         <div class="card-header">
             <span>VICTIM DETAILS</span>
         </div>
@@ -91,7 +91,7 @@
         </div>
     </div>
 
-    <div class="card shadow-lg mb-3">
+    <div class="card mb-3 shadow-lg">
         <div class="card-header">
             <div class="d-flex justify-content-between">
                 <span>REPORT DETAILS</span>
@@ -162,9 +162,15 @@
             <hr />
             <p class="text-bold">Place of incidence</p>
             <p class="text-justify">{{ $profile->place_of_incidence }}</p>
-
+            
             <p class="text-bold">Summary</p>
             <p class="text-justify">{{ $profile->summary }}</p>
+
+            <p class="text-bold">Video</p>
+            <video width="320" height="240" controls>
+                <source src="{{ asset('videos/' . $profile->videos) }}" type="video/mp4" id="video-source">
+                Your browser does not support the video tag.
+            </video>
         </div>
 
     </div>
