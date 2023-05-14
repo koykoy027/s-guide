@@ -59,7 +59,6 @@
     </script>
     {{-- custom js --}}
     <script src="{{ asset('js/scripts.js') }}"></script>
-    <script src="{{ asset('assets/dist/js/script.js') }}"></script>
     <!-- Bootstrap 4 -->
     <script src="{{ asset('assets/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <!-- ChartJS -->

@@ -26,14 +26,15 @@
         @csrf
         <input readonly type="hidden" class="form-control" name="school_code" value="{{ Auth::user()->school_code }}">
         <input readonly type="hidden" class="form-control" name="report_id" value="{{ Auth::user()->id }}">
-        <input readonly type="hidden" class="form-control" name="student_numbere" value="{{ Auth::user()->employee_number }}">
+        <input readonly type="hidden" class="form-control" name="student_numbere"
+            value="{{ Auth::user()->employee_number }}">
         <input readonly type="hidden" class="form-control" name="lastname" value="{{ Auth::user()->lastname }}">
         <input readonly type="hidden" class="form-control" name="firstname" value="{{ Auth::user()->firstname }}">
         <input readonly type="hidden" class="form-control" name="middlename" value="{{ Auth::user()->middlename }}">
         <input readonly type="hidden" class="form-control" name="gender" value="{{ Auth::user()->gender }}">
         <input readonly type="hidden" class="form-control" name="email" value="{{ Auth::user()->email }}">
 
-        <div class="card shadow-lg mb-3">
+        <div class="card mb-3 shadow-lg">
             <div class="card-header">
                 <div class="d-flex justify-content-between">
                     <span>OFFENDERS DETAILS</span>
@@ -110,7 +111,7 @@
 
         </div>
 
-        <div class="card shadow-lg mb-3">
+        <div class="card mb-3 shadow-lg">
             <div class="card-header">
                 <div class="d-flex justify-content-between">
                     <span>REPORT DETAILS</span>
@@ -173,29 +174,13 @@
                         Click to Speak
                     </button>
                 </div>
-                <textarea class="form-control  @error('summary') is-invalid @enderror" autocomplete="on" autofocusname="status"
+                <textarea class="form-control @error('summary') is-invalid @enderror" autocomplete="on" autofocusname="status"
                     cols="30" rows="10" name="summary" id="textarea">{{ old('summary') }}</textarea>
                 @error('summary')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
                     </span>
                 @enderror
-                <script>
-                    var speak = document.getElementById('speak');
-                    var textarea = document.getElementById('textarea');
-                    var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-                    var recognition = new SpeechRecognition();
-                    speak.addEventListener('click', function() {
-                        recognition.start();
-                        speak.innerHTML = '...speaking';
-                    })
-
-                    recognition.onresult = function(e) {
-                        var transcript = e.results[0][0].transcript;
-                        textarea.innerHTML += transcript + ' ';
-                        speak.innerHTML = 'Click to speak';
-                    }
-                </script>
                 <button class="btn btn-primary btn-block btn-sm" type="submit">Submit</button>
             </div>
 
