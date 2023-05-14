@@ -452,10 +452,10 @@
                                 </span>
                             @enderror
 
-
                             <p class="text-bold mt-3">Upload Video</p>
 
-                            <input type="file" class="form-control @error('videos') is-invalid @enderror" name="videos" />
+                            <input type="file" class="form-control @error('videos') is-invalid @enderror"
+                                name="videos" />
                             @error('videos')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
@@ -472,22 +472,7 @@
                                     <strong>{{ $message }}</strong>
                                 </span>
                             @enderror
-                            <script>
-                                var speak = document.getElementById('speak');
-                                var textarea = document.getElementById('textarea');
-                                var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-                                var recognition = new SpeechRecognition();
-                                speak.addEventListener('click', function() {
-                                    recognition.start();
-                                    speak.innerHTML = '...speaking';
-                                })
 
-                                recognition.onresult = function(e) {
-                                    var transcript = e.results[0][0].transcript;
-                                    textarea.innerHTML += transcript + ' ';
-                                    speak.innerHTML = 'Click to speak';
-                                }
-                            </script>
                         </div>
                         <button type="submit" name="next" class="next action-button">
                             Submit

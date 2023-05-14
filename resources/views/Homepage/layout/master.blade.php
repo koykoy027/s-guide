@@ -24,19 +24,14 @@
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-
     {{-- sweet alert --}}
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-
-
 
     <!-- Scripts -->
 
     {{-- <script src="{{ asset('index/assets/js/custom.js') }}"></script> --}}
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
 
 </head>
 
@@ -52,8 +47,8 @@
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation"><span
                         class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase">
+                <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-lg-0 text-uppercase mb-2">
                         <li class="nav-item"><a href="{{ url('/') }}"
                                 class="nav-link {{ '/' == request()->path() ? 'active' : '' }}">HOME</a></li>
                         <li class="nav-item"><a href="{{ url('about') }}"
@@ -98,10 +93,9 @@
 
         @yield('content')
 
-
     </main>
     <!-- Footer-->
-    <footer class="bg-dark py-4 mt-auto">
+    <footer class="bg-dark mt-auto py-4">
         <div class="container px-5">
             <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                 <div class="col-auto">
@@ -109,15 +103,14 @@
                 </div>
                 <div class="col-auto">
                     <a class="link-light small" href="{{ url('privacy') }}">Privacy</a>
-                    <span class="text-white mx-1">&middot;</span>
+                    <span class="mx-1 text-white">&middot;</span>
                     <a class="link-light small" href="{{ url('terms') }}">Terms</a>
-                    <span class="text-white mx-1">&middot;</span>
+                    <span class="mx-1 text-white">&middot;</span>
                     <a class="link-light small" href="{{ url('contact') }}">Contact</a>
                 </div>
             </div>
         </div>
     </footer>
-
 
 </body>
 
