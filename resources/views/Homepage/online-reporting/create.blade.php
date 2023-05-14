@@ -452,15 +452,15 @@
                                 </span>
                             @enderror
 
-                            {{-- image --}}
-                            <p class="text-bold mt-3">Upload Video</p>
-                            {{-- <video width="320" height="240" controls>
-                                <source src="" type="video/mp4" id="video-source">
-                                Your browser does not support the video tag.
-                            </video> --}}
-                            <input type="file" class="form-control" name="videos" />
 
-                            {{-- end of image --}}
+                            <p class="text-bold mt-3">Upload Video</p>
+
+                            <input type="file" class="form-control @error('videos') is-invalid @enderror" name="videos" />
+                            @error('videos')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
 
                             <p class="text-bold mt-3">Summary</p>
                             <button type="button" id="speak" class="btn btn-info btn-sm mb-3 text-white">Click
