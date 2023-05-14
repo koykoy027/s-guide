@@ -60,16 +60,11 @@ class OnlineReportController extends Controller
             'summary' => 'required',
             'videos' => 'mimes:mp4|max:50000'
         ]);
+        if ($request->hasFile('videos')) {
             $videoName = time().'.'.$request->videos->getClientOriginalExtension();
             $request->videos->move(public_path('videos'), $videoName);
-
-            // $file = time().'.'.$request->videos->getClientOriginalExtension();
-            // $request->file->move('videos', $file);
-
-
-
-
-
+        }
+        
             OnlineReport::create($request->all());
             return redirect()->back()->with(['message' => 'Thank you!, Your reports has been sent.']);
     }
