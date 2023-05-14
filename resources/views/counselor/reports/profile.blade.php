@@ -2,7 +2,7 @@
 @section('title', 'REPORTS - PROFILE ')
 @section('content')
 
-    <div class="card shadow-lg mb-3">
+    <div class="card mb-3 shadow-lg">
         <div class="card-header">
             <span>VICTIM DETAILS</span>
         </div>
@@ -91,7 +91,7 @@
         </div>
     </div>
 
-    <div class="card shadow-lg mb-3">
+    <div class="card mb-3 shadow-lg">
         <div class="card-header">
             <div class="d-flex justify-content-between">
                 <span>REPORT DETAILS</span>
@@ -148,7 +148,8 @@
             <p class="text-justify">{{ $profile->place_of_incidence }}</p>
 
             <p class="text-bold">Summary</p>
-            <p class="text-justify">{{ $profile->summary }}</p>
+            <p class="text-justify" id="summary">{{ $profile->summary }}</p>
+            <button id="btnSpeech" class="btn-primary btn-sm">Talk</button>
         </div>
 
     </div>
