@@ -41,7 +41,6 @@
     {{-- ICON --}}
     <link rel="shortcut icon" href="{{ asset('images/S-Guide.png') }}" type="image/x-icon">
 
-
     <!-- jQuery -->
 
     {{-- Install the Select2 package using npm --}}
@@ -59,6 +58,7 @@
         $.widget.bridge('uibutton', $.ui.button)
     </script>
     {{-- custom js --}}
+    <script src="{{ asset('js/scripts.js') }}"></script>
     <script src="{{ asset('assets/dist/js/script.js') }}"></script>
     <!-- Bootstrap 4 -->
     <script src="{{ asset('assets/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
@@ -194,7 +194,6 @@
                with font-awesome or any other icon font library -->
                         {{-- .menu-open --}}
 
-
                         <li class="nav-header">MENU</li>
                         <li class="nav-item">
                             <a href="{{ route('dashboard') }}"
@@ -236,7 +235,6 @@
                             </a>
                         </li>
 
-
                         <li class="nav-header">User management</li>
                         <li class="nav-item">
                             <a href="{{ url('counselor/user/list') }}"
@@ -257,7 +255,6 @@
                 </nav>
             </div>
         </aside>
-
 
         <div class="content-wrapper">
             <section class="content">
@@ -284,7 +281,7 @@
         <footer class="main-footer">
             <strong>Copyright &copy; 2019-2022 <a target="_blank" href="">BigBro</a>.</strong> All rights
             reserved.
-            <div class="float-right d-none d-sm-inline-block">
+            <div class="d-none d-sm-inline-block float-right">
                 <b>Version</b> 1.0.0
             </div>
         </footer>

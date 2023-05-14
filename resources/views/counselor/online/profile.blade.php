@@ -162,9 +162,10 @@
             <hr />
             <p class="text-bold">Place of incidence</p>
             <p class="text-justify">{{ $profile->place_of_incidence }}</p>
-            
+
             <p class="text-bold">Summary</p>
-            <p class="text-justify">{{ $profile->summary }}</p>
+            <p class="text-justify" id="summary">{{ $profile->summary }}</p>
+            <button id="btnSpeech" class="btn-primary btn-sm">Talk</button>
 
             <p class="text-bold">Video</p>
             <video width="320" height="240" controls>

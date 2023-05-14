@@ -1,3 +1,19 @@
+// TEXT TO SPEECH
+
+$(document).ready(function () {
+
+    let summary = document.getElementById('summary');
+    let btnSpeech = document.getElementById('btnSpeech');
+
+    btnSpeech.addEventListener("click", function () {
+        let text = summary.textContent;
+        let utterance = new SpeechSynthesisUtterance(text);
+        speechSynthesis.speak(utterance);
+    });
+
+})
+
+// PROGRESSIVE STEP BAR
 $(document).ready(function () {
 
     var current_fs, next_fs, previous_fs; //fieldsets
