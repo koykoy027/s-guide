@@ -23,325 +23,11 @@
     </script>
 @endif
 
-{{-- validation --}}
-{{-- <section class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-11 col-sm-9 col-md-7 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2">
-                <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
-                    <h2 id="heading">Online Report</h2>
-                    <p>Validate your school code first</p>
-                    <hr>
-                    <strong>{{ session('message') }}</strong>
-                    <form method="GET" action="{{ url('getData') }}">
-                        <div class="form-card">
-                            <div class="row mb-3">
-                                <div class="col-md">
-                                    <label class="fieldlabels">School code</label>
-                                    <input type="num" class="form-control @error('id') is-invalid @enderror"
-                                        name="id" placeholder="6 digit school code" />
-                                    @error('id')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
-
-                                    @foreach ($data as $item)
-                                        <div>{{ $item->name }}</div>
-                                    @endforeach
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="d-flex justify-content-end">
-                            <button type="submit" class="btn btn-primary">
-                                Validate
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section> --}}
-
-{{-- show all --}}
-{{-- <section class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-10 p-0 mt-3 mb-2">
-                <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
-                    <div class="text-center">
-                        <h2 id="heading">Online Report</h2>
-                        <p>Validate your school code first</p>
-                    </div>
-                    <hr>
-                    <form action="{{ url('store') }}" method="POST">
-                        @csrf
-
-                        <div class="card shadow-lg mb-3">
-                            <div class="card-header">
-                                <span>STUDENT PROFILE</span>
-                            </div>
-
-                        </div>
-
-                        <div class="card shadow-lg mb-3">
-                            <div class="card-header">
-                                <div class="d-flex justify-content-between">
-                                    <span>STUDENT PROFILE</span>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-md">
-                                        <div class="row mb-3">
-                                            <div class="col-md-4">
-                                                <p>Name</p>
-                                            </div>
-                                            <div class="col-md">
-                                                <input type="text"
-                                                    class="form-control @error('lastname') is-invalid @enderror"
-                                                    value="{{ old('lastname') }}" autocomplete="on" autofocus
-                                                    name="lastname" placeholder="Lastname">
-                                                @error('lastname')
-                                                    <span class="invalid-feedback" role="alert">
-                                                        <strong>{{ $message }}</strong>
-                                                    </span>
-                                                @enderror
-                                            </div>
-                                            <div class="col-md">
-                                                <input type="text"
-                                                    class="form-control @error('firstname') is-invalid @enderror"
-                                                    value="{{ old('firstname') }}" autocomplete="on" autofocus
-                                                    name="firstname" placeholder="Firstname">
-                                                @error('firstname')
-                                                    <span class="invalid-feedback" role="alert">
-                                                        <strong>{{ $message }}</strong>
-                                                    </span>
-                                                @enderror
-                                            </div>
-                                            <div class="col-md">
-                                                <input type="text"
-                                                    class="form-control @error('middlename') is-invalid @enderror"
-                                                    value="{{ old('middlename') }}" autocomplete="on" autofocus
-                                                    name="middlename" placeholder="Middlename">
-                                                @error('middlename')
-                                                    <span class="invalid-feedback" role="alert">
-                                                        <strong>{{ $message }}</strong>
-                                                    </span>
-                                                @enderror
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <div class="col-md-4">
-                                                <p>Student number</p>
-                                            </div>
-                                            <div class="col-md">
-                                                <input type="text"
-                                                    class="form-control @error('student_number') is-invalid @enderror"
-                                                    value="{{ old('student_number') }}" autocomplete="on" autofocus
-                                                    name="student_number">
-                                                @error('student_number')
-                                                    <span class="invalid-feedback" role="alert">
-                                                        <strong>{{ $message }}</strong>
-                                                    </span>
-                                                @enderror
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <div class="col-md-4">
-                                                <p>Gender</p>
-                                            </div>
-                                            <div class="col-md">
-                                                <select class="form-control @error('gender') is-invalid @enderror"
-                                                    value="{{ old('gender') }}" autocomplete="on" autofocus name="gender">
-                                                    <option value="Male">Male</option>
-                                                    <option value="Female">Female</option>
-                                                    <option value="Prefer not to say">Prefer not to say</option>
-                                                </select>
-                                                @error('gender')
-                                                    <span class="invalid-feedback" role="alert">
-                                                        <strong>{{ $message }}</strong>
-                                                    </span>
-                                                @enderror
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <div class="col-md-4">
-                                                <p>Birthday</p>
-                                            </div>
-                                            <div class="col-md">
-                                                <input type="date"
-                                                    class="form-control @error('birthday') is-invalid @enderror"
-                                                    value="{{ old('birthday') }}" autocomplete="on" autofocus
-                                                    name="birthday">
-                                                @error('birthday')
-                                                    <span class="invalid-feedback" role="alert">
-                                                        <strong>{{ $message }}</strong>
-                                                    </span>
-                                                @enderror
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <div class="col-md-4">
-                                                <p>Contact number</p>
-                                            </div>
-                                            <div class="col-md">
-                                                <input type="tel"
-                                                    class="form-control @error('contact_number') is-invalid @enderror"
-                                                    value="{{ old('contact_number') }}" autocomplete="on" autofocus
-                                                    name="contact_number">
-                                                @error('contact_number')
-                                                    <span class="invalid-feedback" role="alert">
-                                                        <strong>{{ $message }}</strong>
-                                                    </span>
-                                                @enderror
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md">
-                                        <div class="row mb-3">
-                                            <div class="col-md-3">
-                                                <p>Program</p>
-                                            </div>
-                                            <div class="col-md">
-                                                <select class="form-control @error('program') is-invalid @enderror"
-                                                    value="{{ old('program') }}" autocomplete="on" autofocus id="program"
-                                                    name="program">
-                                                    <option
-                                                        value="Bachelor of Science in Entertainment and Multimedia Computing">
-                                                        Bachelor
-                                                        of
-                                                        Science in Entertainment and Multimedia Computing</option>
-                                                    <option value="Bachelor of Science in Computer Science">Bachelor of
-                                                        Science in Computer
-                                                        Science</option>
-                                                    <option value="Bachelor of Science in Information Techonology">Bachelor
-                                                        of Science in
-                                                        Information Techonology</option>
-                                                    <option value="Bachelor of Science in Information System">Bachelor of
-                                                        Science in
-                                                        Information
-                                                        System</option>
-                                                </select>
-                                                @error('program')
-                                                    <span class="invalid-feedback" role="alert">
-                                                        <strong>{{ $message }}</strong>
-                                                    </span>
-                                                @enderror
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <div class="col-md-3">
-                                                <p>Year</p>
-                                            </div>
-                                            <div class="col-md">
-                                                <select class="form-control @error('year') is-invalid @enderror"
-                                                    name="year">
-                                                    <option value="1st year College">1st year College</option>
-                                                    <option value="2nd year College">2nd year College</option>
-                                                    <option value="3rd year College">3rd year College</option>
-                                                    <option value="4th year College">4th year College</option>
-                                                </select>
-                                                @error('year')
-                                                    <span class="invalid-feedback" role="alert">
-                                                        <strong>{{ $message }}</strong>
-                                                    </span>
-                                                @enderror
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <div class="col-md-3">
-                                                <p>Section</p>
-                                            </div>
-                                            <div class="col-md">
-                                                <input type="text"
-                                                    class="form-control @error('section') is-invalid @enderror"
-                                                    value="{{ old('section') }}" autocomplete="on" autofocus
-                                                    name="section">
-                                                @error('section')
-                                                    <span class="invalid-feedback" role="alert">
-                                                        <strong>{{ $message }}</strong>
-                                                    </span>
-                                                @enderror
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card shadow-lg mb-3">
-                            <div class="card-header">
-                                <div class="d-flex justify-content-between">
-                                    <span>REPORT DETAILS</span>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-md mb-3">
-                                        <p class="text-bold">Type of complain</p>
-                                        <select class="form-control @error('type_of_complain') is-invalid @enderror"
-                                            value="{{ old('type_of_complain') }}" autocomplete="on" autofocus
-                                            name="type_of_complain">
-                                            <option value="Sexual Harassment">Sexual Harassment</option>
-                                            <option value="Smoking inside campus">Arriving Late</option>
-                                            <option value="Smoking inside campus">Smoking inside campus</option>
-                                            <option value="Gambling">Gambling</option>
-                                            <option value="Bullying">Bullying</option>
-                                            <option value="Failure to wear prescribed uniform">Failure to wear prescribed
-                                                uniform</option>
-                                            <option value="Use or Posses drugs">Use or Posses drugs</option>
-
-
-                                        </select>
-                                        @error('type_of_complain')
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $message }}</strong>
-                                            </span>
-                                        @enderror
-
-
-
-
-                                    </div>
-                                    <input type="hidden" class="form-control" name="status" value="Minor offense">
-
-                                </div>
-                                <p class="text-bold mt-3">Place of Incidence</p>
-                                <input type="text"
-                                    class="form-control @error('place_of_incidence') is-invalid @enderror"
-                                    value="{{ old('place_of_incidence') }}" autocomplete="on"
-                                    autofocusname="place_of_incidence" name="place_of_incidence">
-                                @error('place_of_incidence')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-
-                                <p class="text-bold mt-3">Summary</p>
-                                <textarea class="form-control  @error('summary') is-invalid @enderror" value="{{ old('summary') }}"
-                                    autocomplete="on" autofocusname="status" cols="30" rows="10" name="summary"></textarea>
-                                @error('summary')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                                <button class="btn btn-primary btn-block btn-sm" type="submit">Submit</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section> --}}
-
-
 {{-- step bar --}}
 <section class="container-fluid">
     <div class="row justify-content-center">
-        <div class="col-11 col-sm-9 col-md-7 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2">
-            <div class="px-0 pt-4 pb-0 mt-3 mb-3">
+        <div class="col-11 col-sm-9 col-md-7 col-lg-6 col-xl-5 mt-3 mb-2 p-0 text-center">
+            <div class="mt-3 mb-3 px-0 pt-4 pb-0">
                 <h2 id="heading">Online Report</h2>
                 <p>Fill all form field to go to next step</p>
 
@@ -766,49 +452,27 @@
                                 </span>
                             @enderror
 
-                            {{-- image --}}
                             <p class="text-bold mt-3">Upload Video</p>
-                            {{-- <video width="320" height="240" controls>
-                                <source src="" type="video/mp4" id="video-source">
-                                Your browser does not support the video tag.
-                            </video> --}}
-                            <input type="file" class="form-control" name="videos" />
 
-
-                            {{-- end of image --}}
-
-
-
-
-
-
+                            <input type="file" class="form-control @error('videos') is-invalid @enderror"
+                                name="videos" />
+                            @error('videos')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
 
                             <p class="text-bold mt-3">Summary</p>
                             <button type="button" id="speak" class="btn btn-info btn-sm mb-3 text-white">Click
                                 to Speak</button>
-                            <textarea class="form-control  @error('summary') is-invalid @enderror" cols="30" rows="10" name="summary"
+                            <textarea class="form-control @error('summary') is-invalid @enderror" cols="30" rows="10" name="summary"
                                 id="textarea">{{ old('summary') }}</textarea>
                             @error('summary')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
                             @enderror
-                            <script>
-                                var speak = document.getElementById('speak');
-                                var textarea = document.getElementById('textarea');
-                                var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-                                var recognition = new SpeechRecognition();
-                                speak.addEventListener('click', function() {
-                                    recognition.start();
-                                    speak.innerHTML = '...speaking';
-                                })
 
-                                recognition.onresult = function(e) {
-                                    var transcript = e.results[0][0].transcript;
-                                    textarea.innerHTML += transcript + ' ';
-                                    speak.innerHTML = 'Click to speak';
-                                }
-                            </script>
                         </div>
                         <button type="submit" name="next" class="next action-button">
                             Submit
@@ -821,6 +485,5 @@
         </div>
     </div>
 </section>
-
 
 @endsection
