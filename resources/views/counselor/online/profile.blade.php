@@ -165,9 +165,9 @@
 
             <p class="text-bold">Summary</p>
             <p class="text-justify" id="summary">{{ $profile->summary }}</p>
-            <button id="btnSpeech" class="btn-primary btn-sm">Talk</button>
+            <button id="btnSpeech" class="btn-primary btn-sm">Listen</button>
 
-            <p class="text-bold">Video</p>
+            <p class="text-bold mt-3">Video</p>
             <video width="320" height="240" controls>
                 <source src="{{ asset('videos/' . $profile->videos) }}" type="video/mp4" id="video-source">
                 Your browser does not support the video tag.
