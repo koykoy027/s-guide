@@ -29,11 +29,11 @@ jobs:
       - name: Copy .env
         run: cp .env.example .env
 
+      - name: Install Composer dependencies
+        run: composer install --no-interaction --optimize-autoloader
+
       - name: Generate key
         run: php artisan key:generate
-
-      - name: Install dependencies
-        run: composer install --no-interaction --optimize-autoloader --no-scripts
 
       - name: Run tests
         run: php artisan test
