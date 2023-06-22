@@ -23,11 +23,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Start Docker service
-        uses: actions/service-containers@v1
-        with:
-          image: ${{ secrets.DOCKER_REGISTRY_USERNAME }}/laravel:${{ github.sha }}
-          credentials: ${{ secrets.DOCKER_REGISTRY_PASSWORD }}
+      - name: Set up Docker
+        uses: docker/setup-buildx-action@v1
 
       - name: Copy .env
         run: cp .env.example .env
