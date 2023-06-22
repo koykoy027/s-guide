@@ -1,0 +1,35 @@
+name: Laravel CI
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.2'
+
+    - name: Install dependencies
+      run: |
+        curl -sS https://getcomposer.org/installer | php
+        php composer.phar install
+
+    - name: Set up Docker
+      uses: docker/setup-docker@v1
+
+    - name: Build and run Docker container
+      run: |
+        docker build -t laravel-app .
+        docker run -d -p 8000:9000 --name laravel-container laravel-app
+
+    - name: Run tests
+      run: docker exec -it laravel-container vendor/bin/phpunit
