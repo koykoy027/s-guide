@@ -6,7 +6,7 @@
             <div class="row gx-5 align-items-center justify-content-center">
                 <div class="col-lg-8 col-xl-7 col-xxl-6">
                     <div class="my-5 text-center text-xl-start">
-                        <h1 class="display-5 fw-bolder text-white mb-2">test</h1>
+                        <h1 class="display-5 fw-bolder text-white mb-2">Welcome to Sguide</h1>
                         <p class="lead fw-normal text-white-50 mb-4">In S-Guide your academic, personal, and social issues
                             are secured. It’s a safe space for everyone.</p>
                         <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
