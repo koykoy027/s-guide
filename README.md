@@ -1,42 +1,30 @@
-<p>Step by step</p>
-<ol>
-    <li>
-    <code>git clone https://github.com/koykoy027/s-guide.git</code>
-    </li>
-    <li>
-    <code>cd s-guide</code>
-    </li>
-    <li>
-    <code>npm install</code>
-    </li>
-    <li>
-    <code>npm run dev</code>
-    </li>
-    <li>
-    <code>composer install</code>
-    </li>
-    <li>
-    <code>php artisan migrate:fresh --seed</code>
-    </li>
-    <li>
-    <code>php artisan serve</code>
-    </li>
-</ol>
-
-<p>SHORTCUT KEY</p>
-<ol>
-<li>
-    crtl + p = find files
-</li>
-<li>
-    crtl + shift + f = search text in all folder
-</li>
-<li>
-    crtl + /? = comment / uncomment
-</li>
-</ol>
-
-#################################
-CHANGES 04/20/23
-- Case Analysis (yung mag dedecide ng minor or major yung incedent
-- Yung QR code for login
+## Things you need to do to run the project
+1. Clone the repository first in your localhost
+```
+git clone github.com/koykoy027/s-guide.git
+```
+2. Go to your directory and download dependencies
+```
+composer install
+```
+3. Generate .env file
+```
+cp .env.example .env
+```
+4. Generate APP_KEY
+```
+php artisan key:generate
+```
+5. Open your .env file and configure your database
+6. Migrate your database using
+```
+php artisan migrate --seed
+```
+7. refresh your server
+```
+php artisan optimize
+```
+8. Run your Laravel project
+```
+php artisan serve
+```
