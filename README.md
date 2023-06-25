@@ -1,5 +1,5 @@
 ## Things you need to do to run this project
-1. Clone this repository in your localhost
+1. Clone this repository on your machine
 ```
 git clone github.com/koykoy027/s-guide.git
 ```
